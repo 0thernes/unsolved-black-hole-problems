@@ -10,28 +10,25 @@ required gate before Done.
       validate.py, build_rag.py, CI, LICENSE.
 - [x] 16 problems seeded with statements, originators, history, key ideas,
       status, and ranking rationale (from established domain knowledge).
+- [x] All 16 `problem.json` pass schema + structural validation; `rag/INDEX.jsonl`
+      built and drift-checked in CI.
+- [x] Enrichment pass complete: every problem has 24–30 verified, sourced papers
+      (foundational + recent) and 10–11 physicists with contributions; all
+      `metadata.confidence: "researched"`. Integrity gate enforced on apply
+      (identifier-or-note required, else dropped). RAG rebuilt to 584 records.
 
-## Validated (schema + CI green, seed coverage)
+## Researching
 
-- [ ] All 16 `problem.json` pass schema + structural validation.
-- [ ] `rag/INDEX.jsonl` built and drift-checked.
-
-## Researching (enrichment pass — real, sourced citations)
-
-- [ ] Per-problem: gather verified key papers (target up to 25: foundational +
-      recent) via arXiv / Consensus / Semantic Scholar.
-- [ ] Per-problem: top ~10 active/historical physicists with contributions.
-- [ ] Upgrade `metadata.confidence` from `seed` → `researched` as coverage lands.
+- (none — enrichment pass complete; reopen per problem as new results land)
 
 ## Backlog
 
 - [ ] Cross-link `simulator_angle` fields to concrete `black-hole-simulation-lab`
       features (e.g. #11 no-hair tests ↔ QNM spectroscopy module).
-- [ ] Add `docs/audits/` entry once enrichment completes.
-- [ ] Consider additional problems if genuinely distinct (e.g. holographic
-      complexity growth; islands in cosmology) — only if not a duplicate.
 - [ ] Daily research feed (mirror the simulator's scheduled pull) appending new
       arXiv items to a per-problem `recent` list.
+- [ ] Consider additional problems if genuinely distinct (e.g. holographic
+      complexity growth; islands in cosmology) — only if not a duplicate.
 
 ## Ranking disputes log
 
