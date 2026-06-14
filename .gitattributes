@@ -1,0 +1,9 @@
+# Normalize line endings to LF in the repository for all text files. This keeps
+# the deterministically-generated rag/INDEX.jsonl (written with \n by
+# build_rag.py) byte-identical between Windows authoring and the Linux CI
+# runner, so the CI "RAG drift" check cannot trip on CRLF/LF differences.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.pdf binary
