@@ -1,0 +1,55 @@
+{
+  "rank": 3,
+  "slug": "03-bekenstein-hawking-entropy",
+  "title": "Microscopic origin of Bekenstein-Hawking entropy",
+  "aliases": ["black hole entropy microstates", "A/4 entropy", "statistical origin of horizon entropy"],
+  "statement": "A black hole carries entropy S = k_B c^3 A / (4 G hbar) — one quarter of its horizon area in Planck units (Bekenstein 1973; Hawking 1975). In ordinary statistical mechanics, entropy counts microstates. What are the microstates of a black hole? String theory (Strominger-Vafa 1996) reproduced S = A/4 by counting D-brane states for special supersymmetric, extremal (and near-extremal) black holes. A microscopic state-counting for a generic astrophysical (e.g. Kerr) black hole, and a framework-independent understanding of why the answer is universally A/4, remain open.",
+  "first_posed": "1972-1973",
+  "originators": [
+    {"name": "Jacob Bekenstein", "note": "1972-73 proposed that black holes carry entropy proportional to horizon area."},
+    {"name": "Stephen Hawking", "note": "1975 fixed the coefficient to 1/4 via the radiation temperature (the first law)."}
+  ],
+  "status": "partially-solved",
+  "statement_tier": "established_theory",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 9,
+    "age": 8,
+    "tractability": 4,
+    "rationale": "Deep (the meaning of A/4 touches quantum gravity and holography), old (1973), but partially solved: string theory counts microstates exactly for SUSY/extremal cases. The general (Kerr) case and a universal explanation are open."
+  },
+  "key_ideas": [
+    "S = A/4 in Planck units is universal across black-hole types — a strong hint about quantum gravity.",
+    "The area law motivated the holographic principle ('t Hooft, Susskind): degrees of freedom scale with area, not volume.",
+    "Strominger-Vafa counted Bogomol'nyi-Prasad-Sommerfield (BPS) D-brane microstates and matched A/4 exactly for extremal charged black holes.",
+    "Loop quantum gravity counts spin-network punctures of the horizon, fixing A/4 via the Barbero-Immirzi parameter.",
+    "Logarithmic corrections to S (Sen and others) provide cross-checks between approaches.",
+    "Open: a microscopic count for a generic (non-extremal, rotating, astrophysical) black hole and a framework-independent derivation of the 1/4."
+  ],
+  "approaches": [
+    {"name": "String theory / D-brane counting", "summary": "Count BPS microstates of brane bound states; matches A/4 for SUSY extremal and near-extremal black holes.", "tier": "established_theory", "proponents": ["Andrew Strominger", "Cumrun Vafa", "Ashoke Sen"]},
+    {"name": "Loop quantum gravity horizon counting", "summary": "Count quantum-geometry states puncturing the horizon; fixes A/4 via the Barbero-Immirzi parameter.", "tier": "speculative_extension", "proponents": ["Carlo Rovelli", "Abhay Ashtekar", "Kirill Krasnov"]},
+    {"name": "Euclidean / Noether-charge (Wald) entropy", "summary": "Entropy as a Noether charge of the horizon-generating Killing field; generalizes A/4 to higher-curvature gravity.", "tier": "analytic_classical", "proponents": ["Robert Wald", "Ted Jacobson"]},
+    {"name": "Conformal symmetry near the horizon (Cardy)", "summary": "Near-horizon conformal symmetry fixes the state count via Cardy's formula, independent of microscopic details.", "tier": "open_conjecture", "proponents": ["Steven Carlip", "Andrew Strominger"]}
+  ],
+  "papers": [
+    {"title": "Black Holes and Entropy", "authors": ["Jacob D. Bekenstein"], "year": 1973, "kind": "foundational", "tier": "established_theory", "note": "Phys. Rev. D 7, 2333 — entropy proportional to horizon area."},
+    {"title": "Particle Creation by Black Holes", "authors": ["Stephen Hawking"], "year": 1975, "kind": "foundational", "tier": "established_theory", "note": "Commun. Math. Phys. 43, 199 — fixes S = A/4."},
+    {"title": "Microscopic Origin of the Bekenstein-Hawking Entropy", "authors": ["Andrew Strominger", "Cumrun Vafa"], "year": 1996, "kind": "foundational", "tier": "established_theory", "identifier": {"arxiv": "hep-th/9601029"}, "note": "D-brane microstate counting matching A/4 for extremal black holes."},
+    {"title": "Black Hole Entropy is the Noether Charge", "authors": ["Robert M. Wald"], "year": 1993, "kind": "foundational", "tier": "analytic_classical", "identifier": {"arxiv": "gr-qc/9307038"}},
+    {"title": "Black Hole Entropy from Conformal Field Theory in Any Dimension", "authors": ["Steven Carlip"], "year": 1999, "kind": "recent", "tier": "open_conjecture", "identifier": {"arxiv": "hep-th/9812013"}}
+  ],
+  "physicists": [
+    {"name": "Jacob Bekenstein", "role": "originator", "era": "1972-2015", "affiliation": "Hebrew University", "contribution": "Proposed black-hole entropy proportional to horizon area."},
+    {"name": "Stephen Hawking", "role": "originator", "era": "1974-2018", "affiliation": "Cambridge", "contribution": "Fixed the 1/4 coefficient via the radiation temperature."},
+    {"name": "Andrew Strominger", "role": "active", "era": "1996-present", "affiliation": "Harvard", "contribution": "String-theory microstate counting; near-horizon conformal symmetry."},
+    {"name": "Cumrun Vafa", "role": "active", "era": "1996-present", "affiliation": "Harvard", "contribution": "D-brane entropy counting with Strominger."},
+    {"name": "Ashoke Sen", "role": "active", "era": "1990s-present", "affiliation": "ICTS / Harish-Chandra", "contribution": "Precision entropy, logarithmic corrections, quantum entropy function."},
+    {"name": "Robert Wald", "role": "foundational", "era": "1990s-present", "affiliation": "Chicago", "contribution": "Noether-charge definition of horizon entropy."},
+    {"name": "Carlo Rovelli", "role": "active", "era": "1990s-present", "affiliation": "Aix-Marseille", "contribution": "Loop-quantum-gravity horizon state counting."},
+    {"name": "Steven Carlip", "role": "active", "era": "1990s-present", "affiliation": "UC Davis", "contribution": "Near-horizon conformal (Cardy) approach to universality of A/4."}
+  ],
+  "related_problems": [2, 1, 8],
+  "simulator_angle": "The horizon area (and thus S = A/4) for Kerr is exactly what the simulator's thermo/hawking.hpp computes (horizon_area_factor, entropy functions); the catalogue documents what that number means and why its microscopic origin is unsolved.",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references (Strominger-Vafa, Wald, Carlip with arXiv ids; Bekenstein/Hawking as notes) + 8 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}

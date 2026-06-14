@@ -1,0 +1,52 @@
+{
+  "rank": 4,
+  "slug": "04-strong-cosmic-censorship",
+  "title": "Strong cosmic censorship & the Cauchy horizon",
+  "aliases": ["determinism in GR", "Cauchy horizon instability", "SCC"],
+  "statement": "Inside charged (Reissner-Nordstrom) and rotating (Kerr) black holes, general relativity's equations lose predictive power at an inner 'Cauchy horizon' beyond which the future is not determined by initial data. Strong cosmic censorship (Penrose 1969) conjectures that, for generic initial data, the Cauchy horizon is unstable and becomes a singular boundary, so determinism is preserved (no observer can pass into the unpredictable region). Whether this holds is open: rigorous work supports a (weaker, Christodoulou) formulation in many cases, but near-extremal Reissner-Nordstrom-de Sitter black holes provide apparent counterexamples.",
+  "first_posed": "1969",
+  "originators": [
+    {"name": "Roger Penrose", "note": "1969 formulation of cosmic censorship; strong version concerns interior determinism."}
+  ],
+  "status": "open-with-recent-progress",
+  "statement_tier": "analytic_classical",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 7,
+    "age": 8,
+    "tractability": 5,
+    "rationale": "A foundational determinism question, old (1969), but unusually tractable for a deep problem: it is a precise PDE statement attacked with rigorous mathematical relativity, with theorems and explicit counterexamples in hand."
+  },
+  "key_ideas": [
+    "The Cauchy horizon is where predictability from initial data ends; classical GR cannot say what lies beyond.",
+    "Blueshift instability: perturbations falling in are infinitely blueshifted at the Cauchy horizon, suggesting it becomes singular (Simpson-Penrose).",
+    "Mass inflation (Poisson-Israel): the interior mass function diverges, reinforcing a singular Cauchy horizon.",
+    "Christodoulou's reformulation: the question is the regularity (differentiability) of the metric extension across the horizon, not mere continuity.",
+    "Quasinormal-mode decay rates vs blueshift growth set whether perturbations remain regular; near-extremal Reissner-Nordstrom-de Sitter can violate the expected censorship.",
+    "Outcome bears on whether GR is a deterministic theory in the strong-field interior."
+  ],
+  "approaches": [
+    {"name": "Rigorous PDE relativity (Dafermos-Luk)", "summary": "Prove C^0-stability / nonlinear instability of the Cauchy horizon for Kerr perturbations.", "tier": "analytic_classical", "proponents": ["Mihalis Dafermos", "Jonathan Luk"]},
+    {"name": "Quasinormal-mode / de Sitter analysis", "summary": "Compare QNM decay to the blueshift rate; near-extremal RN-dS appears to violate SCC.", "tier": "numerical_approximation", "proponents": ["Vitor Cardoso", "Joao Costa", "Kyriakos Destounis", "Peter Hintz", "Aron Jansen"]},
+    {"name": "Mass-inflation modeling", "summary": "Effective models of the diverging interior mass at the Cauchy horizon.", "tier": "analytic_classical", "proponents": ["Eric Poisson", "Werner Israel"]}
+  ],
+  "papers": [
+    {"title": "Gravitational Collapse: The Role of General Relativity", "authors": ["Roger Penrose"], "year": 1969, "kind": "foundational", "tier": "analytic_classical", "note": "Riv. Nuovo Cimento 1, 252 — the cosmic-censorship conjectures."},
+    {"title": "Internal instability in a Reissner-Nordstrom black hole", "authors": ["Michael Simpson", "Roger Penrose"], "year": 1973, "kind": "foundational", "tier": "analytic_classical", "note": "Int. J. Theor. Phys. 7, 183 — Cauchy-horizon blueshift instability."},
+    {"title": "Internal structure of black holes (mass inflation)", "authors": ["Eric Poisson", "Werner Israel"], "year": 1990, "kind": "foundational", "tier": "analytic_classical", "note": "Phys. Rev. D 41, 1796."},
+    {"title": "Quasinormal Modes and Strong Cosmic Censorship", "authors": ["Vitor Cardoso", "Joao L. Costa", "Kyriakos Destounis", "Peter Hintz", "Aron Jansen"], "year": 2018, "kind": "recent", "tier": "numerical_approximation", "identifier": {"arxiv": "1711.10502"}, "note": "near-extremal RN-de Sitter apparent violation."},
+    {"title": "On the formation of trapped surfaces / strong cosmic censorship for Kerr (program)", "authors": ["Mihalis Dafermos", "Jonathan Luk"], "year": 2017, "kind": "recent", "tier": "analytic_classical", "note": "C^0-stability of the Kerr Cauchy horizon program."}
+  ],
+  "physicists": [
+    {"name": "Roger Penrose", "role": "originator", "era": "1969-present", "affiliation": "Oxford", "contribution": "Posed cosmic censorship; Nobel Prize 2020."},
+    {"name": "Demetrios Christodoulou", "role": "foundational", "era": "1990s-present", "affiliation": "ETH Zurich", "contribution": "Reformulated SCC in terms of metric regularity; rigorous collapse results."},
+    {"name": "Mihalis Dafermos", "role": "active", "era": "2000s-present", "affiliation": "Princeton/Cambridge", "contribution": "Rigorous analysis of the Kerr/RN Cauchy horizon."},
+    {"name": "Jonathan Luk", "role": "active", "era": "2010s-present", "affiliation": "Stanford", "contribution": "Cauchy-horizon stability/instability theorems with Dafermos."},
+    {"name": "Vitor Cardoso", "role": "active", "era": "2000s-present", "affiliation": "IST Lisbon / Niels Bohr Institute", "contribution": "QNM route to SCC; near-extremal RN-dS counterexample."},
+    {"name": "Peter Hintz", "role": "active", "era": "2010s-present", "affiliation": "ETH Zurich", "contribution": "Microlocal/PDE analysis of black-hole stability and SCC."},
+    {"name": "Werner Israel", "role": "foundational", "era": "1960s-2010s", "affiliation": "Alberta/Victoria", "contribution": "Mass inflation; black-hole uniqueness."}
+  ],
+  "related_problems": [5, 1, 11],
+  "simulator_angle": "The blueshift/QNM analysis uses the same Kerr null-geodesic and quasinormal-mode machinery as the simulator; the simulator can illustrate the inner-horizon structure (r_-) of the Kerr metric it already implements.",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references (Cardoso et al with arXiv id; others as bibliographic notes) + 7 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}

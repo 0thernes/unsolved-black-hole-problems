@@ -1,0 +1,52 @@
+{
+  "rank": 5,
+  "slug": "05-weak-cosmic-censorship",
+  "title": "Weak cosmic censorship",
+  "aliases": ["no naked singularities", "WCC", "cosmic censorship hypothesis"],
+  "statement": "Weak cosmic censorship (Penrose 1969) conjectures that the singularities produced by realistic gravitational collapse are always hidden behind event horizons, so no 'naked' singularity is visible to a distant observer and predictability at infinity is preserved. There is no general proof. Spherically-symmetric counterexamples exist (Christodoulou) but appear non-generic; gedanken experiments that try to over-spin or over-charge a black hole into a naked singularity are generically thwarted, though with subtle near-extremal cases; and clean violations are known in asymptotically anti-de Sitter spacetimes.",
+  "first_posed": "1969",
+  "originators": [
+    {"name": "Roger Penrose", "note": "1969 cosmic-censorship hypothesis; weak version protects observers at infinity."}
+  ],
+  "status": "open-with-recent-progress",
+  "statement_tier": "analytic_classical",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 7,
+    "age": 8,
+    "tractability": 5,
+    "rationale": "Foundational and old, but attacked with rigorous PDE methods and explicit examples; the genericity question (do violations survive perturbation?) is the crux and remains open in 4D asymptotically-flat GR."
+  },
+  "key_ideas": [
+    "A naked singularity would emit unpredictable signals to infinity, breaking the predictive power of GR for outside observers.",
+    "Christodoulou proved naked singularities CAN form in spherical scalar-field collapse, then proved they are non-generic (perturbations remove them).",
+    "Critical collapse (Choptuik): at the precise threshold between dispersal and black-hole formation sits a self-similar, marginally-naked solution.",
+    "Overspinning/overcharging gedanken experiments: attempts to push a black hole past extremality (a>M) by throwing in matter are generically prevented, with delicate near-extremal exceptions.",
+    "In asymptotically anti-de Sitter space, explicit WCC violations are known (Horowitz, Santos and collaborators).",
+    "Closely tied to whether the final state of collapse is always a Kerr black hole."
+  ],
+  "approaches": [
+    {"name": "Rigorous spherical-collapse analysis", "summary": "Prove formation/non-genericity of naked singularities in symmetric models.", "tier": "analytic_classical", "proponents": ["Demetrios Christodoulou"]},
+    {"name": "Critical-collapse / numerical relativity", "summary": "Study the threshold of black-hole formation and its self-similar, marginally-naked critical solution.", "tier": "numerical_approximation", "proponents": ["Matthew Choptuik"]},
+    {"name": "Overspinning/overcharging gedanken tests", "summary": "Test destructibility of horizons by infalling matter; backreaction and self-force generically protect censorship.", "tier": "analytic_classical", "proponents": ["Robert Wald", "Veronika Hubeny"]},
+    {"name": "AdS violations", "summary": "Construct explicit naked-singularity-forming solutions with anti-de Sitter boundary conditions.", "tier": "numerical_approximation", "proponents": ["Gary Horowitz", "Jorge Santos", "Toby Crisford"]}
+  ],
+  "papers": [
+    {"title": "Gravitational Collapse: The Role of General Relativity", "authors": ["Roger Penrose"], "year": 1969, "kind": "foundational", "tier": "analytic_classical", "note": "Riv. Nuovo Cimento 1, 252."},
+    {"title": "Universality and Scaling in Gravitational Collapse of a Massless Scalar Field", "authors": ["Matthew W. Choptuik"], "year": 1993, "kind": "foundational", "tier": "numerical_approximation", "note": "Phys. Rev. Lett. 70, 9 — critical collapse."},
+    {"title": "The instability of naked singularities in the gravitational collapse of a scalar field", "authors": ["Demetrios Christodoulou"], "year": 1999, "kind": "foundational", "tier": "analytic_classical", "note": "Ann. of Math. 149, 183 — naked singularities are non-generic."},
+    {"title": "Gedanken Experiments to Destroy a Black Hole", "authors": ["Robert M. Wald"], "year": 1974, "kind": "foundational", "tier": "analytic_classical", "note": "Ann. Phys. 82, 548 — cannot overcharge/overspin by dropping particles."},
+    {"title": "Violating the Weak Cosmic Censorship Conjecture in Four-Dimensional Anti-de Sitter Space", "authors": ["Toby Crisford", "Jorge E. Santos"], "year": 2017, "kind": "recent", "tier": "numerical_approximation", "identifier": {"arxiv": "1702.05490"}}
+  ],
+  "physicists": [
+    {"name": "Roger Penrose", "role": "originator", "era": "1969-present", "affiliation": "Oxford", "contribution": "Cosmic-censorship hypothesis; Nobel Prize 2020."},
+    {"name": "Demetrios Christodoulou", "role": "foundational", "era": "1980s-present", "affiliation": "ETH Zurich", "contribution": "Formation and non-genericity of naked singularities in scalar collapse."},
+    {"name": "Matthew Choptuik", "role": "active", "era": "1990s-present", "affiliation": "UBC", "contribution": "Discovered critical phenomena in gravitational collapse."},
+    {"name": "Robert Wald", "role": "foundational", "era": "1970s-present", "affiliation": "Chicago", "contribution": "Gedanken tests of horizon destructibility."},
+    {"name": "Jorge Santos", "role": "active", "era": "2010s-present", "affiliation": "Cambridge", "contribution": "Explicit WCC violations in anti-de Sitter space."},
+    {"name": "Gary Horowitz", "role": "active", "era": "1980s-present", "affiliation": "UC Santa Barbara", "contribution": "Holography; AdS instabilities and censorship violations."}
+  ],
+  "related_problems": [4, 1, 11],
+  "simulator_angle": "The event-horizon vs naked-singularity distinction is exactly the shadow-formation condition the simulator encodes (b_critical, the photon region); a hypothetical naked singularity would cast no shadow — a renderable contrast.",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references (Crisford-Santos with arXiv id; others as bibliographic notes) + 6 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}

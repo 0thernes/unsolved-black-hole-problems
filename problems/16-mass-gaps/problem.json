@@ -1,0 +1,51 @@
+{
+  "rank": 16,
+  "slug": "16-mass-gaps",
+  "title": "The compact-object mass gaps",
+  "aliases": ["lower mass gap", "pair-instability mass gap", "neutron-star-black-hole gap"],
+  "statement": "Two apparent gaps in the compact-object mass distribution are unexplained. The LOWER mass gap (~3-5 M_sun) lies between the heaviest neutron stars and the lightest black holes; X-ray binary data once suggested a real dearth there, but gravitational-wave events (e.g. GW190814's ~2.6 M_sun secondary, GW190425) populate or blur it. The UPPER (pair-instability) gap (~50-120 M_sun) is predicted because pair-instability supernovae leave no remnant; yet GW190521's ~85 M_sun component sits inside it. The open problem: are these gaps real features of stellar/supernova physics, or artifacts of selection and small samples — and what fills them (hierarchical mergers, accretion, exotic channels)?",
+  "first_posed": "1990s-present",
+  "originators": [
+    {"name": "(community)", "note": "lower gap from X-ray-binary mass measurements (Bailyn et al. 1998); upper gap from pair-instability supernova theory."}
+  ],
+  "status": "open-observational",
+  "statement_tier": "observational_constraint",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 3,
+    "age": 5,
+    "tractability": 7,
+    "rationale": "A stellar-astrophysics and population-statistics question (shallow fundamentally), being actively resolved by the growing gravitational-wave catalogue; the most tractable entry, placed at the bottom of the list."
+  },
+  "key_ideas": [
+    "Lower gap (~3-5 M_sun): X-ray binaries showed few objects there; whether it is a true gap depends on the supernova explosion mechanism (rapid vs delayed).",
+    "GW190814's secondary (~2.6 M_sun) is right in the lower gap — neutron star or black hole is unknown.",
+    "Upper (pair-instability) gap (~50-120 M_sun): electron-positron pair production in very massive stellar cores triggers an instability that leaves NO remnant, forbidding direct-collapse BHs in this range.",
+    "GW190521's ~85 M_sun component lies inside the upper gap, suggesting hierarchical (second-generation) mergers or uncertain pair-instability boundaries.",
+    "Selection effects and small samples can mimic or hide a gap; population inference is improving with each LIGO/Virgo/KAGRA run.",
+    "Resolving the gaps constrains supernova physics, the maximum neutron-star mass, and binary-evolution channels."
+  ],
+  "approaches": [
+    {"name": "Gravitational-wave population inference", "summary": "Hierarchically model the merging-binary mass distribution to test for true gaps.", "tier": "observational_constraint", "proponents": ["Will Farr", "Maya Fishbach", "LIGO/Virgo/KAGRA Collaboration"]},
+    {"name": "Supernova / stellar-evolution modeling", "summary": "Predict remnant masses (explosion mechanism, pair-instability) and the resulting gaps.", "tier": "numerical_approximation", "proponents": ["Stan Woosley", "Alexander Heger"]},
+    {"name": "X-ray-binary mass measurements", "summary": "Dynamical masses of compact objects in X-ray binaries probing the lower gap.", "tier": "observational_constraint", "proponents": ["Charles Bailyn", "Feryal Ozel"]}
+  ],
+  "papers": [
+    {"title": "The Mass Distribution of Stellar Black Holes", "authors": ["Charles D. Bailyn", "Raj K. Jain", "Paolo Coppi", "Jerome A. Orosz"], "year": 1998, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "astro-ph/9708032"}},
+    {"title": "The Black Hole Mass Distribution in the Galaxy", "authors": ["Feryal Ozel", "Dimitrios Psaltis", "Ramesh Narayan", "Jeffrey E. McClintock"], "year": 2010, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "1006.2834"}},
+    {"title": "GW190814: Gravitational Waves from the Coalescence of a 23 Msun Black Hole with a 2.6 Msun Compact Object", "authors": ["LIGO Scientific Collaboration", "Virgo Collaboration"], "year": 2020, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "2006.12611"}},
+    {"title": "The mass distribution of stellar-mass black holes (lower-gap statistics)", "authors": ["Will M. Farr", "et al."], "year": 2011, "kind": "recent", "tier": "observational_constraint", "identifier": {"arxiv": "1011.1459"}},
+    {"title": "Pulsational Pair-Instability Supernovae", "authors": ["S. E. Woosley"], "year": 2017, "kind": "foundational", "tier": "numerical_approximation", "identifier": {"arxiv": "1608.08939"}, "note": "predicts the upper (pair-instability) mass gap."}
+  ],
+  "physicists": [
+    {"name": "Feryal Ozel", "role": "active", "era": "2000s-present", "affiliation": "Georgia Tech", "contribution": "Compact-object mass distributions; the lower gap."},
+    {"name": "Charles Bailyn", "role": "active", "era": "1990s-present", "affiliation": "Yale", "contribution": "Early dynamical evidence for the lower mass gap."},
+    {"name": "Will Farr", "role": "active", "era": "2010s-present", "affiliation": "Stony Brook / Flatiron", "contribution": "Gravitational-wave population inference of the mass distribution."},
+    {"name": "Maya Fishbach", "role": "active", "era": "2010s-present", "affiliation": "Toronto (CITA)", "contribution": "Population analyses probing both gaps."},
+    {"name": "Stan Woosley", "role": "active", "era": "1980s-present", "affiliation": "UC Santa Cruz", "contribution": "Pair-instability supernova theory setting the upper gap."},
+    {"name": "Alexander Heger", "role": "active", "era": "2000s-present", "affiliation": "Monash", "contribution": "Massive-star evolution and remnant masses."}
+  ],
+  "related_problems": [14, 12],
+  "simulator_angle": "Mass-agnostic for the GR renderer; relevant as the population context (which masses of Kerr black holes actually exist) rather than a distinct geometry.",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references with arXiv ids + 6 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}

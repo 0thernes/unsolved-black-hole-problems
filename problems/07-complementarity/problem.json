@@ -1,0 +1,51 @@
+{
+  "rank": 7,
+  "slug": "07-complementarity",
+  "title": "Black-hole complementarity & its consistency",
+  "aliases": ["horizon complementarity", "stretched horizon", "STU complementarity"],
+  "statement": "Black-hole complementarity (Susskind, Thorlacius, Uglum 1993; 't Hooft) proposes that the descriptions seen by an infalling observer (who passes a smooth horizon) and an external observer (who sees information thermalized and re-emitted on a 'stretched horizon') are complementary, not contradictory, because no single observer can access both. It was the leading reconciliation of unitarity with a smooth horizon until the firewall argument (#06) challenged its consistency. Whether complementarity is internally consistent, and how it is realized, is open.",
+  "first_posed": "1993",
+  "originators": [
+    {"name": "Leonard Susskind"}, {"name": "Larus Thorlacius"}, {"name": "John Uglum"}, {"name": "Gerard 't Hooft", "note": "independent precursor ideas on horizon information and the holographic S-matrix."}
+  ],
+  "status": "contested",
+  "statement_tier": "open_conjecture",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 7,
+    "age": 5,
+    "tractability": 5,
+    "rationale": "A specific proposed mechanism (not a brute mystery), now partly superseded/challenged by firewalls and reframed by holography; ranked mid-list as an actively-debated consistency question rather than a deep open void."
+  },
+  "key_ideas": [
+    "No-cloning is respected because no observer sees information both inside and in the radiation.",
+    "The 'stretched horizon' is a fictitious membrane (a Planck length outside the true horizon) that absorbs, thermalizes and re-radiates information for the external observer.",
+    "Complementarity underlies and motivated the holographic principle.",
+    "Hayden-Preskill: a black hole that has already radiated half its entropy returns infalling information very quickly (the black hole as a near-optimal scrambler).",
+    "The firewall argument (#06) claims complementarity is inconsistent for old black holes; ER=EPR (#08) is a proposed rescue.",
+    "AdS/CFT gives a manifestly unitary external description, sharpening the question of how the interior is encoded."
+  ],
+  "approaches": [
+    {"name": "Stretched-horizon membrane", "summary": "Model the horizon as a dissipative membrane for external observers (the membrane paradigm made quantum).", "tier": "open_conjecture", "proponents": ["Leonard Susskind", "Larus Thorlacius", "John Uglum"]},
+    {"name": "Holographic encoding (AdS/CFT)", "summary": "The interior is encoded in boundary CFT data; subregion/entanglement-wedge reconstruction.", "tier": "open_conjecture", "proponents": ["Juan Maldacena", "Daniel Harlow"]},
+    {"name": "Fast scrambling / Hayden-Preskill", "summary": "Quantify how quickly information is returned, constraining when complementarity must hold.", "tier": "open_conjecture", "proponents": ["Patrick Hayden", "John Preskill", "Yasuhiro Sekino", "Leonard Susskind"]}
+  ],
+  "papers": [
+    {"title": "The Stretched Horizon and Black Hole Complementarity", "authors": ["Leonard Susskind", "Larus Thorlacius", "John Uglum"], "year": 1993, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "hep-th/9306069"}},
+    {"title": "On the Quantum Structure of a Black Hole", "authors": ["Gerard 't Hooft"], "year": 1985, "kind": "foundational", "tier": "open_conjecture", "note": "Nucl. Phys. B 256, 727 — horizon information and the S-matrix approach."},
+    {"title": "Black holes as mirrors: quantum information in random subsystems (Hayden-Preskill)", "authors": ["Patrick Hayden", "John Preskill"], "year": 2007, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "0708.4025"}},
+    {"title": "Fast Scramblers", "authors": ["Yasuhiro Sekino", "Leonard Susskind"], "year": 2008, "kind": "recent", "tier": "open_conjecture", "identifier": {"arxiv": "0808.2096"}},
+    {"title": "The World as a Hologram", "authors": ["Leonard Susskind"], "year": 1995, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "hep-th/9409089"}}
+  ],
+  "physicists": [
+    {"name": "Leonard Susskind", "role": "originator", "era": "1993-present", "affiliation": "Stanford", "contribution": "Complementarity, holography, fast scrambling, ER=EPR."},
+    {"name": "Gerard 't Hooft", "role": "originator", "era": "1980s-present", "affiliation": "Utrecht", "contribution": "Nobel laureate; horizon information, holographic principle precursor."},
+    {"name": "Larus Thorlacius", "role": "foundational", "era": "1990s-present", "affiliation": "Iceland/NORDITA", "contribution": "Co-author of complementarity."},
+    {"name": "John Preskill", "role": "active", "era": "1990s-present", "affiliation": "Caltech", "contribution": "Hayden-Preskill; quantum information of black holes."},
+    {"name": "Patrick Hayden", "role": "active", "era": "2007-present", "affiliation": "Stanford", "contribution": "Black-hole information mirrors; scrambling."},
+    {"name": "Daniel Harlow", "role": "active", "era": "2010s-present", "affiliation": "MIT", "contribution": "Holographic interior reconstruction."}
+  ],
+  "related_problems": [2, 6, 8],
+  "simulator_angle": "The classical membrane paradigm (a conductive horizon membrane) is a visualization the simulator could render; the quantum complementarity question is beyond it.",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references (4 with arXiv ids; 't Hooft 1985 as note) + 6 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}

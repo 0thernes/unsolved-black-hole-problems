@@ -1,0 +1,54 @@
+{
+  "rank": 6,
+  "slug": "06-firewall-paradox",
+  "title": "The firewall paradox (AMPS)",
+  "aliases": ["AMPS paradox", "firewalls", "black hole complementarity vs firewalls"],
+  "statement": "Almheiri, Marolf, Polchinski and Sully (2012) argued that three widely-held assumptions cannot all be true for an old (post-Page-time) black hole: (i) evaporation is unitary, (ii) effective field theory is valid outside the horizon, and (iii) an infalling observer sees nothing special at the horizon (the equivalence principle / 'no drama'). Monogamy of entanglement forces a contradiction; the proposed escape is that the horizon is replaced by a high-energy 'firewall' that destroys infalling observers, violating the equivalence principle. Whether firewalls exist, or which assumption truly fails, is open.",
+  "first_posed": "2012",
+  "originators": [
+    {"name": "Ahmed Almheiri"}, {"name": "Donald Marolf"}, {"name": "Joseph Polchinski"}, {"name": "James Sully"}
+  ],
+  "status": "open",
+  "statement_tier": "open_conjecture",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 8,
+    "age": 4,
+    "tractability": 5,
+    "rationale": "Newer (2012) than the deepest problems, but it sharpened the information paradox into a precise contradiction and reshaped the field; ranked here because it is a crisp, actively-attacked statement rather than a decades-old impasse."
+  },
+  "key_ideas": [
+    "Monogamy of entanglement: a late Hawking quantum cannot be maximally entangled with both its early-radiation partner (required by unitarity) and its interior partner (required by a smooth horizon).",
+    "Page time: the argument bites only for 'old' black holes that have radiated more than half their entropy.",
+    "Firewall: dropping the smooth-horizon assumption replaces the horizon with a wall of high-energy quanta.",
+    "Mathur's earlier 'small corrections' theorem reached a related conclusion via fuzzballs.",
+    "ER=EPR (problem #08) was proposed partly to dissolve the firewall by identifying the two entanglements geometrically.",
+    "The island/replica resolution of #02 bears directly on whether a firewall is required."
+  ],
+  "approaches": [
+    {"name": "Firewalls", "summary": "Accept that old black-hole horizons are not smooth; the interior is cut off by a high-energy surface.", "tier": "open_conjecture", "proponents": ["Almheiri", "Marolf", "Polchinski", "Sully", "Bousso"]},
+    {"name": "ER=EPR / state-dependence", "summary": "Identify interior and exterior partners so monogamy is not violated; interior operators depend on the state.", "tier": "open_conjecture", "proponents": ["Juan Maldacena", "Leonard Susskind", "Kyriakos Papadodimas", "Suvrat Raju"]},
+    {"name": "Computational complexity / firewall avoidance", "summary": "Decoding the interior is exponentially hard, so a firewall is never operationally encountered (Harlow-Hayden).", "tier": "open_conjecture", "proponents": ["Daniel Harlow", "Patrick Hayden"]},
+    {"name": "Fuzzballs", "summary": "There is no smooth interior at all; the horizon is the surface of a stringy bound state.", "tier": "speculative_extension", "proponents": ["Samir Mathur"]}
+  ],
+  "papers": [
+    {"title": "Black Holes: Complementarity or Firewalls?", "authors": ["Ahmed Almheiri", "Donald Marolf", "Joseph Polchinski", "James Sully"], "year": 2013, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "1207.3123"}},
+    {"title": "An Apologia for Firewalls", "authors": ["Ahmed Almheiri", "Donald Marolf", "Joseph Polchinski", "Douglas Stanford", "James Sully"], "year": 2013, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "1304.6483"}},
+    {"title": "The information paradox: A pedagogical introduction (small corrections theorem)", "authors": ["Samir D. Mathur"], "year": 2009, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "0909.1038"}},
+    {"title": "Quantum Computation vs. Firewalls", "authors": ["Daniel Harlow", "Patrick Hayden"], "year": 2013, "kind": "recent", "tier": "open_conjecture", "identifier": {"arxiv": "1301.4504"}},
+    {"title": "Cool horizons for entangled black holes (ER=EPR)", "authors": ["Juan Maldacena", "Leonard Susskind"], "year": 2013, "kind": "recent", "tier": "open_conjecture", "identifier": {"arxiv": "1306.0533"}}
+  ],
+  "physicists": [
+    {"name": "Joseph Polchinski", "role": "originator", "era": "2012-2018", "affiliation": "UC Santa Barbara (KITP)", "contribution": "Co-author of the firewall argument; string theorist (D-branes)."},
+    {"name": "Donald Marolf", "role": "originator", "era": "2012-present", "affiliation": "UC Santa Barbara", "contribution": "Firewalls; gravitational path integral and islands."},
+    {"name": "Ahmed Almheiri", "role": "originator", "era": "2012-present", "affiliation": "NYU Abu Dhabi", "contribution": "Firewalls and later the islands resolution."},
+    {"name": "Raphael Bousso", "role": "active", "era": "2000s-present", "affiliation": "UC Berkeley", "contribution": "Covariant entropy bound; firewall analyses."},
+    {"name": "Daniel Harlow", "role": "active", "era": "2010s-present", "affiliation": "MIT", "contribution": "Complexity-based firewall avoidance; quantum gravity in AdS."},
+    {"name": "Patrick Hayden", "role": "active", "era": "2007-present", "affiliation": "Stanford", "contribution": "Hayden-Preskill decoding; complexity of the interior."},
+    {"name": "Suvrat Raju", "role": "active", "era": "2010s-present", "affiliation": "ICTS Bangalore", "contribution": "State-dependence / interior reconstruction."},
+    {"name": "Samir Mathur", "role": "active", "era": "2000s-present", "affiliation": "Ohio State", "contribution": "Fuzzballs; small-corrections theorem."}
+  ],
+  "related_problems": [2, 7, 8, 3],
+  "simulator_angle": "No direct classical-GR observable (the firewall is a quantum-gravity feature at the horizon), but the Page-time setup uses the same Hawking temperature/evaporation the simulator's thermo module computes.",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references with arXiv ids + 8 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}

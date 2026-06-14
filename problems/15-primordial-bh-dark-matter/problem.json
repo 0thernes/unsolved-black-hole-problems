@@ -1,0 +1,52 @@
+{
+  "rank": 15,
+  "slug": "15-primordial-bh-dark-matter",
+  "title": "Primordial black holes as dark matter",
+  "aliases": ["PBH dark matter", "primordial black holes", "asteroid-mass window"],
+  "statement": "Black holes could have formed in the very early universe from the collapse of large density fluctuations, before stars existed (Hawking 1971; Carr-Hawking 1974). Such primordial black holes (PBHs) are a candidate for some or all of the dark matter, requiring no new particle. Observational limits (Hawking-evaporation constraints, microlensing, dynamical and accretion bounds, gravitational waves) exclude PBHs as the dominant dark matter across most mass ranges, but an 'asteroid-mass' window (~10^17-10^23 g) remains largely open, and PBHs could still be a sub-component or seed SMBHs. Whether PBHs exist at all, and their cosmological role, is unresolved.",
+  "first_posed": "1971-1974",
+  "originators": [
+    {"name": "Stephen Hawking", "note": "1971 proposal that gravitationally-collapsed objects could form in the early universe."},
+    {"name": "Bernard Carr", "note": "with Hawking, 1974, developed PBH formation from density perturbations."}
+  ],
+  "status": "open-observational",
+  "statement_tier": "observational_constraint",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 4,
+    "age": 7,
+    "tractability": 6,
+    "rationale": "Cosmology/observation-driven and old (1971), but progressing fast with microlensing, GW, and CMB constraints; needs no new fundamental physics, so it ranks below the quantum-gravity problems despite its age."
+  },
+  "key_ideas": [
+    "PBHs form when a sufficiently large primordial overdensity re-enters the horizon and collapses; the mass is set by the horizon mass at that epoch.",
+    "Mass spectrum is broad in principle (from sub-gram to supermassive), so constraints are window-by-window.",
+    "Hawking evaporation: PBHs below ~5e14 g would have evaporated by now; their final bursts are searched for (gamma rays).",
+    "Microlensing (MACHO/EROS/OGLE/Subaru-HSC), dynamical heating of star clusters, CMB accretion, and the LIGO/Virgo merger population all set bounds.",
+    "The asteroid-mass window (~10^17-10^23 g) is hard to constrain (lensing wave-optics + finite-source effects) and remains viable for 100% dark matter.",
+    "PBHs could also be sub-dominant yet seed supermassive black holes (#12) or contribute to GW mergers."
+  ],
+  "approaches": [
+    {"name": "Microlensing surveys", "summary": "Search for brightening of background stars by PBH lenses to constrain the mass function.", "tier": "observational_constraint", "proponents": ["Subaru HSC team", "OGLE", "Hiroko Niikura"]},
+    {"name": "Evaporation / gamma-ray constraints", "summary": "Bound low-mass PBHs via Hawking emission and final-burst signatures.", "tier": "observational_constraint", "proponents": ["Bernard Carr", "Don Page"]},
+    {"name": "GW and accretion constraints", "summary": "Use the LIGO/Virgo merger population and CMB accretion bounds to limit PBH abundance.", "tier": "observational_constraint", "proponents": ["Juan Garcia-Bellido", "Misao Sasaki"]}
+  ],
+  "papers": [
+    {"title": "Gravitationally Collapsed Objects of Very Low Mass", "authors": ["Stephen Hawking"], "year": 1971, "kind": "foundational", "tier": "established_theory", "note": "MNRAS 152, 75 — the first PBH proposal."},
+    {"title": "Black Holes in the Early Universe", "authors": ["Bernard J. Carr", "Stephen W. Hawking"], "year": 1974, "kind": "foundational", "tier": "established_theory", "note": "MNRAS 168, 399 — PBH formation from perturbations."},
+    {"title": "Primordial Black Holes as Dark Matter (constraints)", "authors": ["Bernard Carr", "Florian Kuhnel", "Marit Sandstad"], "year": 2016, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "1607.06077"}},
+    {"title": "Primordial Black Holes as Dark Matter: Recent Developments (review)", "authors": ["Bernard Carr", "Florian Kuhnel"], "year": 2020, "kind": "review", "tier": "observational_constraint", "identifier": {"arxiv": "2006.02838"}},
+    {"title": "Microlensing constraints on primordial black holes with Subaru/HSC Andromeda observations", "authors": ["Hiroko Niikura", "et al."], "year": 2019, "kind": "recent", "tier": "observational_constraint", "identifier": {"arxiv": "1701.02151"}}
+  ],
+  "physicists": [
+    {"name": "Bernard Carr", "role": "originator", "era": "1974-present", "affiliation": "Queen Mary University of London", "contribution": "Co-founder of PBH theory; leading constraints and reviews."},
+    {"name": "Stephen Hawking", "role": "originator", "era": "1971-2018", "affiliation": "Cambridge", "contribution": "First proposed primordial black holes."},
+    {"name": "Florian Kuhnel", "role": "active", "era": "2010s-present", "affiliation": "Munich (MPP)", "contribution": "Modern PBH-dark-matter constraints and reviews."},
+    {"name": "Juan Garcia-Bellido", "role": "active", "era": "1990s-present", "affiliation": "UAM Madrid", "contribution": "PBH formation from inflation; GW/PBH connection."},
+    {"name": "Misao Sasaki", "role": "active", "era": "1980s-present", "affiliation": "Kavli IPMU", "contribution": "Inflationary perturbations; PBH and GW signatures."},
+    {"name": "Anne Green", "role": "active", "era": "2000s-present", "affiliation": "Nottingham", "contribution": "PBH dark-matter constraints and mass functions."}
+  ],
+  "related_problems": [12, 16, 2],
+  "simulator_angle": "Asteroid-mass PBHs are far too small to image, but the simulator's Hawking-evaporation module (thermo) directly gives the evaporation lifetime that sets the low-mass PBH constraint boundary (~5e14 g evaporating now).",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references (Carr et al / Niikura with arXiv ids; Hawking 1971 & Carr-Hawking 1974 as notes) + 6 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}

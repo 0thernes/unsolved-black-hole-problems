@@ -1,0 +1,57 @@
+{
+  "rank": 11,
+  "slug": "11-no-hair-tests",
+  "title": "Testing the no-hair theorem & exotic compact objects",
+  "aliases": ["no-hair theorem tests", "black-hole spectroscopy", "are they really Kerr?", "exotic compact objects"],
+  "statement": "The no-hair theorems (Israel, Carter, Hawking, Robinson) state that a stationary, isolated black hole in general relativity is completely characterized by mass, spin, and charge — all higher multipole moments are fixed functions of these (the Kerr metric for the astrophysical, uncharged case). The open question is observational and theoretical: are the compact objects we detect actually Kerr black holes, or could they be exotic alternatives (boson stars, gravastars, wormholes, fuzzballs) or harbor deviations from GR? Black-hole spectroscopy (quasinormal-mode ringdown with LIGO/Virgo/KAGRA) and the Event Horizon Telescope shadow are now testing this directly, with results so far consistent with Kerr but far from a decisive null.",
+  "first_posed": "1967-1975 (theorems); 2015- (precision tests)",
+  "originators": [
+    {"name": "Werner Israel", "note": "1967 uniqueness for static (Schwarzschild) black holes."},
+    {"name": "Brandon Carter", "note": "1971 two-parameter (Kerr) family theorem."},
+    {"name": "Stephen Hawking", "note": "1972 rigidity / horizon topology results."},
+    {"name": "David Robinson", "note": "1975 Kerr uniqueness."}
+  ],
+  "status": "open-observational",
+  "statement_tier": "analytic_classical",
+  "resolution_tier": "observational_constraint",
+  "ranking": {
+    "depth": 5,
+    "age": 6,
+    "tractability": 7,
+    "rationale": "The theorem is established GR; the open part is whether nature realizes it, which is now directly testable with gravitational-wave ringdown and EHT imaging. High tractability and active observational progress place it low on the difficulty list."
+  },
+  "key_ideas": [
+    "No-hair: (mass, spin, charge) fix all multipoles; e.g. the quadrupole is Q = -J^2/M for Kerr.",
+    "Quasinormal modes: the ringdown after a merger is a superposition of damped tones whose frequencies depend ONLY on the remnant mass and spin if it is Kerr.",
+    "Black-hole spectroscopy: detecting two or more QNMs over-determines (M, J) and tests the Kerr prediction; a mismatch would signal new physics or an exotic object.",
+    "The EHT shadow size/shape tests the photon-region geometry against Kerr.",
+    "Exotic compact objects (boson stars, gravastars, wormholes) can mimic some signatures but typically differ in ringdown 'echoes' or shadow structure.",
+    "Charge is astrophysically negligible, so the relevant test is two-parameter Kerr."
+  ],
+  "approaches": [
+    {"name": "Gravitational-wave ringdown spectroscopy", "summary": "Extract multiple QNMs from merger ringdowns and check consistency with Kerr (M, J).", "tier": "observational_constraint", "proponents": ["Saul Teukolsky", "Emanuele Berti", "Vitor Cardoso", "Maximiliano Isi", "Will Farr"]},
+    {"name": "EHT shadow imaging", "summary": "Compare the measured shadow size/asymmetry of M87* and Sgr A* with the Kerr photon region.", "tier": "observational_constraint", "proponents": ["Event Horizon Telescope Collaboration"]},
+    {"name": "Exotic-compact-object modeling", "summary": "Predict distinguishing signatures (echoes, modified shadows, tidal-deformability) of non-Kerr alternatives.", "tier": "speculative_extension", "proponents": ["Vitor Cardoso", "Paolo Pani"]}
+  ],
+  "papers": [
+    {"title": "Event Horizon in Metrics of Rotating Masses (Kerr uniqueness, two-parameter family)", "authors": ["Brandon Carter"], "year": 1971, "kind": "foundational", "tier": "analytic_classical", "note": "Phys. Rev. Lett. 26, 331."},
+    {"title": "Event Horizons in Static Vacuum Space-Times", "authors": ["Werner Israel"], "year": 1967, "kind": "foundational", "tier": "analytic_classical", "note": "Phys. Rev. 164, 1776 — Schwarzschild uniqueness."},
+    {"title": "Observation of Gravitational Waves from a Binary Black Hole Merger (GW150914)", "authors": ["LIGO Scientific Collaboration", "Virgo Collaboration"], "year": 2016, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "1602.03837"}},
+    {"title": "Testing the no-hair theorem with GW150914", "authors": ["Maximiliano Isi", "Matthew Giesler", "Will M. Farr", "Mark A. Scheel", "Saul A. Teukolsky"], "year": 2019, "kind": "recent", "tier": "observational_constraint", "identifier": {"arxiv": "1905.00869"}},
+    {"title": "Quasinormal modes of black holes and black branes (review)", "authors": ["Emanuele Berti", "Vitor Cardoso", "Andrei O. Starinets"], "year": 2009, "kind": "review", "tier": "numerical_approximation", "identifier": {"arxiv": "0905.2975"}},
+    {"title": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole", "authors": ["Event Horizon Telescope Collaboration"], "year": 2019, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "1906.11238"}}
+  ],
+  "physicists": [
+    {"name": "Brandon Carter", "role": "originator", "era": "1968-present", "affiliation": "Meudon/Paris", "contribution": "Kerr uniqueness; Carter constant; no-hair."},
+    {"name": "Werner Israel", "role": "originator", "era": "1960s-2010s", "affiliation": "Alberta/Victoria", "contribution": "Static black-hole uniqueness."},
+    {"name": "Saul Teukolsky", "role": "active", "era": "1970s-present", "affiliation": "Cornell/Caltech", "contribution": "Teukolsky equation; QNMs; numerical relativity; spectroscopy."},
+    {"name": "Emanuele Berti", "role": "active", "era": "2000s-present", "affiliation": "Johns Hopkins", "contribution": "QNM theory and tests of GR with ringdown."},
+    {"name": "Vitor Cardoso", "role": "active", "era": "2000s-present", "affiliation": "IST Lisbon / NBI", "contribution": "QNMs, exotic compact objects, echoes."},
+    {"name": "Maximiliano Isi", "role": "active", "era": "2010s-present", "affiliation": "Flatiron/Columbia", "contribution": "Ringdown overtone spectroscopy of GW150914."},
+    {"name": "Paolo Pani", "role": "active", "era": "2010s-present", "affiliation": "Sapienza Rome", "contribution": "Exotic-compact-object phenomenology."},
+    {"name": "Sheperd Doeleman", "role": "active", "era": "2000s-present", "affiliation": "Harvard/EHT", "contribution": "Founding director of the Event Horizon Telescope."}
+  ],
+  "related_problems": [4, 5, 1],
+  "simulator_angle": "DIRECT: the simulator already computes the Kerr shadow (Bardeen boundary), photon region, and is the natural home for a quasinormal-mode module; no-hair tests are the observational counterpart of exactly what it renders. This is the catalogue entry most coupled to the simulation project (and where libirrep's spin-weighted spherical harmonics would genuinely earn their keep).",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 6 key references (LIGO/Isi/Berti/EHT with arXiv ids; Carter/Israel as notes) + 8 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}

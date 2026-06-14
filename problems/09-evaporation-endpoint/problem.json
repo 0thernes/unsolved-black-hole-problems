@@ -1,0 +1,52 @@
+{
+  "rank": 9,
+  "slug": "09-evaporation-endpoint",
+  "title": "The endpoint of evaporation: remnants vs information release",
+  "aliases": ["black hole remnants", "final state of evaporation", "Planck-scale remnant problem"],
+  "statement": "As a black hole evaporates via Hawking radiation it shrinks toward the Planck scale, where the semiclassical description fails. What is the final state? Candidates include: a stable or long-lived Planck-mass remnant retaining the lost information; complete evaporation with information carried out in subtle correlations of the radiation; information stored in a disconnected 'baby universe'; or a genuine breakdown of unitary evolution. Each option has serious difficulties (e.g. remnants must carry unboundedly large entropy for a given mass, threatening infinite pair-production), and none is established.",
+  "first_posed": "1974-1992",
+  "originators": [
+    {"name": "Stephen Hawking", "note": "1974-76 evaporation and the information question that frames the endpoint."},
+    {"name": "Steven Giddings", "note": "1992 analysis of massive remnants and their problems."}
+  ],
+  "status": "open",
+  "statement_tier": "established_theory",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 8,
+    "age": 6,
+    "tractability": 3,
+    "rationale": "Requires Planck-scale physics (low tractability) and is tightly coupled to the information paradox; ranked just below the entanglement-geometry cluster because it is more of an endgame consequence than an independent deep axiom."
+  },
+  "key_ideas": [
+    "Semiclassical gravity breaks down once the hole reaches the Planck mass (~10^-8 kg), so the true endpoint needs quantum gravity.",
+    "Stable remnant: a Planck-scale object stores the information — but must have enormous degeneracy at fixed mass, risking divergent pair-production (the 'remnant problem').",
+    "Complete evaporation + information in correlations: requires the late radiation to be highly non-thermal in a way the leading calculation misses (now supported by the island/Page-curve results, #02).",
+    "Baby universe: information escapes into a causally-disconnected region (does not help an outside observer recover it).",
+    "Long-lived (metastable) remnant as a phenomenological middle ground.",
+    "The answer is constrained by, and feeds back into, the information paradox and its island resolution."
+  ],
+  "approaches": [
+    {"name": "Remnant scenarios", "summary": "Stable or long-lived Planck-scale objects retaining information; analyze consistency (pair-production, entropy bounds).", "tier": "speculative_extension", "proponents": ["Steven Giddings", "Yakir Aharonov", "Tom Banks"]},
+    {"name": "Complete evaporation with unitary radiation", "summary": "Information is in the full radiation state; supported by Page-curve / island computations.", "tier": "open_conjecture", "proponents": ["Don Page", "Ahmed Almheiri", "Geoffrey Penington"]},
+    {"name": "Baby universes / disconnected interiors", "summary": "Information passes into a disconnected region; assessed against the gravitational path integral.", "tier": "speculative_extension", "proponents": ["Stephen Hawking", "Tom Banks"]}
+  ],
+  "papers": [
+    {"title": "Black hole explosions?", "authors": ["Stephen Hawking"], "year": 1974, "kind": "foundational", "tier": "established_theory", "note": "Nature 248, 30 — announces evaporation."},
+    {"title": "Black holes and massive remnants", "authors": ["Steven B. Giddings"], "year": 1992, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "hep-th/9203059"}},
+    {"title": "Do black holes destroy information?", "authors": ["John Preskill"], "year": 1992, "kind": "review", "tier": "open_conjecture", "identifier": {"arxiv": "hep-th/9209058"}},
+    {"title": "Magnetic monopoles, black holes and remnants (information retention)", "authors": ["Yakir Aharonov", "Aharon Casher", "Shmuel Nussinov"], "year": 1987, "kind": "foundational", "tier": "speculative_extension", "note": "Phys. Lett. B 191, 51 — early remnant proposal."},
+    {"title": "Average entropy of a subsystem (Page)", "authors": ["Don N. Page"], "year": 1993, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "gr-qc/9305007"}, "note": "the Page-curve framework constraining the endpoint."}
+  ],
+  "physicists": [
+    {"name": "Stephen Hawking", "role": "originator", "era": "1974-2018", "affiliation": "Cambridge", "contribution": "Evaporation; framed the endpoint/information question."},
+    {"name": "Steven Giddings", "role": "active", "era": "1990s-present", "affiliation": "UC Santa Barbara", "contribution": "Remnant analyses; nonviolent nonlocality proposals."},
+    {"name": "John Preskill", "role": "active", "era": "1990s-present", "affiliation": "Caltech", "contribution": "Framed the information-destruction options."},
+    {"name": "Tom Banks", "role": "active", "era": "1990s-present", "affiliation": "Rutgers/UCSC", "contribution": "Remnant and baby-universe critiques."},
+    {"name": "Don Page", "role": "foundational", "era": "1976-present", "affiliation": "Alberta", "contribution": "Page curve constraining the final state."},
+    {"name": "Geoffrey Penington", "role": "active", "era": "2019-present", "affiliation": "UC Berkeley", "contribution": "Islands; endpoint consistency with unitarity."}
+  ],
+  "related_problems": [2, 1, 6, 3],
+  "simulator_angle": "The simulator's thermo module gives the evaporation timescale and the shrinking horizon radius down to where semiclassical physics fails; it can illustrate the runaway final flash but not the Planck-scale endpoint.",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references (3 with arXiv ids; Hawking/ACN as notes) + 6 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}

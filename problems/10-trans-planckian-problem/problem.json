@@ -1,0 +1,52 @@
+{
+  "rank": 10,
+  "slug": "10-trans-planckian-problem",
+  "title": "The trans-Planckian problem of Hawking radiation",
+  "aliases": ["trans-Planckian problem", "robustness of Hawking radiation", "ultrashort-distance problem"],
+  "statement": "In the standard derivation, the Hawking quanta seen at late times are traced back to modes that were, near the horizon at early times, blueshifted to arbitrarily high (trans-Planckian) frequencies — far beyond where the underlying field theory and the fixed-background approximation can be trusted. The trans-Planckian problem asks whether Hawking radiation is a genuine, robust prediction or an artifact of extrapolating physics into an unknown ultraviolet regime. Analogue-gravity systems and modified-dispersion models give strong evidence for robustness, but a fully satisfactory, first-principles demonstration awaits the true short-distance theory.",
+  "first_posed": "1981-1991",
+  "originators": [
+    {"name": "William Unruh", "note": "1981 raised the issue and proposed the sonic (analogue) horizon as a testbed."},
+    {"name": "Ted Jacobson", "note": "1991 analysis of Hawking radiation and ultrashort distances / modified dispersion."}
+  ],
+  "status": "open-with-recent-progress",
+  "statement_tier": "established_theory",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 6,
+    "age": 5,
+    "tractability": 6,
+    "rationale": "Less deep than the information cluster (it questions an approximation, not unitarity) and unusually tractable: analogue-gravity experiments and dispersion models let it be probed concretely; hence ranked lower."
+  },
+  "key_ideas": [
+    "Near-horizon exponential blueshift sends the origin of late Hawking quanta to trans-Planckian frequencies in the naive calculation.",
+    "Modified-dispersion-relation models (introducing a UV cutoff) still reproduce a thermal spectrum to good approximation — evidence of robustness.",
+    "Analogue gravity: sonic/optical/BEC 'horizons' realize the same kinematics with KNOWN microphysics, providing experimental tests.",
+    "Observation of stimulated and (claimed) spontaneous analogue Hawking radiation in BECs (Steinhauer) supports the effect's robustness.",
+    "The result hints that Hawking radiation is a low-energy, horizon-kinematics phenomenon insensitive to UV details — but this is argued, not proven.",
+    "Connects to whether the equivalence principle plus QFT alone fix the radiation, independent of quantum gravity."
+  ],
+  "approaches": [
+    {"name": "Modified dispersion relations", "summary": "Impose a Lorentz-violating UV cutoff and check the spectrum survives.", "tier": "numerical_approximation", "proponents": ["Ted Jacobson", "Renaud Parentani", "Stefano Liberati"]},
+    {"name": "Analogue gravity (sonic/optical/BEC horizons)", "summary": "Reproduce horizon kinematics in condensed-matter systems with known microphysics; measure analogue Hawking radiation.", "tier": "observational_constraint", "proponents": ["William Unruh", "Jeff Steinhauer", "Carlos Barcelo", "Matt Visser"]},
+    {"name": "Wave-packet / mode-tracking analyses", "summary": "Track the relevant modes carefully to show the trans-Planckian region is not essential.", "tier": "analytic_classical", "proponents": ["Renaud Parentani", "Ralf Schutzhold"]}
+  ],
+  "papers": [
+    {"title": "Experimental Black-Hole Evaporation?", "authors": ["William G. Unruh"], "year": 1981, "kind": "foundational", "tier": "established_theory", "note": "Phys. Rev. Lett. 46, 1351 — the sonic-horizon analogy."},
+    {"title": "Black-hole evaporation and ultrashort distances", "authors": ["Ted Jacobson"], "year": 1991, "kind": "foundational", "tier": "established_theory", "note": "Phys. Rev. D 44, 1731."},
+    {"title": "Analogue Gravity (Living Review)", "authors": ["Carlos Barcelo", "Stefano Liberati", "Matt Visser"], "year": 2011, "kind": "review", "tier": "established_theory", "identifier": {"arxiv": "gr-qc/0505065"}},
+    {"title": "Observation of quantum Hawking radiation and its entanglement in an analogue black hole", "authors": ["Jeff Steinhauer"], "year": 2016, "kind": "recent", "tier": "observational_constraint", "identifier": {"arxiv": "1510.00621"}},
+    {"title": "Hawking radiation without trans-Planckian frequencies", "authors": ["Renaud Parentani", "et al."], "year": 1996, "kind": "recent", "tier": "numerical_approximation", "note": "representative dispersion-model robustness analysis; details to be verified in enrichment."}
+  ],
+  "physicists": [
+    {"name": "William Unruh", "role": "originator", "era": "1976-present", "affiliation": "UBC", "contribution": "Unruh effect; sonic analogue horizons; raised the trans-Planckian issue."},
+    {"name": "Ted Jacobson", "role": "originator", "era": "1990s-present", "affiliation": "Maryland", "contribution": "Ultrashort-distance analysis; entropic/thermodynamic gravity."},
+    {"name": "Matt Visser", "role": "active", "era": "1990s-present", "affiliation": "Victoria University of Wellington", "contribution": "Analogue gravity framework."},
+    {"name": "Stefano Liberati", "role": "active", "era": "2000s-present", "affiliation": "SISSA", "contribution": "Analogue gravity; Lorentz-violation phenomenology."},
+    {"name": "Renaud Parentani", "role": "active", "era": "1990s-2020", "affiliation": "Paris-Saclay", "contribution": "Dispersion-model robustness of Hawking radiation."},
+    {"name": "Jeff Steinhauer", "role": "active", "era": "2010s-present", "affiliation": "Technion", "contribution": "BEC analogue Hawking-radiation experiments."}
+  ],
+  "related_problems": [2, 1],
+  "simulator_angle": "The near-horizon blueshift is exactly the gravitational-redshift factor the simulator already computes; the simulator can visualize how the redshift diverges approaching the horizon, the kinematic root of the trans-Planckian issue.",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references (Barcelo-Liberati-Visser and Steinhauer with arXiv ids; Unruh/Jacobson as notes; one dispersion-model entry flagged for verification) + 6 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}

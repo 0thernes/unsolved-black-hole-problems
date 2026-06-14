@@ -1,0 +1,52 @@
+{
+  "rank": 12,
+  "slug": "12-smbh-seeds",
+  "title": "Origin & seeds of supermassive black holes",
+  "aliases": ["SMBH seeds", "high-redshift quasar problem", "early black hole growth"],
+  "statement": "Quasars powered by billion-solar-mass black holes are observed at redshift z > 7, less than ~700 million years after the Big Bang. Growing such masses so quickly from ordinary stellar-mass seeds via Eddington-limited accretion is difficult. The open problem is the formation channel: light seeds (~100 M_sun remnants of Population III stars) with episodes of super-Eddington accretion, heavy seeds (~10^4-10^6 M_sun) from direct collapse of pristine gas clouds, or runaway collapse in dense nuclear star clusters — and which dominates. It is an astrophysical problem (no new fundamental physics required), now sharply constrained by JWST and high-z quasar surveys.",
+  "first_posed": "2001-present (sharpened by high-z discoveries)",
+  "originators": [
+    {"name": "Martin Rees", "note": "early frameworks for SMBH formation and accretion."},
+    {"name": "Marta Volonteri", "note": "modern seed/growth scenarios and reviews."}
+  ],
+  "status": "open-observational",
+  "statement_tier": "observational_constraint",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 4,
+    "age": 4,
+    "tractability": 7,
+    "rationale": "An astrophysical formation problem (no new fundamental physics), strongly observationally driven (JWST, high-z quasars) and modeled with simulations; tractable and progressing, hence low on the difficulty list."
+  },
+  "key_ideas": [
+    "e-folding (Salpeter) time for Eddington-limited growth is ~45 Myr; reaching 10^9 M_sun by z~7 from a 100 M_sun seed requires near-continuous accretion or super-Eddington phases.",
+    "Light seeds: Population III stellar remnants (~10-1000 M_sun).",
+    "Heavy seeds: direct collapse of atomically-cooling, metal-free gas to ~10^4-10^6 M_sun, avoiding fragmentation (needs Lyman-Werner radiation to suppress H2 cooling).",
+    "Runaway stellar collisions in dense nuclear clusters as an intermediate channel.",
+    "JWST is finding abundant faint AGN / overmassive black holes at high z, reshaping the seed debate.",
+    "Connects to intermediate-mass black holes (#14) as possible leftover seeds."
+  ],
+  "approaches": [
+    {"name": "Direct-collapse heavy seeds", "summary": "Form ~10^5 M_sun seeds from pristine gas without fragmentation; explains rapid early growth.", "tier": "numerical_approximation", "proponents": ["Mitchell Begelman", "Zoltan Haiman", "Priyamvada Natarajan"]},
+    {"name": "Light seeds + super-Eddington accretion", "summary": "Pop III remnants grow via episodic super-Eddington (slim-disk) accretion.", "tier": "numerical_approximation", "proponents": ["Marta Volonteri", "Kohei Inayoshi"]},
+    {"name": "Nuclear-cluster runaway", "summary": "Stellar collisions in dense clusters build a very massive star then a seed.", "tier": "numerical_approximation", "proponents": ["Marta Volonteri", "Hagai Perets"]}
+  ],
+  "papers": [
+    {"title": "Formation of Supermassive Black Holes (review)", "authors": ["Marta Volonteri"], "year": 2010, "kind": "review", "tier": "numerical_approximation", "identifier": {"arxiv": "1003.4404"}},
+    {"title": "The Assembly of the First Massive Black Holes (review)", "authors": ["Kohei Inayoshi", "Eli Visbal", "Zoltan Haiman"], "year": 2020, "kind": "review", "tier": "numerical_approximation", "identifier": {"arxiv": "1911.05791"}},
+    {"title": "An 800-million-solar-mass black hole in a significantly neutral Universe at a redshift of 7.5", "authors": ["Eduardo Banados", "et al."], "year": 2018, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "1712.01860"}, "note": "quasar ULAS J1342+0928 at z=7.54."},
+    {"title": "A luminous quasar at redshift 7.642 (J0313-1806)", "authors": ["Feige Wang", "et al."], "year": 2021, "kind": "recent", "tier": "observational_constraint", "identifier": {"arxiv": "2101.03179"}},
+    {"title": "Massive black hole seeds (review)", "authors": ["Mitchell C. Begelman", "Marta Volonteri", "Martin J. Rees"], "year": 2006, "kind": "review", "tier": "numerical_approximation", "note": "MNRAS 370, 289 — direct-collapse 'quasistar' seeds."}
+  ],
+  "physicists": [
+    {"name": "Martin Rees", "role": "foundational", "era": "1970s-present", "affiliation": "Cambridge", "contribution": "Foundational AGN/SMBH theory; seed scenarios."},
+    {"name": "Marta Volonteri", "role": "active", "era": "2000s-present", "affiliation": "IAP Paris", "contribution": "Leading theorist of SMBH seed formation and growth."},
+    {"name": "Zoltan Haiman", "role": "active", "era": "2000s-present", "affiliation": "Columbia", "contribution": "Direct-collapse seeds; high-z quasar growth."},
+    {"name": "Priyamvada Natarajan", "role": "active", "era": "2000s-present", "affiliation": "Yale", "contribution": "Heavy-seed models and their observational signatures."},
+    {"name": "Mitchell Begelman", "role": "active", "era": "1980s-present", "affiliation": "Colorado", "contribution": "Quasistar / direct-collapse seed theory."},
+    {"name": "Kohei Inayoshi", "role": "active", "era": "2010s-present", "affiliation": "Peking University", "contribution": "Super-Eddington growth and seed assembly."}
+  ],
+  "related_problems": [14, 13],
+  "simulator_angle": "Out of the GR-ray-tracer's scope (this is formation astrophysics), but the resulting Kerr black holes are exactly what the simulator renders; spin distributions of early SMBHs connect to #11.",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references (Volonteri/Inayoshi/Banados/Wang with arXiv ids; Begelman-Volonteri-Rees as note) + 6 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}

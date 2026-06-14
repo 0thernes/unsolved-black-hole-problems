@@ -1,0 +1,47 @@
+{
+  "rank": 14,
+  "slug": "14-intermediate-mass-bh",
+  "title": "Intermediate-mass black holes: existence & formation",
+  "aliases": ["IMBHs", "missing-link black holes", "100-100000 solar mass black holes"],
+  "statement": "Black holes are well established in two regimes: stellar-mass (~3-100 M_sun, from stellar collapse) and supermassive (~10^6-10^10 M_sun, in galactic nuclei). Intermediate-mass black holes (IMBHs, ~100-10^5 M_sun) are the expected bridge, but observational confirmation is sparse and their formation channels uncertain. The open problem: do IMBHs exist as a genuine population, where (globular clusters, dwarf-galaxy nuclei, ultraluminous X-ray sources?), and how do they form (runaway stellar collisions, repeated mergers, leftover SMBH seeds)? Gravitational-wave events like GW190521 (a ~150 M_sun remnant) and dynamical/X-ray candidates are narrowing the gap.",
+  "first_posed": "1970s-present",
+  "originators": [
+    {"name": "(community)", "note": "no single originator; the 'missing link' framing emerged from cluster dynamics and ULX observations."}
+  ],
+  "status": "open-observational",
+  "statement_tier": "observational_constraint",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 3,
+    "age": 5,
+    "tractability": 7,
+    "rationale": "Existence/formation is an observational and astrophysical-dynamics question, actively narrowed by gravitational waves (GW190521), dynamics, and X-ray surveys; shallow fundamentally and progressing, so near the bottom."
+  },
+  "key_ideas": [
+    "Candidate sites: cores of globular and nuclear star clusters; nuclei of dwarf galaxies; some ultraluminous X-ray sources (ULXs).",
+    "Formation channels: runaway collisions of massive stars in dense clusters; hierarchical (repeated) mergers of stellar-mass black holes; surviving direct-collapse SMBH seeds.",
+    "GW190521 produced a ~150 M_sun remnant — the first fairly secure IMBH-scale object — and its components fall in/near the pair-instability gap (#16).",
+    "Dynamical mass measurements in clusters are contentious (alternatives: a dense subcluster of stellar remnants can mimic an IMBH).",
+    "An IMBH population would test SMBH seed scenarios (#12) and hierarchical-merger predictions.",
+    "Future facilities (LISA, ngVLA, next-gen X-ray) target the IMBH regime directly."
+  ],
+  "approaches": [
+    {"name": "Gravitational-wave detection", "summary": "Identify IMBH-scale remnants and hierarchical mergers in LIGO/Virgo/KAGRA (and future LISA) data.", "tier": "observational_constraint", "proponents": ["LIGO/Virgo/KAGRA Collaboration"]},
+    {"name": "Dynamical / X-ray candidate searches", "summary": "Measure central masses in clusters and characterize ULXs and tidal-disruption events.", "tier": "observational_constraint", "proponents": ["Jenny Greene", "M. Coleman Miller"]},
+    {"name": "Cluster N-body formation models", "summary": "Simulate runaway collisions and repeated mergers to predict IMBH masses and rates.", "tier": "numerical_approximation", "proponents": ["(community)"]}
+  ],
+  "papers": [
+    {"title": "Intermediate-Mass Black Holes (review)", "authors": ["Jenny E. Greene", "Jay Strader", "Luis C. Ho"], "year": 2020, "kind": "review", "tier": "observational_constraint", "identifier": {"arxiv": "1911.09678"}},
+    {"title": "GW190521: A Binary Black Hole Merger with a Total Mass of 150 Msun", "authors": ["LIGO Scientific Collaboration", "Virgo Collaboration"], "year": 2020, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "2009.01075"}},
+    {"title": "Intermediate-Mass Black Holes (earlier review)", "authors": ["M. Coleman Miller", "E. J. M. Colbert"], "year": 2004, "kind": "review", "tier": "observational_constraint", "identifier": {"arxiv": "astro-ph/0308402"}}
+  ],
+  "physicists": [
+    {"name": "Jenny Greene", "role": "active", "era": "2000s-present", "affiliation": "Princeton", "contribution": "Low-mass / intermediate-mass black-hole searches and demographics."},
+    {"name": "M. Coleman Miller", "role": "active", "era": "2000s-present", "affiliation": "Maryland", "contribution": "IMBH formation theory; ULX interpretation."},
+    {"name": "Jay Strader", "role": "active", "era": "2010s-present", "affiliation": "Michigan State", "contribution": "IMBH candidate searches in clusters."},
+    {"name": "Luis Ho", "role": "active", "era": "1990s-present", "affiliation": "Peking University (KIAA)", "contribution": "AGN/black-hole demographics across the mass range."}
+  ],
+  "related_problems": [12, 16],
+  "simulator_angle": "Mass-agnostic for the GR renderer (an IMBH renders like any Kerr/Schwarzschild hole at the right mass); relevant mainly as the demographic bridge, not a new geometry.",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 3 key references with arXiv ids + 4 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+}
