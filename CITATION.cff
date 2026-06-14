@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+title: >-
+  Unsolved Black-Hole Problems: A Ranked, AI-Reviewed Meta-Analysis Catalogue
+message: >-
+  If you reference or build on this catalogue, please cite it as below.
+  The human author and Human-in-the-Loop is Alexander Donahue. The catalogue
+  was assembled and reviewed with AI assistance under his direction; see
+  AUTHORS, docs/AI_REVIEW.md, and PHILOSOPHY.md. It catalogues OPEN problems
+  and unproven conjectures and claims to solve none of them.
+type: dataset
+authors:
+  - given-names: Alexander
+    family-names: Donahue
+    alias: 0thernes
+    email: 0_0@0thernes.art
+    roles:
+      - "Author"
+      - "Director"
+      - "Curator / Reviewer (Human-in-the-Loop)"
+repository-code: "https://github.com/0thernes/unsolved-black-hole-problems"
+abstract: >-
+  A ranked, research-grade catalogue of the major open problems about black
+  holes (16 problems, from spacetime singularities to compact-object mass gaps),
+  each with a precise statement, originator biographies, a curated set of ~25
+  verified key papers and ~10 key physicists, a truth-tier label, and RAG-ready
+  structured data. Assembled as an AI-reviewed meta-analysis of the published
+  literature (human-directed, citation-integrity controlled: every reference has
+  a real identifier or bibliographic note; none fabricated). It catalogues open
+  problems and does not claim to solve them.
+keywords:
+  - black holes
+  - general relativity
+  - quantum gravity
+  - open problems
+  - meta-analysis
+  - research catalogue
+  - retrieval-augmented generation
+  - AI-assisted research
+  - philosophy of science
+license: LicenseRef-Proprietary-AllRightsReserved

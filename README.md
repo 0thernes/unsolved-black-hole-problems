@@ -15,8 +15,22 @@ RAG-ready structured data.
 > [PHILOSOPHY.md](PHILOSOPHY.md). This is the discipline that makes a catalogue
 > like this worth anything — rigor over bravado.
 
-License: **Proprietary — All Rights Reserved** (see [LICENSE](LICENSE)).
-Branch: `main`. CI: GitHub Actions (schema + structural validation).
+**Author (Human-in-the-Loop):** Alexander Donahue
+([0thernes](https://github.com/0thernes)). This is an **AI-reviewed
+meta-analysis** — assembled and reviewed with AI assistance (Anthropic Claude /
+Claude Code and a multi-agent research system) under Alexander Donahue's
+direction, with mechanical citation-integrity controls (every reference carries a
+real identifier or bibliographic note; none fabricated). Exactly what that does
+and does **not** claim — and the reproducible multi-model (Grok / Gemini / GPT /
+Claude) verification framework — is stated honestly in
+[docs/AI_REVIEW.md](docs/AI_REVIEW.md). **Expert review is welcome:** see
+[docs/ACADEMIC_REVIEW_REQUEST.md](docs/ACADEMIC_REVIEW_REQUEST.md),
+[CITATION.cff](CITATION.cff), and [AUTHORS.md](AUTHORS.md).
+
+License: **Proprietary — All Rights Reserved** (see [LICENSE](LICENSE)); public
+visibility is source-viewing, with scholarly citation and academic review
+expressly welcomed. Branch: `main`. CI: GitHub Actions (schema + structural
+validation).
 
 ---
 

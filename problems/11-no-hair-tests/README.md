@@ -81,7 +81,7 @@ The theorem is established GR; the open part is whether nature realizes it, whic
 
 ## Connection to the simulator
 
-DIRECT: the simulator already computes the Kerr shadow (Bardeen boundary), photon region, and is the natural home for a quasinormal-mode module; no-hair tests are the observational counterpart of exactly what it renders. This is the catalogue entry most coupled to the simulation project (and where libirrep's spin-weighted spherical harmonics would genuinely earn their keep).
+DIRECT — now realized in code. The companion simulator (black-hole-simulation-lab) carries a quasinormal-mode module, include/blackhole_ds/qnm/: a Leaver continued-fraction solver for Schwarzschild (schwarzschild_qnm) AND Kerr (kerr_qnm, coupled angular-spheroidal + radial continued fractions), an independent WKB cross-check (wkb3_schwarzschild), the Berti-Cardoso-Will fit, and a spectroscopy front-end (spectroscopy.hpp). It computes exactly the ringdown spectrum that black-hole spectroscopy measures, validated against published Berti/Leaver/Konoplya values to < 1e-4 (tests/qnm_tests.cpp). The no-hair test itself is encoded in no_hair_signature(j), which returns the mass-INDEPENDENT Kerr fingerprint — the (3,3,0)/(2,2,0) frequency ratio, the (2,2,0) quality factor, etc. — that depends on spin alone; a measured deviation from these is the observational signature of a non-Kerr object. The simulator also renders the Kerr shadow (Bardeen boundary) and photon region, the EHT-imaging counterpart of the same test. (libirrep's spin-weighted spherical harmonics could later accelerate the angular continued fraction.)
 
 ## Related problems
 

@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026-06-14 — Public release: attribution, AI-review framing, #11 ↔ QNM link
+
+- **Made public** on GitHub (was private). Visibility is source-viewing under the
+  unchanged proprietary All-Rights-Reserved license; scholarly citation and
+  academic review are expressly welcomed (LICENSE §8).
+- **Authorship.** Credited **Alexander Donahue** (0thernes) as the human author,
+  director, and curator — the Human-in-the-Loop. Added `CITATION.cff`,
+  `AUTHORS.md`, and named attribution in `LICENSE`/`NOTICE`/`README`.
+- **AI-reviewed meta-analysis, stated honestly.** Added `docs/AI_REVIEW.md` —
+  what "AI-reviewed" means here, what has and has **not** been independently
+  verified, and a reproducible multi-model (Grok / Gemini / GPT / Claude)
+  verification framework.
+- **Academic review option.** Added `docs/ACADEMIC_REVIEW_REQUEST.md` (real
+  channels + a ready outreach template) and a GitHub issue template
+  (`.github/ISSUE_TEMPLATE/academic_review.md`).
+- **#11 ↔ simulator cross-link is now concrete.** Problem #11 (no-hair tests /
+  black-hole spectroscopy) `simulator_angle` now points at the real
+  quasinormal-mode module in the companion simulator (`include/blackhole_ds/qnm/`:
+  Leaver CF for Schwarzschild + Kerr, WKB cross-check, `no_hair_signature`).
+  READMEs regenerated, RAG rebuilt (584 records), validation green.
+
 ## 2026-06-14 — Catalogue enriched to spec: 25 papers + 10 physicists each
 
 - All 16 problems now carry **24-30 real, sourced papers and 10-11 physicists**
