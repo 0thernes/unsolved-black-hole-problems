@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/0thernes/unsolved-black-hole-problems/schema/problem.schema.json",
+  "title": "Unsolved Black-Hole Problem",
+  "description": "Structured, RAG-ready record of one open black-hole problem. Source of truth for the narrative README and the RAG index. Citations must be real and verifiable (see PHILOSOPHY.md).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["rank", "slug", "title", "statement", "first_posed", "originators", "status", "statement_tier", "resolution_tier", "ranking", "key_ideas", "papers", "physicists", "metadata"],
+  "properties": {
+    "rank": {"type": "integer", "minimum": 1, "maximum": 999},
+    "slug": {"type": "string", "pattern": "^[0-9]{2}-[a-z0-9-]+$"},
+    "title": {"type": "string"},
+    "aliases": {"type": "array", "items": {"type": "string"}},
+    "statement": {"type": "string", "description": "Precise statement of the open problem."},
+    "first_posed": {"type": "string", "description": "Year or range, e.g. '1969' or '1975-1976'."},
+    "originators": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["name"],
+        "properties": {"name": {"type": "string"}, "note": {"type": "string"}}
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["open", "partially-solved", "open-with-recent-progress", "open-observational", "contested"]
+    },
+    "statement_tier": {"$ref": "#/$defs/tier"},
+    "resolution_tier": {"$ref": "#/$defs/tier"},
+    "ranking": {
+      "type": "object", "additionalProperties": false,
+      "required": ["depth", "age", "tractability", "rationale"],
+      "properties": {
+        "depth": {"type": "integer", "minimum": 1, "maximum": 10, "description": "10 = needs new physics (quantum gravity)."},
+        "age": {"type": "integer", "minimum": 1, "maximum": 10, "description": "10 = oldest and least moved."},
+        "tractability": {"type": "integer", "minimum": 1, "maximum": 10, "description": "10 = clear path / strong recent progress (pushes rank DOWN)."},
+        "rationale": {"type": "string"}
+      }
+    },
+    "key_ideas": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "approaches": {
+      "type": "array",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["name", "summary", "tier"],
+        "properties": {
+          "name": {"type": "string"},
+          "summary": {"type": "string"},
+          "tier": {"$ref": "#/$defs/tier"},
+          "proponents": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "papers": {
+      "type": "array",
+      "description": "Real, verifiable papers. Empty allowed at seed stage; coverage_note must explain.",
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["title", "authors", "year", "kind"],
+        "properties": {
+          "title": {"type": "string"},
+          "authors": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "year": {"type": "integer", "minimum": 1900, "maximum": 2100},
+          "kind": {"type": "string", "enum": ["foundational", "review", "recent", "textbook"]},
+          "tier": {"$ref": "#/$defs/tier"},
+          "identifier": {
+            "type": "object", "additionalProperties": false,
+            "properties": {
+              "arxiv": {"type": "string"},
+              "doi": {"type": "string"},
+              "url": {"type": "string", "format": "uri"}
+            }
+          },
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "physicists": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["name", "role"],
+        "properties": {
+          "name": {"type": "string"},
+          "role": {"type": "string", "enum": ["originator", "foundational", "active", "historical"]},
+          "era": {"type": "string"},
+          "affiliation": {"type": "string"},
+          "contribution": {"type": "string"}
+        }
+      }
+    },
+    "related_problems": {"type": "array", "items": {"type": "integer"}},
+    "simulator_angle": {"type": "string", "description": "If/how this connects to the computable black-hole-simulation-lab project."},
+    "metadata": {
+      "type": "object", "additionalProperties": false,
+      "required": ["created", "updated", "coverage_note"],
+      "properties": {
+        "created": {"type": "string", "format": "date"},
+        "updated": {"type": "string", "format": "date"},
+        "coverage_note": {"type": "string", "description": "Honest statement of how complete the papers/physicists lists are (seed vs enriched)."},
+        "confidence": {"type": "string", "enum": ["seed", "researched", "reviewed"]}
+      }
+    }
+  },
+  "$defs": {
+    "tier": {
+      "type": "string",
+      "enum": ["established_theory", "observational_constraint", "analytic_classical", "numerical_approximation", "open_conjecture", "speculative_extension"]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "rank": 1,
+  "slug": "01-spacetime-singularities",
+  "title": "Spacetime singularities & their quantum-gravity resolution",
+  "aliases": ["the singularity problem", "breakdown of general relativity", "quantum gravity at r=0"],
+  "statement": "General relativity predicts that gravitational collapse produces a spacetime singularity where curvature invariants diverge and the classical theory breaks down. The Penrose-Hawking theorems prove such singularities are generic (not artifacts of symmetry), given reasonable energy and causality conditions. What physically replaces the singularity is unknown and is believed to require a quantum theory of gravity, which does not yet exist in complete, predictive form.",
+  "first_posed": "1916-1965",
+  "originators": [
+    {"name": "Karl Schwarzschild", "note": "1916 vacuum solution exhibiting the r=0 curvature singularity (and the coordinate singularity at r=2M)."},
+    {"name": "Roger Penrose", "note": "1965 singularity theorem using trapped surfaces and global methods; Nobel Prize 2020."},
+    {"name": "Stephen Hawking", "note": "extended the theorems (with Penrose) to cosmology and generic collapse."}
+  ],
+  "status": "open",
+  "statement_tier": "analytic_classical",
+  "resolution_tier": "open_conjecture",
+  "ranking": {
+    "depth": 10,
+    "age": 10,
+    "tractability": 2,
+    "rationale": "The deepest and oldest: resolving it requires the missing theory of quantum gravity. Ranked #1 because no other black-hole problem is more fundamental or has resisted longer."
+  },
+  "key_ideas": [
+    "Curvature singularities are where geodesics are incomplete and invariants like the Kretschmann scalar diverge.",
+    "Penrose's trapped-surface argument makes singularity formation generic, independent of exact symmetry.",
+    "Cosmic censorship (problems #04, #05) concerns whether such singularities are hidden behind horizons.",
+    "Candidate resolutions replace r=0 with a quantum-gravity core: a bounce (loop quantum gravity), a fuzzball/string condensate, or a regular (non-singular) black-hole interior.",
+    "Any resolution must reduce to classical GR in the appropriate limit and respect the singularity theorems' assumptions or evade one of them (e.g. via quantum energy-condition violation)."
+  ],
+  "approaches": [
+    {"name": "Loop quantum gravity / quantum bounce", "summary": "Discrete quantum geometry replaces the singularity with a bounce to an expanding region.", "tier": "speculative_extension", "proponents": ["Abhay Ashtekar", "Martin Bojowald"]},
+    {"name": "String theory / fuzzballs", "summary": "The interior is a horizon-scale quantum bound state of strings/branes with no singular core.", "tier": "speculative_extension", "proponents": ["Samir Mathur"]},
+    {"name": "Regular (non-singular) black holes", "summary": "Effective metrics (Bardeen, Hayward) with a de Sitter core; phenomenological, seeking a fundamental basis.", "tier": "speculative_extension", "proponents": ["James Bardeen", "Sean Hayward"]},
+    {"name": "Asymptotic safety / other QG programs", "summary": "Running couplings soften the UV behavior of gravity near the core.", "tier": "speculative_extension", "proponents": ["Steven Weinberg (program)"]}
+  ],
+  "papers": [
+    {"title": "On the Gravitational Field of a Mass Point According to Einstein's Theory", "authors": ["Karl Schwarzschild"], "year": 1916, "kind": "foundational", "tier": "analytic_classical", "note": "Sitzungsber. Preuss. Akad. Wiss.; the Schwarzschild solution."},
+    {"title": "Gravitational Collapse and Space-Time Singularities", "authors": ["Roger Penrose"], "year": 1965, "kind": "foundational", "tier": "analytic_classical", "note": "Phys. Rev. Lett. 14, 57; the first modern singularity theorem (trapped surfaces)."},
+    {"title": "The Singularities of Gravitational Collapse and Cosmology", "authors": ["Stephen Hawking", "Roger Penrose"], "year": 1970, "kind": "foundational", "tier": "analytic_classical", "note": "Proc. R. Soc. Lond. A 314, 529."},
+    {"title": "The Large Scale Structure of Space-Time", "authors": ["Stephen Hawking", "George F. R. Ellis"], "year": 1973, "kind": "textbook", "tier": "analytic_classical", "note": "Cambridge University Press; definitive treatment of the singularity theorems."},
+    {"title": "Quantum Nature of the Big Bang", "authors": ["Abhay Ashtekar", "Tomasz Pawlowski", "Parampreet Singh"], "year": 2006, "kind": "recent", "tier": "speculative_extension", "note": "loop-quantum-cosmology bounce; arXiv gr-qc/0602086."}
+  ],
+  "physicists": [
+    {"name": "Roger Penrose", "role": "originator", "era": "1965-present", "affiliation": "Oxford", "contribution": "Singularity theorems via trapped surfaces and global causal methods; Nobel Prize 2020."},
+    {"name": "Stephen Hawking", "role": "foundational", "era": "1965-2018", "affiliation": "Cambridge", "contribution": "Singularity theorems in cosmology and generic collapse."},
+    {"name": "Abhay Ashtekar", "role": "active", "era": "1980s-present", "affiliation": "Penn State", "contribution": "Loop quantum gravity; quantum bounce replacing classical singularities."},
+    {"name": "Samir Mathur", "role": "active", "era": "1990s-present", "affiliation": "Ohio State", "contribution": "Fuzzball proposal for a non-singular black-hole interior."},
+    {"name": "Demetrios Christodoulou", "role": "foundational", "era": "1990s-present", "affiliation": "ETH Zurich", "contribution": "Rigorous results on collapse and trapped-surface formation."}
+  ],
+  "related_problems": [4, 5, 2, 3],
+  "simulator_angle": "A classical-GR ray tracer cannot probe the singularity, but it can map the trapped region / horizon structure and visualize geodesic incompleteness up to the horizon; regular-black-hole metrics are a drop-in alternative metric to render and compare against Kerr.",
+  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 canonical references (bibliographic notes; arXiv ids to be verified) + 5 key physicists. Aspiration is up to 25 papers / 10 physicists, to be expanded by sourced enrichment.", "confidence": "seed"}
+}

@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate catalogue + RAG
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install jsonschema
+
+      - name: Validate structure + every problem.json against the schema
+        run: python scripts/validate.py
+
+      - name: Rebuild the RAG index and confirm it is committed (no drift)
+        run: |
+          python scripts/build_rag.py
+          if ! git diff --quiet -- rag/INDEX.jsonl; then
+            echo "::error::rag/INDEX.jsonl is stale — run scripts/build_rag.py and commit."
+            git --no-pager diff -- rag/INDEX.jsonl | head -50
+            exit 1
+          fi
+          echo "RAG index is up to date."
