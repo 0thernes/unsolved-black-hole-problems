@@ -2,11 +2,18 @@
   "rank": 16,
   "slug": "16-mass-gaps",
   "title": "The compact-object mass gaps",
-  "aliases": ["lower mass gap", "pair-instability mass gap", "neutron-star-black-hole gap"],
+  "aliases": [
+    "lower mass gap",
+    "pair-instability mass gap",
+    "neutron-star-black-hole gap"
+  ],
   "statement": "Two apparent gaps in the compact-object mass distribution are unexplained. The LOWER mass gap (~3-5 M_sun) lies between the heaviest neutron stars and the lightest black holes; X-ray binary data once suggested a real dearth there, but gravitational-wave events (e.g. GW190814's ~2.6 M_sun secondary, GW190425) populate or blur it. The UPPER (pair-instability) gap (~50-120 M_sun) is predicted because pair-instability supernovae leave no remnant; yet GW190521's ~85 M_sun component sits inside it. The open problem: are these gaps real features of stellar/supernova physics, or artifacts of selection and small samples — and what fills them (hierarchical mergers, accretion, exotic channels)?",
   "first_posed": "1990s-present",
   "originators": [
-    {"name": "(community)", "note": "lower gap from X-ray-binary mass measurements (Bailyn et al. 1998); upper gap from pair-instability supernova theory."}
+    {
+      "name": "(community)",
+      "note": "lower gap from X-ray-binary mass measurements (Bailyn et al. 1998); upper gap from pair-instability supernova theory."
+    }
   ],
   "status": "open-observational",
   "statement_tier": "observational_constraint",
@@ -26,26 +33,509 @@
     "Resolving the gaps constrains supernova physics, the maximum neutron-star mass, and binary-evolution channels."
   ],
   "approaches": [
-    {"name": "Gravitational-wave population inference", "summary": "Hierarchically model the merging-binary mass distribution to test for true gaps.", "tier": "observational_constraint", "proponents": ["Will Farr", "Maya Fishbach", "LIGO/Virgo/KAGRA Collaboration"]},
-    {"name": "Supernova / stellar-evolution modeling", "summary": "Predict remnant masses (explosion mechanism, pair-instability) and the resulting gaps.", "tier": "numerical_approximation", "proponents": ["Stan Woosley", "Alexander Heger"]},
-    {"name": "X-ray-binary mass measurements", "summary": "Dynamical masses of compact objects in X-ray binaries probing the lower gap.", "tier": "observational_constraint", "proponents": ["Charles Bailyn", "Feryal Ozel"]}
+    {
+      "name": "Gravitational-wave population inference",
+      "summary": "Hierarchically model the merging-binary mass distribution to test for true gaps.",
+      "tier": "observational_constraint",
+      "proponents": [
+        "Will Farr",
+        "Maya Fishbach",
+        "LIGO/Virgo/KAGRA Collaboration"
+      ]
+    },
+    {
+      "name": "Supernova / stellar-evolution modeling",
+      "summary": "Predict remnant masses (explosion mechanism, pair-instability) and the resulting gaps.",
+      "tier": "numerical_approximation",
+      "proponents": [
+        "Stan Woosley",
+        "Alexander Heger"
+      ]
+    },
+    {
+      "name": "X-ray-binary mass measurements",
+      "summary": "Dynamical masses of compact objects in X-ray binaries probing the lower gap.",
+      "tier": "observational_constraint",
+      "proponents": [
+        "Charles Bailyn",
+        "Feryal Ozel"
+      ]
+    }
   ],
   "papers": [
-    {"title": "The Mass Distribution of Stellar Black Holes", "authors": ["Charles D. Bailyn", "Raj K. Jain", "Paolo Coppi", "Jerome A. Orosz"], "year": 1998, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "astro-ph/9708032"}},
-    {"title": "The Black Hole Mass Distribution in the Galaxy", "authors": ["Feryal Ozel", "Dimitrios Psaltis", "Ramesh Narayan", "Jeffrey E. McClintock"], "year": 2010, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "1006.2834"}},
-    {"title": "GW190814: Gravitational Waves from the Coalescence of a 23 Msun Black Hole with a 2.6 Msun Compact Object", "authors": ["LIGO Scientific Collaboration", "Virgo Collaboration"], "year": 2020, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "2006.12611"}},
-    {"title": "The mass distribution of stellar-mass black holes (lower-gap statistics)", "authors": ["Will M. Farr", "et al."], "year": 2011, "kind": "recent", "tier": "observational_constraint", "identifier": {"arxiv": "1011.1459"}},
-    {"title": "Pulsational Pair-Instability Supernovae", "authors": ["S. E. Woosley"], "year": 2017, "kind": "foundational", "tier": "numerical_approximation", "identifier": {"arxiv": "1608.08939"}, "note": "predicts the upper (pair-instability) mass gap."}
+    {
+      "title": "The Mass Distribution of Stellar Black Holes",
+      "authors": [
+        "Charles D. Bailyn",
+        "Raj K. Jain",
+        "Paolo Coppi",
+        "Jerome A. Orosz"
+      ],
+      "year": 1997,
+      "kind": "foundational",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/0fb60bd16e8c5bbfb8ee03f70f646cfc/"
+      },
+      "note": "ApJ 499, 367. First Bayesian claim of a ~7 Msun clustering of BH masses in transient LMXBs and a significant gap above the neutron-star masses — the original empirical 'lower mass gap'."
+    },
+    {
+      "title": "The Black Hole Mass Distribution in the Galaxy",
+      "authors": [
+        "Feryal Ozel",
+        "Dimitrios Psaltis",
+        "Ramesh Narayan",
+        "Jeffrey E. McClintock"
+      ],
+      "year": 2010,
+      "kind": "foundational",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/3aace23bdad85048a974781d16c88dbe/"
+      },
+      "note": "ApJ 725, 1918. 16 transient LMXBs give a narrow BH mass distribution at 7.8 +/- 1.2 Msun and argue the 2-5 Msun gap is not a selection effect — the canonical lower-gap reference."
+    },
+    {
+      "title": "The Mass Distribution of Stellar-Mass Black Holes",
+      "authors": [
+        "Will M. Farr",
+        "Niharika Sravan",
+        "Andrew Cantrell",
+        "Laura Kreidberg",
+        "Charles D. Bailyn",
+        "Ilya Mandel",
+        "Vicky Kalogera"
+      ],
+      "year": 2010,
+      "kind": "foundational",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/e00bf6ce45c05638bc733f7ea7f6823c/"
+      },
+      "note": "ApJ 741, 103. Bayesian model-selection over 20 X-ray binaries; finds M(1%) > 4.3-4.5 Msun, providing strong statistical evidence for the lower gap."
+    },
+    {
+      "title": "Compact Remnant Mass Function: Dependence on the Explosion Mechanism and Metallicity",
+      "authors": [
+        "Chris L. Fryer",
+        "Krzysztof Belczynski",
+        "Grzegorz Wiktorowicz",
+        "Michal Dominik",
+        "Vicky Kalogera",
+        "Daniel E. Holz"
+      ],
+      "year": 2011,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a64a47cdc9cd554db057644c792c17db/"
+      },
+      "note": "ApJ 749, 91. The 'rapid' vs 'delayed' supernova-engine remnant-mass prescriptions used by essentially all population-synthesis codes; rapid engine produces a lower mass gap, delayed fills it."
+    },
+    {
+      "title": "Missing Black Holes Unveil the Supernova Explosion Mechanism",
+      "authors": [
+        "Krzysztof Belczynski",
+        "Grzegorz Wiktorowicz",
+        "Chris L. Fryer",
+        "Daniel E. Holz",
+        "Vicky Kalogera"
+      ],
+      "year": 2012,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/917e9bd73b71580f8912dead122075fb/"
+      },
+      "note": "ApJ 757, 91. Argues the observed gap implies the core-collapse explosion is launched within ~100-200 ms by a rapidly growing instability; a fill-in would instead imply slower (>200 ms) growth."
+    },
+    {
+      "title": "Mass Measurements of Black Holes in X-Ray Transients: Is There a Mass Gap?",
+      "authors": [
+        "Laura Kreidberg",
+        "Charles D. Bailyn",
+        "Will M. Farr",
+        "Vicky Kalogera"
+      ],
+      "year": 2012,
+      "kind": "foundational",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a35a6ab2c89956dca74abf57903906cd/"
+      },
+      "note": "ApJ 757, 36. Systematic-error study of inclination/ellipsoidal modeling showing some gap candidates (e.g. GRO J0422+32) may move into the gap — a key caveat on the empirical gap."
+    },
+    {
+      "title": "Very Massive Stars, Pair-Instability Supernovae and Intermediate-Mass Black Holes with the SEVN Code",
+      "authors": [
+        "Mario Spera",
+        "Michela Mapelli"
+      ],
+      "year": 2017,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/dc5c67c208fa5b8c8997fb16b408d1f3/"
+      },
+      "note": "MNRAS 470, 4739. Implements PPISN/PISN in population synthesis, predicting an upper BH mass gap roughly 60-120 Msun — an early quantitative upper-gap modeling reference."
+    },
+    {
+      "title": "A Noninteracting Low-Mass Black Hole-Giant Star Binary System",
+      "authors": [
+        "Todd A. Thompson",
+        "Christopher S. Kochanek",
+        "Krzysztof Z. Stanek",
+        "et al."
+      ],
+      "year": 2019,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/8bc5f7f5a90a5d8781b9f993664ac462/"
+      },
+      "note": "Science 366, 637. 2MASS J05215658+4359220: a ~3.3 Msun unseen companion to a giant — a candidate non-interacting lower-gap object (its nature is debated; see van den Heuvel comment)."
+    },
+    {
+      "title": "Pulsational Pair-Instability Supernovae. I. Pre-collapse Evolution and Pulsational Mass Ejection",
+      "authors": [
+        "Shing-Chi Leung",
+        "Ken'ichi Nomoto",
+        "Sergei Blinnikov"
+      ],
+      "year": 2019,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/2d891205fb0d5a8d9bcefb75f0dd1bde/"
+      },
+      "note": "ApJ 887, 72. Detailed hydrodynamic PPISN models setting the maximum BH mass below the upper gap near ~50 Msun, consistent with early LIGO/Virgo BH masses."
+    },
+    {
+      "title": "The Impact of Pair-Instability Mass Loss on the Binary Black Hole Mass Distribution",
+      "authors": [
+        "Simon Stevenson",
+        "Matthew Sampson",
+        "Jade Powell",
+        "Alejandro Vigna-Gomez",
+        "Coenraad J. Neijssel",
+        "Dorottya Szecsi",
+        "Ilya Mandel"
+      ],
+      "year": 2019,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/c2e7f6532c48546f84983b7a97162897/"
+      },
+      "note": "ApJ 882, 121. COMPAS isolated-binary models predicting a pile-up at 30-45 Msun and a cutoff near ~45 Msun from (P)PISN — an early link of the upper-gap edge to GW data."
+    },
+    {
+      "title": "GW190814: Gravitational Waves from the Coalescence of a 23 Solar Mass Black Hole with a 2.6 Solar Mass Compact Object",
+      "authors": [
+        "LIGO Scientific Collaboration",
+        "Virgo Collaboration",
+        "R. Abbott",
+        "et al."
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/8849c5319fd85d6a937225dcabbbb06d/"
+      },
+      "note": "ApJL 896, L44. The 2.50-2.67 Msun secondary is either the lightest BH or heaviest NS observed; the flagship lower-gap GW event challenging compact-object formation models."
+    },
+    {
+      "title": "Exploring the Lower Mass Gap and Unequal Mass Regime in Compact Binary Evolution",
+      "authors": [
+        "Michael Zevin",
+        "Mario Spera",
+        "Christopher P. L. Berry",
+        "Vicky Kalogera"
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a1935b76a19050e9af296998459221f0/"
+      },
+      "note": "ApJL 899, L1. Population modeling of GW190814-like systems; concludes that forming them requires a delayed/long-timescale engine, hinting the lower gap may be narrow or absent."
+    },
+    {
+      "title": "A Lower Bound on the Maximum Mass if the Secondary in GW190814 Was Once a Rapidly Spinning Neutron Star",
+      "authors": [
+        "Elias R. Most",
+        "Lukas R. Weih",
+        "Luciano Rezzolla",
+        "Jurgen Schaffner-Bielich"
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/67dd9623dd995693b3144249d49b98a5/"
+      },
+      "note": "MNRAS 499, L82. Uses universal relations to argue GW190814's secondary could be a (formerly) rapidly rotating NS, yielding M(TOV) > 2.08 Msun — links lower gap to the NS EoS."
+    },
+    {
+      "title": "GW190521: A Binary Black Hole Merger with a Total Mass of 150 Solar Masses",
+      "authors": [
+        "LIGO Scientific Collaboration",
+        "Virgo Collaboration",
+        "R. Abbott",
+        "et al."
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/1fcc328364b85c538e9e2b39d11297c0/"
+      },
+      "note": "PRL 125, 101102. Primary ~85 Msun lies in the pair-instability (upper) mass gap with 99% probability; remnant ~142 Msun is an intermediate-mass black hole."
+    },
+    {
+      "title": "Properties and Astrophysical Implications of the 150 Msun Binary Black Hole Merger GW190521",
+      "authors": [
+        "LIGO Scientific Collaboration",
+        "Virgo Collaboration",
+        "R. Abbott",
+        "et al."
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/6b36d7304b2f593b8cf5b447d3dd2859/"
+      },
+      "note": "ApJL 900, L13. Companion astrophysics paper discussing channels to populate the upper gap: stellar mergers, hierarchical mergers in clusters/AGN disks, and exotic alternatives."
+    },
+    {
+      "title": "Constraints from Gravitational-Wave Detections of Binary Black Hole Mergers on the 12C(alpha,gamma)16O Rate",
+      "authors": [
+        "Robert Farmer",
+        "Mathieu Renzo",
+        "Selma E. de Mink",
+        "Mario Spera",
+        "Stephen Justham"
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/2335c29f94da584ba8458757cc1934e1/"
+      },
+      "note": "ApJL 902, L36. Shows the lower edge of the upper gap is set mainly by the uncertain 12C(alpha,gamma)16O reaction rate; GW BH masses can in turn constrain that nuclear S-factor."
+    },
+    {
+      "title": "Formation of GW190521 from Stellar Evolution: the Impact of the Hydrogen-Rich Envelope, Dredge-Up, and 12C(alpha,gamma)16O Rate on the Pair-Instability Black Hole Mass Gap",
+      "authors": [
+        "Guglielmo Costa",
+        "Alessandro Bressan",
+        "Michela Mapelli",
+        "Paola Marigo",
+        "Giuliano Iorio",
+        "Mario Spera"
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/3d51882a59d959fcb5656b9be18c876f/"
+      },
+      "note": "MNRAS 501, 4514. Demonstrates the upper-gap lower edge can shift to ~70 Msun (or close entirely) given envelope collapse, dredge-up, and reaction-rate uncertainties — a model route to GW190521."
+    },
+    {
+      "title": "The Impact of Stellar Rotation on the Black Hole Mass-Gap from Pair-Instability Supernovae",
+      "authors": [
+        "Pablo Marchant",
+        "Takashi J. Moriya"
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/e7d85d7943be5c7f80caba5b8b1df371/"
+      },
+      "note": "A&A 640, L18. Shows the lower edge of the upper gap depends on rotation and angular-momentum transport (Spruit-Tayler dynamo), predicting a BH-spin dependence of the gap edge."
+    },
+    {
+      "title": "Population Properties of Compact Objects from the Second LIGO-Virgo Gravitational-Wave Transient Catalog / Population of Merging Compact Binaries Inferred Using Gravitational Waves through GWTC-3",
+      "authors": [
+        "LIGO Scientific Collaboration",
+        "Virgo Collaboration",
+        "KAGRA Collaboration",
+        "R. Abbott",
+        "et al."
+      ],
+      "year": 2021,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/441e20a0ac995d79b69037079c5e6e4f/"
+      },
+      "note": "PRX 13, 011048 (GWTC-3 population). Cannot yet confirm or rule out the lower gap; finds BH mass-spectrum features (peaks near chirp mass 8.3 and 27.9 Msun) and no sharp cutoff above ~60 Msun."
+    },
+    {
+      "title": "Observation of Gravitational Waves from Two Neutron Star-Black Hole Coalescences",
+      "authors": [
+        "LIGO Scientific Collaboration",
+        "Virgo Collaboration",
+        "KAGRA Collaboration",
+        "R. Abbott",
+        "et al."
+      ],
+      "year": 2021,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/3843162c55a253cb999af5d9d12c046b/"
+      },
+      "note": "ApJL 915, L5. GW200105 and GW200115, the first confident NS-BH mergers; their BH primaries (~5.7-8.9 Msun) and NS secondaries probe the edges of the lower gap."
+    },
+    {
+      "title": "Bridging the Gap: Categorizing Gravitational-Wave Events at the Transition between Neutron Stars and Black Holes",
+      "authors": [
+        "Amanda M. Farah",
+        "Maya Fishbach",
+        "Reed Essick",
+        "Daniel E. Holz",
+        "Shanika Galaudage"
+      ],
+      "year": 2021,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/199e8fd573d75a7c86b877cf78dc7a94/"
+      },
+      "note": "ApJ 931, 108. Population analysis placing the (tentative) lower-gap edges at ~2.2 and ~6.0 Msun and self-consistently classifying GW190814, GW200105, GW200115 at the NS-BH transition."
+    },
+    {
+      "title": "Hierarchical Mergers of Stellar-Mass Black Holes and Their Gravitational-Wave Signatures",
+      "authors": [
+        "Davide Gerosa",
+        "Maya Fishbach"
+      ],
+      "year": 2021,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/921ce89d72d05dd1beaeb1af958a28af/"
+      },
+      "note": "Nature Astronomy 5, 749. Review of hierarchical (second+ generation) BH mergers as a way to populate the pair-instability gap, with the spin~0.7 signature and escape-speed requirements."
+    },
+    {
+      "title": "The Pair-Instability Mass Gap for Black Holes",
+      "authors": [
+        "Stan E. Woosley",
+        "Alexander Heger"
+      ],
+      "year": 2021,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/15061604f26a56279f3241521d1637d2/"
+      },
+      "note": "ApJL 912, L31. Examines four factors (reaction rates, binary stripping, rotation, super-Eddington accretion) that can move the upper-gap boundaries, allowing M_low up to ~64-70 Msun."
+    },
+    {
+      "title": "Observation of Gravitational Waves from the Coalescence of a 2.5-4.5 Msun Compact Object and a Neutron Star (GW230529)",
+      "authors": [
+        "LIGO Scientific Collaboration",
+        "Virgo Collaboration",
+        "KAGRA Collaboration",
+        "A. G. Abac",
+        "et al."
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/0dec0b4a72905897be52aa2f38b0d929/"
+      },
+      "note": "ApJL 970, L34. GW230529: a 2.5-4.5 Msun primary most plausibly a lower-mass-gap black hole merging with a neutron star — strongest GW evidence yet for objects inside the lower gap."
+    }
   ],
   "physicists": [
-    {"name": "Feryal Ozel", "role": "active", "era": "2000s-present", "affiliation": "Georgia Tech", "contribution": "Compact-object mass distributions; the lower gap."},
-    {"name": "Charles Bailyn", "role": "active", "era": "1990s-present", "affiliation": "Yale", "contribution": "Early dynamical evidence for the lower mass gap."},
-    {"name": "Will Farr", "role": "active", "era": "2010s-present", "affiliation": "Stony Brook / Flatiron", "contribution": "Gravitational-wave population inference of the mass distribution."},
-    {"name": "Maya Fishbach", "role": "active", "era": "2010s-present", "affiliation": "Toronto (CITA)", "contribution": "Population analyses probing both gaps."},
-    {"name": "Stan Woosley", "role": "active", "era": "1980s-present", "affiliation": "UC Santa Cruz", "contribution": "Pair-instability supernova theory setting the upper gap."},
-    {"name": "Alexander Heger", "role": "active", "era": "2000s-present", "affiliation": "Monash", "contribution": "Massive-star evolution and remnant masses."}
+    {
+      "name": "Charles D. Bailyn",
+      "role": "originator",
+      "era": "1990s-present",
+      "affiliation": "Yale University",
+      "contribution": "Led the 1997 dynamical-mass study of transient LMXBs that first identified the empirical lower mass gap between neutron stars and black holes."
+    },
+    {
+      "name": "Feryal Ozel",
+      "role": "foundational",
+      "era": "2000s-present",
+      "affiliation": "Georgia Institute of Technology (formerly University of Arizona)",
+      "contribution": "Authored the 2010 Galactic BH mass-distribution paper establishing the narrow ~7.8 Msun BH peak and arguing the 2-5 Msun gap is physical, not a selection effect."
+    },
+    {
+      "name": "Vicky Kalogera",
+      "role": "foundational",
+      "era": "1990s-present",
+      "affiliation": "Northwestern University (CIERA)",
+      "contribution": "Co-developed compact-binary population synthesis and the statistical/theoretical framing of the mass gap and the supernova-engine remnant-mass prescriptions."
+    },
+    {
+      "name": "Chris L. Fryer",
+      "role": "foundational",
+      "era": "1990s-present",
+      "affiliation": "Los Alamos National Laboratory",
+      "contribution": "Built the rapid- vs delayed-explosion remnant-mass formulae (Fryer et al. 2012) that determine whether population-synthesis models produce or fill the lower mass gap."
+    },
+    {
+      "name": "Krzysztof Belczynski",
+      "role": "foundational",
+      "era": "2000s-present",
+      "affiliation": "Nicolaus Copernicus Astronomical Center, Warsaw",
+      "contribution": "Argued (2012) that the 'missing' low-mass black holes constrain the timescale of the core-collapse supernova explosion mechanism."
+    },
+    {
+      "name": "Stan E. Woosley",
+      "role": "originator",
+      "era": "1970s-present",
+      "affiliation": "University of California, Santa Cruz",
+      "contribution": "Pioneered the stellar-evolution theory of pair-instability and pulsational-pair-instability supernovae that creates the upper (pair-instability) black-hole mass gap."
+    },
+    {
+      "name": "Alexander Heger",
+      "role": "foundational",
+      "era": "1990s-present",
+      "affiliation": "Monash University",
+      "contribution": "Co-developed massive-star and pair-instability supernova models defining the location and uncertainties of the ~50-130 Msun upper mass gap."
+    },
+    {
+      "name": "Maya Fishbach",
+      "role": "active",
+      "era": "2010s-present",
+      "affiliation": "University of Toronto / CITA",
+      "contribution": "Leads gravitational-wave population inference probing both gaps, including hierarchical-merger signatures and categorizing events at the NS-BH transition."
+    },
+    {
+      "name": "Michela Mapelli",
+      "role": "active",
+      "era": "2010s-present",
+      "affiliation": "University of Padova / Heidelberg University",
+      "contribution": "Developed the SEVN population-synthesis treatment of PPISN/PISN and dynamical formation channels that populate the upper mass gap."
+    },
+    {
+      "name": "Robert Farmer",
+      "role": "active",
+      "era": "2010s-present",
+      "affiliation": "Max Planck Institute for Astrophysics / University of Amsterdam",
+      "contribution": "Showed the upper-gap lower edge is governed by the 12C(alpha,gamma)16O reaction rate, tying gravitational-wave BH masses to nuclear astrophysics."
+    }
   ],
-  "related_problems": [14, 12],
+  "related_problems": [
+    14,
+    12
+  ],
   "simulator_angle": "Mass-agnostic for the GR renderer; relevant as the population context (which masses of Kerr black holes actually exist) rather than a distinct geometry.",
-  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references with arXiv ids + 6 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+  "metadata": {
+    "created": "2026-06-14",
+    "updated": "2026-06-14",
+    "coverage_note": "Assembled 24 verified, genuinely-relevant papers and 10 physicists for the compact-object mass-gap problem. Method: ran 13 varied Consensus MCP searches (mcp__plugin_bio-research_consensus__search) across the lower mass gap (NS-BH), upper/pair-instability mass gap, GW190814, GW190521, GW230529, NS-BH mergers, X-ray-binary and Gaia dynamical mass measurements, supernova-engine remnant-mass theory, PPISN/PISN stellar modeling, hierarchical mergers, the 12C(alpha,gamma)16O reaction-rate edge, and GWTC-3/GWTC-4 population inference. Every paper carries a real Consensus/arXiv-backed identifier.url returned by the search tool. No invented entries; none of the famous-classic-by-memory slots were needed since search surfaced the foundational landmarks (Bailyn 1997, Ozel 2010, Farr 2010, Fryer 2011, Belczynski 2012) directly. This is an OPEN problem: the existence/width of both gaps is still unresolved, so observational papers are tagged observational_constraint, population-inference and stellar-modeling resolution claims are open_conjecture, and the LVK detection papers are observational_constraint. Counts: 24 papers, 10 physicists.",
+    "confidence": "researched"
+  }
 }

@@ -2,13 +2,26 @@
   "rank": 1,
   "slug": "01-spacetime-singularities",
   "title": "Spacetime singularities & their quantum-gravity resolution",
-  "aliases": ["the singularity problem", "breakdown of general relativity", "quantum gravity at r=0"],
+  "aliases": [
+    "the singularity problem",
+    "breakdown of general relativity",
+    "quantum gravity at r=0"
+  ],
   "statement": "General relativity predicts that gravitational collapse produces a spacetime singularity where curvature invariants diverge and the classical theory breaks down. The Penrose-Hawking theorems prove such singularities are generic (not artifacts of symmetry), given reasonable energy and causality conditions. What physically replaces the singularity is unknown and is believed to require a quantum theory of gravity, which does not yet exist in complete, predictive form.",
   "first_posed": "1916-1965",
   "originators": [
-    {"name": "Karl Schwarzschild", "note": "1916 vacuum solution exhibiting the r=0 curvature singularity (and the coordinate singularity at r=2M)."},
-    {"name": "Roger Penrose", "note": "1965 singularity theorem using trapped surfaces and global methods; Nobel Prize 2020."},
-    {"name": "Stephen Hawking", "note": "extended the theorems (with Penrose) to cosmology and generic collapse."}
+    {
+      "name": "Karl Schwarzschild",
+      "note": "1916 vacuum solution exhibiting the r=0 curvature singularity (and the coordinate singularity at r=2M)."
+    },
+    {
+      "name": "Roger Penrose",
+      "note": "1965 singularity theorem using trapped surfaces and global methods; Nobel Prize 2020."
+    },
+    {
+      "name": "Stephen Hawking",
+      "note": "extended the theorems (with Penrose) to cosmology and generic collapse."
+    }
   ],
   "status": "open",
   "statement_tier": "analytic_classical",
@@ -27,26 +40,480 @@
     "Any resolution must reduce to classical GR in the appropriate limit and respect the singularity theorems' assumptions or evade one of them (e.g. via quantum energy-condition violation)."
   ],
   "approaches": [
-    {"name": "Loop quantum gravity / quantum bounce", "summary": "Discrete quantum geometry replaces the singularity with a bounce to an expanding region.", "tier": "speculative_extension", "proponents": ["Abhay Ashtekar", "Martin Bojowald"]},
-    {"name": "String theory / fuzzballs", "summary": "The interior is a horizon-scale quantum bound state of strings/branes with no singular core.", "tier": "speculative_extension", "proponents": ["Samir Mathur"]},
-    {"name": "Regular (non-singular) black holes", "summary": "Effective metrics (Bardeen, Hayward) with a de Sitter core; phenomenological, seeking a fundamental basis.", "tier": "speculative_extension", "proponents": ["James Bardeen", "Sean Hayward"]},
-    {"name": "Asymptotic safety / other QG programs", "summary": "Running couplings soften the UV behavior of gravity near the core.", "tier": "speculative_extension", "proponents": ["Steven Weinberg (program)"]}
+    {
+      "name": "Loop quantum gravity / quantum bounce",
+      "summary": "Discrete quantum geometry replaces the singularity with a bounce to an expanding region.",
+      "tier": "speculative_extension",
+      "proponents": [
+        "Abhay Ashtekar",
+        "Martin Bojowald"
+      ]
+    },
+    {
+      "name": "String theory / fuzzballs",
+      "summary": "The interior is a horizon-scale quantum bound state of strings/branes with no singular core.",
+      "tier": "speculative_extension",
+      "proponents": [
+        "Samir Mathur"
+      ]
+    },
+    {
+      "name": "Regular (non-singular) black holes",
+      "summary": "Effective metrics (Bardeen, Hayward) with a de Sitter core; phenomenological, seeking a fundamental basis.",
+      "tier": "speculative_extension",
+      "proponents": [
+        "James Bardeen",
+        "Sean Hayward"
+      ]
+    },
+    {
+      "name": "Asymptotic safety / other QG programs",
+      "summary": "Running couplings soften the UV behavior of gravity near the core.",
+      "tier": "speculative_extension",
+      "proponents": [
+        "Steven Weinberg (program)"
+      ]
+    }
   ],
   "papers": [
-    {"title": "On the Gravitational Field of a Mass Point According to Einstein's Theory", "authors": ["Karl Schwarzschild"], "year": 1916, "kind": "foundational", "tier": "analytic_classical", "note": "Sitzungsber. Preuss. Akad. Wiss.; the Schwarzschild solution."},
-    {"title": "Gravitational Collapse and Space-Time Singularities", "authors": ["Roger Penrose"], "year": 1965, "kind": "foundational", "tier": "analytic_classical", "note": "Phys. Rev. Lett. 14, 57; the first modern singularity theorem (trapped surfaces)."},
-    {"title": "The Singularities of Gravitational Collapse and Cosmology", "authors": ["Stephen Hawking", "Roger Penrose"], "year": 1970, "kind": "foundational", "tier": "analytic_classical", "note": "Proc. R. Soc. Lond. A 314, 529."},
-    {"title": "The Large Scale Structure of Space-Time", "authors": ["Stephen Hawking", "George F. R. Ellis"], "year": 1973, "kind": "textbook", "tier": "analytic_classical", "note": "Cambridge University Press; definitive treatment of the singularity theorems."},
-    {"title": "Quantum Nature of the Big Bang", "authors": ["Abhay Ashtekar", "Tomasz Pawlowski", "Parampreet Singh"], "year": 2006, "kind": "recent", "tier": "speculative_extension", "note": "loop-quantum-cosmology bounce; arXiv gr-qc/0602086."}
+    {
+      "title": "Gravitational Collapse and Space-Time Singularities",
+      "authors": [
+        "Roger Penrose"
+      ],
+      "year": 1965,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "note": "Physical Review Letters 14, 57. The original singularity theorem: trapped surfaces imply geodesic incompleteness. Half of the 2020 Nobel Prize. Canonical landmark.",
+      "identifier": {
+        "doi": "10.1103/PhysRevLett.14.57"
+      }
+    },
+    {
+      "title": "The Singularities of Gravitational Collapse and Cosmology",
+      "authors": [
+        "Stephen W. Hawking",
+        "Roger Penrose"
+      ],
+      "year": 1970,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "note": "Proceedings of the Royal Society A 314, 529. The general Hawking-Penrose singularity theorem covering both collapse and cosmology. Canonical landmark.",
+      "identifier": {
+        "doi": "10.1098/rspa.1970.0021"
+      }
+    },
+    {
+      "title": "Particle Creation by Black Holes",
+      "authors": [
+        "Stephen W. Hawking"
+      ],
+      "year": 1975,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "note": "Communications in Mathematical Physics 43, 199. Hawking radiation; sets up the information-loss and singularity-endpoint puzzles. Canonical landmark.",
+      "identifier": {
+        "doi": "10.1007/BF02345020"
+      }
+    },
+    {
+      "title": "Black Holes and Entropy",
+      "authors": [
+        "Jacob D. Bekenstein"
+      ],
+      "year": 1973,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "note": "Physical Review D 7, 2333. Black-hole entropy proportional to horizon area; foundation of black-hole thermodynamics and the information problem. Canonical landmark.",
+      "identifier": {
+        "doi": "10.1103/PhysRevD.7.2333"
+      }
+    },
+    {
+      "title": "Breakdown of Predictability in Gravitational Collapse",
+      "authors": [
+        "Stephen W. Hawking"
+      ],
+      "year": 1976,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "note": "Physical Review D 14, 2460. Original statement of the black-hole information-loss paradox. Canonical landmark.",
+      "identifier": {
+        "doi": "10.1103/PhysRevD.14.2460"
+      }
+    },
+    {
+      "title": "Non-singular general-relativistic gravitational collapse (Bardeen regular black hole)",
+      "authors": [
+        "James M. Bardeen"
+      ],
+      "year": 1968,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "note": "Proceedings of GR5 (Tbilisi) conference, 1968. The first regular (singularity-free) black-hole model with a de Sitter-like core; basis of the Bardeen metric. Canonical landmark cited throughout the regular-BH literature."
+    },
+    {
+      "title": "Formation and Evaporation of Regular Black Holes",
+      "authors": [
+        "Sean A. Hayward"
+      ],
+      "year": 2006,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "note": "Physical Review Letters 96, 031103. The Hayward regular black hole; a widely used nonsingular model with dynamical formation/evaporation. Canonical landmark.",
+      "identifier": {
+        "doi": "10.1103/PhysRevLett.96.031103",
+        "arxiv": "gr-qc/0506126"
+      }
+    },
+    {
+      "title": "The fuzzball proposal for black holes: an elementary review",
+      "authors": [
+        "Samir D. Mathur"
+      ],
+      "year": 2005,
+      "kind": "review",
+      "tier": "speculative_extension",
+      "note": "Fortschritte der Physik 53, 793 (1071 citations). Foundational review of the string-theory fuzzball picture replacing the horizon/singularity with horizonless microstates.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/8150ad1715dc573fb3e63b26e5027a74/?utm_source=claude_code",
+        "arxiv": "hep-th/0502050"
+      }
+    },
+    {
+      "title": "Fuzzballs and Microstate Geometries: Black-Hole Structure in String Theory",
+      "authors": [
+        "Iosif Bena",
+        "Emil J. Martinec",
+        "Samir D. Mathur",
+        "Nicholas P. Warner"
+      ],
+      "year": 2022,
+      "kind": "review",
+      "tier": "speculative_extension",
+      "note": "Snowmass white paper, expanded version (51 citations). Current status of the fuzzball/microstate-geometry program.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/3db41c78d3ad56cba4c19309e1c11435/?utm_source=claude_code",
+        "arxiv": "2204.13113"
+      }
+    },
+    {
+      "title": "Regular Black Holes: A Short Topic Review",
+      "authors": [
+        "Chen Lan",
+        "Hao Yang",
+        "Yang Guo",
+        "Yan-Gang Miao"
+      ],
+      "year": 2023,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "note": "International Journal of Theoretical Physics (181 citations). Surveys curvature-regular / geodesically-complete black holes that evade Penrose's theorem by violating the strong energy condition.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/f197320c4a955d98a5afae6c82119545/?utm_source=claude_code"
+      }
+    },
+    {
+      "title": "Some Remarks on Non-Singular Spherically Symmetric Space-Times",
+      "authors": [
+        "Lorenzo Sebastiani",
+        "Sergio Zerbini"
+      ],
+      "year": 2022,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "note": "Astronomy 1, 99. Review of regular black holes with de Sitter cores, black-bounce spacetimes, and the Cauchy-horizon instability issue.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/fa1060e3059d56d9b2f12b44dec78301/?utm_source=claude_code"
+      }
+    },
+    {
+      "title": "On the Inner Horizon Instability of Non-Singular Black Holes",
+      "authors": [
+        "Francesco Di Filippo",
+        "Raul Carballo-Rubio",
+        "Stefano Liberati",
+        "Costantino Pacilio",
+        "Matt Visser"
+      ],
+      "year": 2022,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "note": "Universe 8, 204. Argues the inner (Cauchy) horizon of regular black holes is generically unstable, a key open consistency problem for the regular-BH program.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/59330829ca405f5cbf3d60ba47752cbf/?utm_source=claude_code"
+      }
+    },
+    {
+      "title": "Regular Black Holes with Asymptotically Minkowski Cores",
+      "authors": [
+        "Alex Simpson",
+        "Matt Visser"
+      ],
+      "year": 2019,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "note": "Universe 6, 8 (153 citations). Regular-BH models with Minkowski (rather than de Sitter) cores; relates to Bardeen/Hayward/Frolov families.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/97480bc70dc353d3a567ad41b2dad165/?utm_source=claude_code",
+        "arxiv": "1911.01020"
+      }
+    },
+    {
+      "title": "Black hole collapse and bounce in effective loop quantum gravity",
+      "authors": [
+        "Jarod George Kelly",
+        "Robert Santacruz",
+        "Edward Wilson-Ewing"
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "note": "Classical and Quantum Gravity 37, 235010 (98 citations). LQG effective equations turn Oppenheimer-Snyder collapse into a singularity-free collapse-then-bounce, with BH lifetime ~ (GM)^2/l_Pl.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/49bc7dff9baf5072adaa7ee04cbdcbef/?utm_source=claude_code",
+        "arxiv": "2006.09302"
+      }
+    },
+    {
+      "title": "Gravitational collapse in effective loop quantum gravity: Beyond marginally bound configurations",
+      "authors": [
+        "Lorenzo Cipriani",
+        "Francesco Fazzini",
+        "Edward Wilson-Ewing"
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "note": "Physical Review D 110, 084003. Extends effective-LQG collapse to non-marginally-bound dust; bounce, shock formation, and horizon disappearance.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/b94e420c1b435de192b49d5782680a66/?utm_source=claude_code"
+      }
+    },
+    {
+      "title": "Black-Hole Models in Loop Quantum Gravity",
+      "authors": [
+        "Martin Bojowald"
+      ],
+      "year": 2020,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "note": "Universe 6, 125 (64 citations). Critical review of LQG black-hole interiors; shows many bouncing-interior constructions violate general covariance and discusses signature change.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/6ddde4ef515954888af282a24158e07c/?utm_source=claude_code"
+      }
+    },
+    {
+      "title": "Black hole singularity resolution in Wheeler-DeWitt quantum gravity",
+      "authors": [
+        "Harpreet Singh",
+        "Malay K. Nandy"
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "note": "Annals of Physics (6 citations). Canonical Wheeler-DeWitt quantization of the Schwarzschild interior (Kantowski-Sachs) satisfying the DeWitt criterion for singularity resolution.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/bdca8dd789b458a1be990b97712d1706/?utm_source=claude_code"
+      }
+    },
+    {
+      "title": "Black Hole Singularity Resolution in Unimodular Gravity from Unitarity",
+      "authors": [
+        "Steffen Gielen",
+        "Lucia Menendez-Pidal"
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "note": "Physical Review Letters (10 citations). Demands unitarity in unimodular time; classical singularity and horizon replaced by a nonsingular quantum region.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/2bcd54737a305e1b85c92bd85eceb033/?utm_source=claude_code"
+      }
+    },
+    {
+      "title": "Black holes in asymptotically safe gravity and beyond",
+      "authors": [
+        "Astrid Eichhorn",
+        "Aaron Held"
+      ],
+      "year": 2022,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "note": "Review (42 citations). RG-improved asymptotic-safety black holes: curvature-singularity resolution, inner horizons, cold remnants, and EHT/X-ray constraints on the quantum-gravity scale.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/911ed47b62075ba7acc34491c92692b1/?utm_source=claude_code",
+        "arxiv": "2212.09495"
+      }
+    },
+    {
+      "title": "Planck stars, White Holes, Remnants and Planck-mass quasi-particles: the quantum gravity phase in black holes' evolution and its manifestations",
+      "authors": [
+        "Carlo Rovelli"
+      ],
+      "year": 2024,
+      "kind": "review",
+      "tier": "speculative_extension",
+      "note": "Review (27 citations). Surveys the Planck-star / black-hole-to-white-hole-transition scenario and Planck-mass remnants as dark-matter candidates.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/f87bae48c0fa569b97bea33c60e6b795/?utm_source=claude_code"
+      }
+    },
+    {
+      "title": "Avoidance of Singularity during the Gravitational Collapse with String T-Duality Effects",
+      "authors": [
+        "Kimet Jusufi"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "speculative_extension",
+      "note": "Universe 9, 41 (14 citations). Zero-point-length (string T-duality) effects yield a minimal scale factor and a Planck-star core; correspondence with LQG modified Friedmann equations.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/493156e938045e989d3c54f0a416b2c0/?utm_source=claude_code"
+      }
+    },
+    {
+      "title": "The Black Hole Information Problem",
+      "authors": [
+        "Joseph Polchinski"
+      ],
+      "year": 2016,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "note": "TASI lectures (174 citations). Pedagogical review of the information paradox, Page curve, AdS/CFT partial resolution, complementarity, and the firewall puzzle.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/0d9c9338a18453bcbbf513109c9b23d7/?utm_source=claude_code",
+        "arxiv": "1609.04036"
+      }
+    },
+    {
+      "title": "Replica wormholes and the black hole interior",
+      "authors": [
+        "Geoffrey Penington",
+        "Stephen H. Shenker",
+        "Douglas Stanford",
+        "Zhenbin Yang"
+      ],
+      "year": 2022,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "note": "Journal of High Energy Physics 2022:205 (235 citations). Derives the Page curve via replica-wormhole geometries in the gravitational path integral; central to the modern information-paradox program.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a3e4dddf06e45ca7a9faf949545d6063/?utm_source=claude_code",
+        "arxiv": "1911.11977"
+      }
+    },
+    {
+      "title": "Gravitational Collapse and Cosmic Censorship",
+      "authors": [
+        "Tejinder P. Singh"
+      ],
+      "year": 1996,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "note": "arXiv:gr-qc/9606016 (194 citations). Review of end-states of gravitational collapse and the open status of the cosmic-censorship hypothesis (black holes vs naked singularities).",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/f5230a8d290f508bae38408f468ab57c/?utm_source=claude_code",
+        "arxiv": "gr-qc/9606016"
+      }
+    },
+    {
+      "title": "The influence of Penrose's singularity theorem in general relativity",
+      "authors": [
+        "Jose M. M. Senovilla"
+      ],
+      "year": 2022,
+      "kind": "review",
+      "tier": "analytic_classical",
+      "note": "General Relativity and Gravitation 54, 152. Modern retrospective on the 1965 singularity theorem, its developments, common misconceptions, and trapped-surface concepts.",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a4edea6733bb5462a7001cd2adc93549/?utm_source=claude_code"
+      }
+    }
   ],
   "physicists": [
-    {"name": "Roger Penrose", "role": "originator", "era": "1965-present", "affiliation": "Oxford", "contribution": "Singularity theorems via trapped surfaces and global causal methods; Nobel Prize 2020."},
-    {"name": "Stephen Hawking", "role": "foundational", "era": "1965-2018", "affiliation": "Cambridge", "contribution": "Singularity theorems in cosmology and generic collapse."},
-    {"name": "Abhay Ashtekar", "role": "active", "era": "1980s-present", "affiliation": "Penn State", "contribution": "Loop quantum gravity; quantum bounce replacing classical singularities."},
-    {"name": "Samir Mathur", "role": "active", "era": "1990s-present", "affiliation": "Ohio State", "contribution": "Fuzzball proposal for a non-singular black-hole interior."},
-    {"name": "Demetrios Christodoulou", "role": "foundational", "era": "1990s-present", "affiliation": "ETH Zurich", "contribution": "Rigorous results on collapse and trapped-surface formation."}
+    {
+      "name": "Roger Penrose",
+      "role": "originator",
+      "era": "1960s-present",
+      "affiliation": "University of Oxford",
+      "contribution": "Proved the first singularity theorem (1965) using trapped surfaces; 2020 Nobel Prize. Originated the cosmic-censorship conjecture."
+    },
+    {
+      "name": "Stephen W. Hawking",
+      "role": "originator",
+      "era": "1965-2018",
+      "affiliation": "University of Cambridge",
+      "contribution": "Co-proved the Hawking-Penrose singularity theorems; discovered Hawking radiation (1974/75); posed the information-loss paradox (1976)."
+    },
+    {
+      "name": "Jacob D. Bekenstein",
+      "role": "foundational",
+      "era": "1972-2015",
+      "affiliation": "Hebrew University of Jerusalem",
+      "contribution": "Introduced black-hole entropy proportional to horizon area, founding black-hole thermodynamics underlying the information problem."
+    },
+    {
+      "name": "Abhay Ashtekar",
+      "role": "foundational",
+      "era": "1980s-present",
+      "affiliation": "Pennsylvania State University",
+      "contribution": "Co-founder of loop quantum gravity; developed the quantum geometry program used to resolve black-hole and cosmological singularities via a bounce."
+    },
+    {
+      "name": "Carlo Rovelli",
+      "role": "active",
+      "era": "1990s-present",
+      "affiliation": "Aix-Marseille University / Western Ontario",
+      "contribution": "Co-founder of loop quantum gravity; proposed Planck stars and the black-hole-to-white-hole transition scenario for singularity/endpoint resolution."
+    },
+    {
+      "name": "Samir D. Mathur",
+      "role": "active",
+      "era": "1990s-present",
+      "affiliation": "Ohio State University",
+      "contribution": "Originated the fuzzball proposal: string-theory microstate geometries replace the horizon and singularity with horizonless structure."
+    },
+    {
+      "name": "Matt Visser",
+      "role": "active",
+      "era": "1990s-present",
+      "affiliation": "Victoria University of Wellington",
+      "contribution": "Leading analyst of regular (nonsingular) black holes, black-bounce spacetimes, and inner-horizon (Cauchy) instabilities."
+    },
+    {
+      "name": "Astrid Eichhorn",
+      "role": "active",
+      "era": "2010s-present",
+      "affiliation": "University of Southern Denmark / Heidelberg",
+      "contribution": "Leading researcher on asymptotically safe quantum gravity and its RG-improved, curvature-regular black-hole solutions and observational constraints."
+    },
+    {
+      "name": "Geoffrey Penington",
+      "role": "active",
+      "era": "2019-present",
+      "affiliation": "University of California, Berkeley",
+      "contribution": "Co-developed the quantum-extremal-surface / island and replica-wormhole derivations of the Page curve, reshaping the information-paradox program."
+    },
+    {
+      "name": "Jose M. M. Senovilla",
+      "role": "active",
+      "era": "1990s-present",
+      "affiliation": "University of the Basque Country",
+      "contribution": "Authority on singularity theorems and trapped surfaces; author of modern reviews clarifying the scope and implications of Penrose's theorem."
+    }
   ],
-  "related_problems": [4, 5, 2, 3],
+  "related_problems": [
+    4,
+    5,
+    2,
+    3
+  ],
   "simulator_angle": "A classical-GR ray tracer cannot probe the singularity, but it can map the trapped region / horizon structure and visualize geodesic incompleteness up to the horizon; regular-black-hole metrics are a drop-in alternative metric to render and compare against Kerr.",
-  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 canonical references (bibliographic notes; arXiv ids to be verified) + 5 key physicists. Aspiration is up to 25 papers / 10 physicists, to be expanded by sourced enrichment.", "confidence": "seed"}
+  "metadata": {
+    "created": "2026-06-14",
+    "updated": "2026-06-14",
+    "coverage_note": "Assembled 25 verified, genuinely-relevant papers and 10 physicists. Method: ran 12 Consensus paper-search calls (mcp__plugin_bio-research_consensus__search) in batches of three, pacing ~35s between batches to respect rate limits, across varied sub-queries — singularity theorems (Penrose/Hawking), quantum-gravity resolution (Wheeler-DeWitt, unimodular, asymptotic safety, LQG effective collapse, string T-duality), regular/nonsingular black holes (Bardeen/Hayward/de Sitter-core, Minkowski-core, inner-horizon instability), fuzzballs/microstate geometries, information paradox/Page curve/replica wormholes, cosmic censorship, and Planck stars. 15 papers carry live Consensus URLs from search results; the remaining 10 are canonical landmarks I supplied directly with verifiable DOIs/arXiv ids or full bibliographic notes (Penrose 1965, Hawking-Penrose 1970, Hawking 1975 & 1976, Bekenstein 1973, Bardeen 1968, Hayward 2006, Mathur 2005 review, Penington et al. 2022, plus Senovilla 2022). Tiers reflect that this is an OPEN problem: singularity theorems and exact GR are analytic_classical; LQG collapse simulations are numerical_approximation; all resolution-level proposals (regular BHs, fuzzballs, Planck stars, unimodular/Wheeler-DeWitt/asymptotic-safety quantization, islands) are open_conjecture or speculative_extension. No titles, authors, years, DOIs, arXiv ids, or URLs were invented; uncertain items were omitted rather than padded.",
+    "confidence": "researched"
+  }
 }

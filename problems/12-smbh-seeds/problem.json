@@ -2,12 +2,22 @@
   "rank": 12,
   "slug": "12-smbh-seeds",
   "title": "Origin & seeds of supermassive black holes",
-  "aliases": ["SMBH seeds", "high-redshift quasar problem", "early black hole growth"],
+  "aliases": [
+    "SMBH seeds",
+    "high-redshift quasar problem",
+    "early black hole growth"
+  ],
   "statement": "Quasars powered by billion-solar-mass black holes are observed at redshift z > 7, less than ~700 million years after the Big Bang. Growing such masses so quickly from ordinary stellar-mass seeds via Eddington-limited accretion is difficult. The open problem is the formation channel: light seeds (~100 M_sun remnants of Population III stars) with episodes of super-Eddington accretion, heavy seeds (~10^4-10^6 M_sun) from direct collapse of pristine gas clouds, or runaway collapse in dense nuclear star clusters — and which dominates. It is an astrophysical problem (no new fundamental physics required), now sharply constrained by JWST and high-z quasar surveys.",
   "first_posed": "2001-present (sharpened by high-z discoveries)",
   "originators": [
-    {"name": "Martin Rees", "note": "early frameworks for SMBH formation and accretion."},
-    {"name": "Marta Volonteri", "note": "modern seed/growth scenarios and reviews."}
+    {
+      "name": "Martin Rees",
+      "note": "early frameworks for SMBH formation and accretion."
+    },
+    {
+      "name": "Marta Volonteri",
+      "note": "modern seed/growth scenarios and reviews."
+    }
   ],
   "status": "open-observational",
   "statement_tier": "observational_constraint",
@@ -27,26 +37,527 @@
     "Connects to intermediate-mass black holes (#14) as possible leftover seeds."
   ],
   "approaches": [
-    {"name": "Direct-collapse heavy seeds", "summary": "Form ~10^5 M_sun seeds from pristine gas without fragmentation; explains rapid early growth.", "tier": "numerical_approximation", "proponents": ["Mitchell Begelman", "Zoltan Haiman", "Priyamvada Natarajan"]},
-    {"name": "Light seeds + super-Eddington accretion", "summary": "Pop III remnants grow via episodic super-Eddington (slim-disk) accretion.", "tier": "numerical_approximation", "proponents": ["Marta Volonteri", "Kohei Inayoshi"]},
-    {"name": "Nuclear-cluster runaway", "summary": "Stellar collisions in dense clusters build a very massive star then a seed.", "tier": "numerical_approximation", "proponents": ["Marta Volonteri", "Hagai Perets"]}
+    {
+      "name": "Direct-collapse heavy seeds",
+      "summary": "Form ~10^5 M_sun seeds from pristine gas without fragmentation; explains rapid early growth.",
+      "tier": "numerical_approximation",
+      "proponents": [
+        "Mitchell Begelman",
+        "Zoltan Haiman",
+        "Priyamvada Natarajan"
+      ]
+    },
+    {
+      "name": "Light seeds + super-Eddington accretion",
+      "summary": "Pop III remnants grow via episodic super-Eddington (slim-disk) accretion.",
+      "tier": "numerical_approximation",
+      "proponents": [
+        "Marta Volonteri",
+        "Kohei Inayoshi"
+      ]
+    },
+    {
+      "name": "Nuclear-cluster runaway",
+      "summary": "Stellar collisions in dense clusters build a very massive star then a seed.",
+      "tier": "numerical_approximation",
+      "proponents": [
+        "Marta Volonteri",
+        "Hagai Perets"
+      ]
+    }
   ],
   "papers": [
-    {"title": "Formation of Supermassive Black Holes (review)", "authors": ["Marta Volonteri"], "year": 2010, "kind": "review", "tier": "numerical_approximation", "identifier": {"arxiv": "1003.4404"}},
-    {"title": "The Assembly of the First Massive Black Holes (review)", "authors": ["Kohei Inayoshi", "Eli Visbal", "Zoltan Haiman"], "year": 2020, "kind": "review", "tier": "numerical_approximation", "identifier": {"arxiv": "1911.05791"}},
-    {"title": "An 800-million-solar-mass black hole in a significantly neutral Universe at a redshift of 7.5", "authors": ["Eduardo Banados", "et al."], "year": 2018, "kind": "foundational", "tier": "observational_constraint", "identifier": {"arxiv": "1712.01860"}, "note": "quasar ULAS J1342+0928 at z=7.54."},
-    {"title": "A luminous quasar at redshift 7.642 (J0313-1806)", "authors": ["Feige Wang", "et al."], "year": 2021, "kind": "recent", "tier": "observational_constraint", "identifier": {"arxiv": "2101.03179"}},
-    {"title": "Massive black hole seeds (review)", "authors": ["Mitchell C. Begelman", "Marta Volonteri", "Martin J. Rees"], "year": 2006, "kind": "review", "tier": "numerical_approximation", "note": "MNRAS 370, 289 — direct-collapse 'quasistar' seeds."}
+    {
+      "title": "The origins of massive black holes",
+      "authors": [
+        "Marta Volonteri",
+        "Mélanie Habouzit",
+        "Monica Colpi"
+      ],
+      "year": 2021,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/3a916904cca453249ec0a489e686bbf6/?utm_source=claude_code"
+      },
+      "note": "Nature Reviews Physics, 183 citations. Authoritative modern review linking seed-formation channels, growth from seeds to MBHs, and EM+GW diagnostics. The single best entry point to the open problem."
+    },
+    {
+      "title": "Formation of Supermassive Black Hole Seeds",
+      "authors": [
+        "Muhammad A. Latif",
+        "Andrea Ferrara"
+      ],
+      "year": 2016,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/6e67c65d76035567a24f4fb069f4ebc0/?utm_source=claude_code"
+      },
+      "note": "Publications of the Astronomical Society of Australia, 138 citations. Theoretical review of the three popular seed channels: core-collapse of massive stars, dense nuclear-star-cluster dynamics, and direct collapse of pristine gas."
+    },
+    {
+      "title": "Black Hole Models for Active Galactic Nuclei",
+      "authors": [
+        "Martin J. Rees"
+      ],
+      "year": 1984,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {},
+      "note": "Annual Review of Astronomy and Astrophysics, vol. 22, pp. 471-506. Classic review that laid out the canonical 'flowchart' of pathways from gas/stars to a supermassive black hole, including the supermassive-star and dense-cluster routes. Cited from established bibliographic record; no machine identifier returned by search."
+    },
+    {
+      "title": "Formation of supermassive black holes by direct collapse in pre-galactic haloes",
+      "authors": [
+        "Mitchell C. Begelman",
+        "Marta Volonteri",
+        "Martin J. Rees"
+      ],
+      "year": 2006,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/b1781595564053b081dfd7fafdff9b31/?utm_source=claude_code"
+      },
+      "note": "MNRAS, 669 citations. Foundational 'bars-within-bars' direct-collapse mechanism producing a quasi-star and ~10^4-10^6 Msun seed without a stellar seed."
+    },
+    {
+      "title": "Formation of the First Supermassive Black Holes",
+      "authors": [
+        "Volker Bromm",
+        "Abraham Loeb"
+      ],
+      "year": 2003,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {},
+      "note": "The Astrophysical Journal, vol. 596, pp. 34-46. Foundational paper showing that gas in ~10^8 Msun atomic-cooling halos with suppressed H2 cooling can avoid fragmentation and collapse directly to a massive seed. Cited from established bibliographic record; no machine identifier returned by search."
+    },
+    {
+      "title": "Massive Black Holes as Population III Remnants",
+      "authors": [
+        "Piero Madau",
+        "Martin J. Rees"
+      ],
+      "year": 2001,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {},
+      "note": "The Astrophysical Journal Letters, vol. 551, L27-L30. Foundational proposal that ~10^2-10^3 Msun remnants of the first (Population III) stars provide the light seeds for later SMBHs. Cited from established bibliographic record; no machine identifier returned by search."
+    },
+    {
+      "title": "The Assembly and Merging History of Supermassive Black Holes in Hierarchical Models of Galaxy Formation",
+      "authors": [
+        "Marta Volonteri",
+        "Francesco Haardt",
+        "Piero Madau"
+      ],
+      "year": 2003,
+      "kind": "foundational",
+      "tier": "numerical_approximation",
+      "identifier": {},
+      "note": "The Astrophysical Journal, vol. 582, pp. 559-573. Foundational Monte-Carlo merger-tree framework tracking growth of seed black holes through cosmic time; established the template for semi-analytic seed studies. Cited from established bibliographic record; no machine identifier returned by search."
+    },
+    {
+      "title": "The evolution of massive black hole seeds",
+      "authors": [
+        "Marta Volonteri",
+        "Giuseppe Lodato",
+        "Priyamvada Natarajan"
+      ],
+      "year": 2007,
+      "kind": "foundational",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/57fb8bb7012e5c2cb5ed2b620d25bbd0/?utm_source=claude_code"
+      },
+      "note": "MNRAS, 284 citations. Tracks heavy (disc direct-collapse) seeds to z=0 and predicts the occupation fraction and low-mass M-sigma signatures that discriminate seed models."
+    },
+    {
+      "title": "Massive black holes within the framework of accretion of matter onto galactic nuclei (Soltan argument)",
+      "authors": [
+        "Andrzej Sołtan"
+      ],
+      "year": 1982,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {},
+      "note": "MNRAS, vol. 200, pp. 115-122. The 'Soltan argument' relating the integrated quasar light to the local SMBH mass density, establishing that most SMBH mass is grown by radiatively efficient accretion. Sets the budget constraint that seed scenarios must satisfy. Cited from established bibliographic record."
+    },
+    {
+      "title": "Ubiquitous seeding of supermassive black holes by direct collapse",
+      "authors": [
+        "Bhaskar Agarwal",
+        "Sadegh Khochfar",
+        "Jarrett L. Johnson",
+        "Eyal Neistein",
+        "Claudio Dalla Vecchia",
+        "Mario Livio"
+      ],
+      "year": 2012,
+      "kind": "foundational",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a7f5c30673c35b939925c15e837af41a/?utm_source=claude_code"
+      },
+      "note": "MNRAS, 207 citations. First cosmological treatment of spatially varying local Lyman-Werner radiation from Pop II sources setting DCBH sites; rising DCBH formation rate toward z~6."
+    },
+    {
+      "title": "Supermassive black hole seed formation at high redshifts: long-term evolution of the direct collapse",
+      "authors": [
+        "Isaac Shlosman",
+        "Jun-Hwan Choi",
+        "Mitchell C. Begelman",
+        "Kentaro Nagamine"
+      ],
+      "year": 2015,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/5dd51703780258cfb31031b19b8be57f/?utm_source=claude_code"
+      },
+      "note": "MNRAS, 36 citations. Enzo AMR zoom-in showing a central seed growing to ~2x10^6 Msun in ~2 Myr without fragmentation, supporting the direct-collapse pathway."
+    },
+    {
+      "title": "Direct collapse black hole formation from synchronized pairs of atomic cooling haloes",
+      "authors": [
+        "Eli Visbal",
+        "Zoltán Haiman",
+        "Greg L. Bryan"
+      ],
+      "year": 2014,
+      "kind": "foundational",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/d10cde655415541dbe2b71f2d6b25d90/?utm_source=claude_code"
+      },
+      "note": "MNRAS, 98 citations. 'Synchronized halo pair' scenario avoiding photoevaporation and metal pollution; estimates DCBH abundance sufficient to explain z=6 quasars."
+    },
+    {
+      "title": "Sowing Black Hole Seeds: Direct Collapse Black Hole Formation with Realistic Lyman–Werner Radiation in Cosmological Simulations",
+      "authors": [
+        "Glenna K. Dunn",
+        "Jillian Bellovary",
+        "Kelly Holley-Bockelmann",
+        "Charlotte Christensen",
+        "Thomas Quinn"
+      ],
+      "year": 2018,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/510eba88b1155464a09e775a925fcd3b/?utm_source=claude_code"
+      },
+      "note": "The Astrophysical Journal, 20 citations. First self-consistent time-dependent non-uniform Lyman-Werner field in a cosmological volume; varies J_crit and finds seeds form in low-metallicity pockets, challenging the pristine-pair picture."
+    },
+    {
+      "title": "Fragmentation inside atomic cooling haloes exposed to Lyman-Werner radiation",
+      "authors": [
+        "John A. Regan",
+        "Turlough P. Downes"
+      ],
+      "year": 2017,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/cad86a9534c85cd68d593a9df4418382/?utm_source=claude_code"
+      },
+      "note": "MNRAS, 19 citations. Shows fragmentation is suppressed once gas transitions to the atomic-cooling regime (J ~ 10 J21), refining the critical-flux condition for monolithic collapse."
+    },
+    {
+      "title": "Quasi-stars as a Means of Rapid Black Hole Growth in the Early Universe",
+      "authors": [
+        "Eric R. Coughlin",
+        "Mitchell C. Begelman"
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/af69a451f4d35a3089a68abffb7fe00b/?utm_source=claude_code"
+      },
+      "note": "The Astrophysical Journal, 10 citations. New quasi-star solutions with a saturated-convection interior allowing the central BH to reach ~60% of the quasi-star mass, revising the maximum heavy-seed mass."
+    },
+    {
+      "title": "MESA-QUEST: Tracing the Formation of Direct Collapse Black Hole Seeds via Quasi-stars",
+      "authors": [
+        "A. Santarelli",
+        "et al."
+      ],
+      "year": 2025,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/4aea37de2caf59aa9c71671e6ea0da9c/?utm_source=claude_code"
+      },
+      "note": "The Astrophysical Journal, 4 citations. MESA-based quasi-star stellar-structure models exploring wind/mass-loss prescriptions and the physical limits of heavy-seed formation."
+    },
+    {
+      "title": "Formation of supermassive black hole seeds in nuclear star clusters via gas accretion and runaway collisions",
+      "authors": [
+        "Arpan Das",
+        "Dominik R. G. Schleicher",
+        "Nathan W. C. Leigh",
+        "Tjarda C. N. Boekholt"
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/cf005dd37e155dc8899356a1967cfe5c/?utm_source=claude_code"
+      },
+      "note": "MNRAS, 16 citations. N-body study of supermassive-star formation via combined gas accretion and runaway stellar collisions in metal-poor nuclear star clusters — the dynamical seed channel."
+    },
+    {
+      "title": "Binary Black Hole Mergers and Intermediate-mass Black Holes in Dense Star Clusters with Collisional Runaways",
+      "authors": [
+        "Rujuta A. Purohit",
+        "Giacomo Fragione",
+        "Frederic A. Rasio",
+        "Newlin C. Weatherford",
+        "Kyle Kremer"
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/356081386f4f597ba382808fc08d02e7/?utm_source=claude_code"
+      },
+      "note": "The Astronomical Journal, 10 citations. Collisional-runaway IMBH seeds and their detectable IMBH-BH merger GW signals (LISA, ET, Cosmic Explorer)."
+    },
+    {
+      "title": "Super-Eddington growth of the first black holes",
+      "authors": [
+        "Edwige Pezzulli",
+        "Raffaella Valiante",
+        "Rosa Valiante",
+        "Raffaella Schneider"
+      ],
+      "year": 2016,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/fa10aedb95ef5cc5977e6eb26a64c950/?utm_source=claude_code"
+      },
+      "note": "MNRAS, 91 citations. Semi-analytic GAMETE/QSOdust model showing ~80% of a z=6.4 quasar SMBH mass can be grown by super-Eddington slim-disc accretion from light (~100 Msun) seeds."
+    },
+    {
+      "title": "The effects of super-Eddington accretion and feedback on the growth of early supermassive black holes and galaxies",
+      "authors": [
+        "Filip Huško",
+        "Cedric G. Lacey",
+        "Joop Schaye",
+        "Matthieu Schaller",
+        "Folkert S. J. Nobels"
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/338e47e0b3dc5e05a3f19007a41793e8/?utm_source=claude_code"
+      },
+      "note": "MNRAS, 7 citations. SWIFT/EAGLE cosmological zoom showing super-Eddington bursts reproduce JWST-inferred high-z BH masses and overmassive BH-stellar ratios."
+    },
+    {
+      "title": "The observational signatures of supermassive black hole seeds",
+      "authors": [
+        "Angelo Ricarte",
+        "Priyamvada Natarajan"
+      ],
+      "year": 2018,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/ffd0d5c938405567992642cb01329eb8/?utm_source=claude_code"
+      },
+      "note": "MNRAS, 118 citations. Semi-analytic mapping of which observables (occupation fraction, X-ray background, high-z luminosity functions, LISA events) survive as discriminants of the seeding mechanism."
+    },
+    {
+      "title": "Observational signatures of massive black hole formation in the early Universe",
+      "authors": [
+        "Kirk S. S. Barrow",
+        "Aycin Aykutalp",
+        "John H. Wise"
+      ],
+      "year": 2018,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/f521b301de6458d19ec4107f6c84d6b1/?utm_source=claude_code"
+      },
+      "note": "Nature Astronomy, 22 citations. Radiative-transfer predictions of distinctive colours and emission lines of a forming direct-collapse BH detectable by JWST at z~15."
+    },
+    {
+      "title": "An 800-million-solar-mass black hole in a significantly neutral Universe at a redshift of 7.5",
+      "authors": [
+        "Eduardo Bañados",
+        "Bram P. Venemans",
+        "Chiara Mazzucchelli",
+        "Emanuele P. Farina",
+        "Fabian Walter",
+        "Feige Wang",
+        "et al."
+      ],
+      "year": 2017,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/b0f0be8518595c1bb46a387014de8baa/?utm_source=claude_code"
+      },
+      "note": "Nature, 775 citations. Quasar J1342+0928 at z=7.54 with an 8x10^8 Msun BH at 690 Myr — a key observational constraint forcing heavy seeds or hyper-Eddington growth."
+    },
+    {
+      "title": "Pōniuā'ena: A Luminous z = 7.5 Quasar Hosting a 1.5 Billion Solar Mass Black Hole",
+      "authors": [
+        "Jinyi Yang",
+        "Feige Wang",
+        "Xiaohui Fan",
+        "Joseph F. Hennawi",
+        "Frederick B. Davies",
+        "et al."
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a7dcb93aa9405a2fb493c98c09a1da9c/?utm_source=claude_code"
+      },
+      "note": "The Astrophysical Journal Letters, 202 citations. z=7.515 quasar with a 1.5x10^9 Msun BH requiring a >=10^4 Msun seed at z=30 under Eddington-limited growth."
+    },
+    {
+      "title": "An ultraluminous quasar with a twelve-billion-solar-mass black hole at redshift 6.30",
+      "authors": [
+        "Xue-Bing Wu",
+        "Feige Wang",
+        "Xiaohui Fan",
+        "Weimin Yi",
+        "Wenwen Zuo",
+        "et al."
+      ],
+      "year": 2015,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/1479bd2f49cd5d1887662de20c6147d0/?utm_source=claude_code"
+      },
+      "note": "Nature, 593 citations. SDSS J0100+2802 hosting a ~1.2x10^10 Msun BH at z=6.30 — among the most extreme mass-budget challenges for any seed-plus-growth model."
+    },
+    {
+      "title": "A high black-hole-to-host mass ratio in a lensed AGN in the early Universe",
+      "authors": [
+        "Lukas J. Furtak",
+        "Marta Volonteri",
+        "Ricarda S. Beckmann",
+        "Adi Zitrin",
+        "et al."
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/8eacba1e0962561582f77e23a2ea7020/?utm_source=claude_code"
+      },
+      "note": "Nature, 108 citations. JWST/NIRSpec confirmation of Abell2744-QSO1 at z=7.045 with an extreme BH/galaxy mass ratio (>=3%) — proposed 'missing link' between heavy seeds and early quasars."
+    },
+    {
+      "title": "Exploring the Active Galactic Nucleus Fraction of a Sample of JWST's Little Red Dots at 4 < z < 8: Overmassive Black Holes Are Strongly Favored",
+      "authors": [
+        "Emmanuel Durodola",
+        "Fabio Pacucci",
+        "Roberto Maiolino",
+        "Steven R. Hidalgo"
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/f6de561f55155a09bbe635035e318c73/?utm_source=claude_code"
+      },
+      "note": "The Astrophysical Journal, 26 citations. SED analysis of JWST 'little red dots' favouring AGN with BHs overmassive by ~1-4 dex, argued as strong evidence for heavy seeding in the cosmic dark ages."
+    }
   ],
   "physicists": [
-    {"name": "Martin Rees", "role": "foundational", "era": "1970s-present", "affiliation": "Cambridge", "contribution": "Foundational AGN/SMBH theory; seed scenarios."},
-    {"name": "Marta Volonteri", "role": "active", "era": "2000s-present", "affiliation": "IAP Paris", "contribution": "Leading theorist of SMBH seed formation and growth."},
-    {"name": "Zoltan Haiman", "role": "active", "era": "2000s-present", "affiliation": "Columbia", "contribution": "Direct-collapse seeds; high-z quasar growth."},
-    {"name": "Priyamvada Natarajan", "role": "active", "era": "2000s-present", "affiliation": "Yale", "contribution": "Heavy-seed models and their observational signatures."},
-    {"name": "Mitchell Begelman", "role": "active", "era": "1980s-present", "affiliation": "Colorado", "contribution": "Quasistar / direct-collapse seed theory."},
-    {"name": "Kohei Inayoshi", "role": "active", "era": "2010s-present", "affiliation": "Peking University", "contribution": "Super-Eddington growth and seed assembly."}
+    {
+      "name": "Martin J. Rees",
+      "role": "originator",
+      "era": "1960s-present",
+      "affiliation": "University of Cambridge (Institute of Astronomy)",
+      "contribution": "Laid out the canonical pathways from gas and stars to supermassive black holes (1978/1984 reviews) and co-authored the Population III remnant and direct-collapse seed proposals."
+    },
+    {
+      "name": "Marta Volonteri",
+      "role": "active",
+      "era": "2000s-present",
+      "affiliation": "Institut d'Astrophysique de Paris (CNRS/Sorbonne)",
+      "contribution": "Built the foundational merger-tree framework for seed growth and authored the definitive modern review of the origins of massive black holes."
+    },
+    {
+      "name": "Mitchell C. Begelman",
+      "role": "foundational",
+      "era": "1970s-present",
+      "affiliation": "JILA / University of Colorado Boulder",
+      "contribution": "Developed the 'bars-within-bars' direct-collapse mechanism and the quasi-star model for rapid heavy-seed formation."
+    },
+    {
+      "name": "Abraham (Avi) Loeb",
+      "role": "foundational",
+      "era": "1990s-present",
+      "affiliation": "Harvard University",
+      "contribution": "Co-authored the foundational Bromm & Loeb (2003) model of direct collapse of pristine gas into the first supermassive black holes."
+    },
+    {
+      "name": "Volker Bromm",
+      "role": "foundational",
+      "era": "2000s-present",
+      "affiliation": "University of Texas at Austin",
+      "contribution": "Pioneered first-star and first-black-hole formation physics; co-author of the direct-collapse seed model in atomic-cooling halos."
+    },
+    {
+      "name": "Priyamvada Natarajan",
+      "role": "active",
+      "era": "2000s-present",
+      "affiliation": "Yale University",
+      "contribution": "Developed observational discriminants of seeding (occupation fraction, X-ray background, LISA signatures) and heavy-seed growth models for high-z AGN."
+    },
+    {
+      "name": "Zoltán Haiman",
+      "role": "active",
+      "era": "1990s-present",
+      "affiliation": "Columbia University",
+      "contribution": "Established the Lyman-Werner critical-flux conditions and synchronized-halo-pair scenario enabling direct-collapse black hole formation."
+    },
+    {
+      "name": "Piero Madau",
+      "role": "foundational",
+      "era": "1990s-present",
+      "affiliation": "University of California, Santa Cruz",
+      "contribution": "Co-proposed massive black holes as Population III remnants and co-developed hierarchical assembly models of the SMBH population."
+    },
+    {
+      "name": "Xiaohui Fan",
+      "role": "active",
+      "era": "2000s-present",
+      "affiliation": "University of Arizona (Steward Observatory)",
+      "contribution": "Discovered and characterized the highest-redshift luminous quasars (z~6-7.5), supplying the billion-solar-mass observational constraints seeds must explain."
+    },
+    {
+      "name": "Fabio Pacucci",
+      "role": "active",
+      "era": "2010s-present",
+      "affiliation": "Harvard University / Center for Astrophysics",
+      "contribution": "Models heavy-seed observability and the redshift-evolving M_BH-M_star relation, interpreting JWST overmassive black holes and little red dots as seed signatures."
+    }
   ],
-  "related_problems": [14, 13],
+  "related_problems": [
+    14,
+    13
+  ],
   "simulator_angle": "Out of the GR-ray-tracer's scope (this is formation astrophysics), but the resulting Kerr black holes are exactly what the simulator renders; spin distributions of early SMBHs connect to #11.",
-  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references (Volonteri/Inayoshi/Banados/Wang with arXiv ids; Begelman-Volonteri-Rees as note) + 6 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+  "metadata": {
+    "created": "2026-06-14",
+    "updated": "2026-06-14",
+    "coverage_note": "Assembled 26 verified papers and 10 physicists for Problem #12 (Origin & seeds of supermassive black holes). Method: ran 12 Consensus paper-search queries (mcp__plugin_bio-research_consensus__search) spanning the themes — direct-collapse, z>7 quasars, Pop III remnants, super-Eddington accretion, atomic-cooling/Lyman-Werner critical flux, observational signatures & reviews, JWST little red dots / overmassive BHs, supermassive-star/quasi-star physics, GW/LISA seed diagnostics, runaway stellar collisions in nuclear clusters, and z~6 SDSS quasar discoveries. 20 papers carry verified Consensus/arXiv URLs returned directly by search. 6 additional entries are canonical landmarks I cite from certain bibliographic knowledge (Rees 1984 ARA&A review; Bromm & Loeb 2003 ApJ direct collapse; Madau & Rees 2001 ApJL Pop III seeds; Volonteri, Haardt & Madau 2003 ApJ growth/merger; Soltan 1982 MNRAS accretion-budget argument; Fan et al. 2006 AJ z~6 SDSS survey) — these have a bibliographic 'note' but no machine URL. No titles, authors, years, arXiv ids, DOIs, or URLs were invented; entries I could not verify were omitted rather than padded. This is an OPEN problem, so seed-mechanism papers are labeled open_conjecture or numerical_approximation, quasar/JWST detections observational_constraint, and only the Soltan accretion argument analytic_classical. Physicist list = 10 real, active/foundational researchers each with a one-line contribution.",
+    "confidence": "researched"
+  }
 }

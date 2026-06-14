@@ -1,61 +1,91 @@
 # #04 — Strong cosmic censorship & the Cauchy horizon
 
-> **Status: OPEN (with recent progress)** · Statement tier: `analytic_classical`
-> · Resolution tier: `open_conjecture` · First posed: 1969 (Penrose).
+*Also known as: determinism in GR, Cauchy horizon instability, SCC.*
+
+> **Status: OPEN WITH RECENT PROGRESS** · Statement tier: `analytic_classical` · Resolution tier: `open_conjecture` · First posed: 1969.
 
 ## The problem
 
-Charged and rotating black holes have, inside them, an **inner (Cauchy)
-horizon**. Initial data on a spacelike slice determines the spacetime only up to
-that horizon; beyond it, Einstein's equations admit *infinitely many*
-continuations — determinism fails. **Strong cosmic censorship (SCC)** is the
-conjecture that nature forbids this: for *generic* initial data the Cauchy
-horizon is unstable and turns into a genuine singular boundary, so no observer
-ever reaches the unpredictable region. Whether SCC holds — and in which precise
-formulation — is open.
+Inside charged (Reissner-Nordstrom) and rotating (Kerr) black holes, general relativity's equations lose predictive power at an inner 'Cauchy horizon' beyond which the future is not determined by initial data. Strong cosmic censorship (Penrose 1969) conjectures that, for generic initial data, the Cauchy horizon is unstable and becomes a singular boundary, so determinism is preserved (no observer can pass into the unpredictable region). Whether this holds is open: rigorous work supports a (weaker, Christodoulou) formulation in many cases, but near-extremal Reissner-Nordstrom-de Sitter black holes provide apparent counterexamples.
 
-## History & originator
+## History & originators
 
-**Roger Penrose** posed cosmic censorship in 1969. The *weak* version (#05)
-hides singularities behind event horizons; the *strong* version concerns
-determinism in the interior. Penrose and Simpson (1973) found the key mechanism:
-infalling radiation is **infinitely blueshifted** at the Cauchy horizon,
-hinting it becomes singular. Poisson and Israel (1990) sharpened this into **mass
-inflation**.
+- **Roger Penrose** — 1969 formulation of cosmic censorship; strong version concerns interior determinism.
 
-## Why it is hard
+## Why it ranks #04
 
-It is a global statement about *generic* solutions of a nonlinear PDE system —
-exactly the regime where rigorous theorems are hardest. The competition is
-quantitative: the **blueshift** amplifies perturbations while **quasinormal
-ringing** damps them; which wins (and how smooth the surviving metric is) decides
-SCC. Christodoulou reframed the question as the *regularity* of the metric
-extension, not mere continuity.
+A foundational determinism question, old (1969), but unusually tractable for a deep problem: it is a precise PDE statement attacked with rigorous mathematical relativity, with theorems and explicit counterexamples in hand.
 
-## Live approaches (truth tiers)
+*(depth 7/10 · age 8/10 · tractability 5/10 — higher tractability pushes the rank toward the bottom of the list.)*
 
-- **Rigorous PDE relativity** (`analytic_classical`) — Dafermos & Luk's program
-  on the C⁰-stability / nonlinear instability of the Kerr Cauchy horizon.
-- **QNM vs blueshift analysis** (`numerical_approximation`) — Cardoso, Costa,
-  Destounis, Hintz, Jansen (2018) showed **near-extremal Reissner–Nordström–de
-  Sitter** black holes can *violate* SCC in the Christodoulou sense — a striking
-  apparent counterexample.
-- **Mass-inflation modeling** (`analytic_classical`) — Poisson–Israel.
+## Key ideas
 
-## Status & what would count as a solution
+- The Cauchy horizon is where predictability from initial data ends; classical GR cannot say what lies beyond.
+- Blueshift instability: perturbations falling in are infinitely blueshifted at the Cauchy horizon, suggesting it becomes singular (Simpson-Penrose).
+- Mass inflation (Poisson-Israel): the interior mass function diverges, reinforcing a singular Cauchy horizon.
+- Christodoulou's reformulation: the question is the regularity (differentiability) of the metric extension across the horizon, not mere continuity.
+- Quasinormal-mode decay rates vs blueshift growth set whether perturbations remain regular; near-extremal Reissner-Nordstrom-de Sitter can violate the expected censorship.
+- Outcome bears on whether GR is a deterministic theory in the strong-field interior.
 
-There is genuine, rigorous progress (and explicit counterexamples in de Sitter
-backgrounds), which is why this ranks more tractable than #01–#03. A resolution
-would be a theorem settling, for the astrophysically relevant **Kerr** case with
-generic data, whether the Cauchy horizon is generically singular at the required
-regularity — preserving determinism — or not.
+## Live approaches
 
-## Key references
+- **Rigorous PDE relativity (Dafermos-Luk)** (`analytic_classical`) — Prove C^0-stability / nonlinear instability of the Cauchy horizon for Kerr perturbations. _Proponents: Mihalis Dafermos, Jonathan Luk._
+- **Quasinormal-mode / de Sitter analysis** (`numerical_approximation`) — Compare QNM decay to the blueshift rate; near-extremal RN-dS appears to violate SCC. _Proponents: Vitor Cardoso, Joao Costa, Kyriakos Destounis, Peter Hintz, Aron Jansen._
+- **Mass-inflation modeling** (`analytic_classical`) — Effective models of the diverging interior mass at the Cauchy horizon. _Proponents: Eric Poisson, Werner Israel._
 
-See [`problem.json`](problem.json). Penrose 1969 (*Riv. Nuovo Cimento* **1**,
-252); Simpson–Penrose 1973; Poisson–Israel 1990; Cardoso et al. 2018
-(`arXiv:1711.10502`).
+## Key papers
 
-Related: [#05 weak cosmic censorship](../05-weak-cosmic-censorship/),
-[#01 singularities](../01-spacetime-singularities/),
-[#11 no-hair tests](../11-no-hair-tests/).
+*Real, verifiable references (see PHILOSOPHY.md: no fabricated citations). This is a curated seed; coverage is noted below.*
+
+- **Gravitational collapse and space-time singularities** (1965) — Roger Penrose. _foundational_, `analytic_classical`. doi:10.1103/PhysRevLett.14.57 — Physical Review Letters 14, 57 (1965). The first singularity theorem; established that gravitational collapse generically produces singularities, the backdrop against which the censorship conjectures were later posed.
+- **Gravitational collapse: the role of general relativity** (1969) — Roger Penrose. _foundational_, `open_conjecture`. doi:10.1007/BF00759862 — Rivista del Nuovo Cimento, Numero Speciale 1, 252 (1969); reprinted Gen. Rel. Grav. 34, 1141 (2002). The paper that introduced the cosmic censorship idea, motivating both weak and strong forms.
+- **The singularities of gravitational collapse and cosmology** (1970) — Stephen W. Hawking, Roger Penrose. _foundational_, `analytic_classical`. doi:10.1098/rspa.1970.0021 — Proc. Roy. Soc. London A 314, 529 (1970). The general Hawking-Penrose singularity theorem; foundational for the question of what regularity the maximal development can have.
+- **Internal instability in a Reissner-Nordstrom black hole** (1973) — Michael Simpson, Roger Penrose. _foundational_, `analytic_classical`. doi:10.1007/BF00671842 — International Journal of Theoretical Physics 7, 183 (1973). First identification that the Reissner-Nordstrom inner (Cauchy) horizon is unstable to infalling radiation — the seed of the modern SCC program.
+- **On crossing the Cauchy horizon of a Reissner-Nordstrom black hole** (1982) — Subrahmanyan Chandrasekhar, James B. Hartle. _foundational_, `analytic_classical`. doi:10.1098/rspa.1982.0129 — Proc. Roy. Soc. London A 384, 301 (1982). Detailed analysis of the divergence of perturbing fields and fluxes at the RN Cauchy horizon; a key precursor to mass inflation.
+- **Instability of black hole inner horizons** (1978) — J. M. McNamara. _foundational_, `analytic_classical`. doi:10.1098/rspa.1978.0060 — Proc. Roy. Soc. London A 358, 499 (1978). Showed via global symmetry/causal arguments that well-behaved initial data give fields singular on the inner horizon — an early rigorous instability result.
+- **Internal structure of black holes** (1990) — Eric Poisson, Werner Israel. _foundational_, `analytic_classical`. doi:10.1103/PhysRevD.41.1796 — Physical Review D 41, 1796 (1990). The mass-inflation paper: cross-flow of ingoing and outgoing radiation drives the inner-horizon mass function and curvature to diverge — the canonical mechanism for SCC in the charged case.
+- **Inner structure of a charged black hole: An exact mass-inflation solution** (1991) — Amos Ori. _foundational_, `analytic_classical`. doi:10.1103/PhysRevLett.67.789 — Physical Review Letters 67, 789 (1991). Exact Einstein-Maxwell mass-inflation solution; showed the singularity is 'weak' (finite tidal distortion), framing whether the metric is C0-extendible.
+- **The interior of dynamical vacuum black holes I: The C^0-stability of the Kerr Cauchy horizon** (2017) — Mihalis Dafermos, Jonathan Luk. _recent_, `analytic_classical`. https://consensus.app/papers/details/3222b4e4aece5c82af6e1b66fa620202/?utm_source=claude_code — Annals of Mathematics (preprint arXiv:1710.01722). Proves the Kerr Cauchy horizon is C0-stable, implying the C0-formulation of SCC is false and that the correct statement must use a stronger (weak-null-singularity) regularity.
+- **Strong Cosmic Censorship in Spherical Symmetry for Two-Ended Asymptotically Flat Initial Data II: The Exterior of the Black Hole Region** (2017) — Jonathan Luk, Sung-Jin Oh. _recent_, `analytic_classical`. https://consensus.app/papers/details/452bf49b15295efd8e20a2396018dace/?utm_source=claude_code — Annals of PDE 5, 6 (2019). Proves the C2-formulation of SCC for Einstein-Maxwell-scalar in spherical symmetry, two-ended; genericity of the L2-averaged lower bound forcing inextendibility.
+- **Stability and Instability of the Sub-extremal Reissner-Nordstrom Black Hole Interior for the Einstein-Maxwell-Klein-Gordon Equations in Spherical Symmetry** (2018) — Maxime Van de Moortel. _recent_, `analytic_classical`. https://consensus.app/papers/details/e1600a66e77a5c7e95aaec9cf6f625c6/?utm_source=claude_code — Communications in Mathematical Physics 360, 103 (2018). Extends Dafermos and Luk-Oh to a charged/massive scalar; C0 extension plus curvature blow-up at the Cauchy horizon — a step toward C2 SCC for one-ended data.
+- **The Strong Cosmic Censorship conjecture** (2025) — Maxime Van de Moortel. _review_, `open_conjecture`. https://consensus.app/papers/details/dd86d67991475a2a93352d3a78048ece/?utm_source=claude_code — Comptes Rendus. Mecanique. A recent PDE-focused review surveying modern advances on SCC in the gravitational-collapse context.
+- **Quasinormal Modes and Strong Cosmic Censorship** (2017) — Vitor Cardoso, Joao L. Costa, Kyriakos Destounis, Peter Hintz, Aron Jansen. _recent_, `open_conjecture`. https://consensus.app/papers/details/ee47bfe547185bef8f104bd5b58f711d/?utm_source=claude_code — Physical Review Letters 120, 031103 (2018). Identifies de Sitter and near-extremal QNM families in RNdS and conjectures SCC is violated near extremality — launched the modern de Sitter SCC controversy.
+- **Strong cosmic censorship in de Sitter space** (2018) — Oscar J. C. Dias, Felicity C. Eperon, Harvey S. Reall, Jorge E. Santos. _recent_, `open_conjecture`. https://consensus.app/papers/details/f50e627bec1754acbce10027b4b2f84a/?utm_source=claude_code — Physical Review D 97, 104060 (2018). Shows that for Kerr-de Sitter, slowly-decaying QNMs exist at all subextremal parameters, so SCC is respected for rotating (uncharged) de Sitter black holes — contrast with the RNdS violation.
+- **Strong cosmic censorship for the massless charged scalar field in the Reissner-Nordstrom-de Sitter spacetime** (2018) — Yuyu Mo, Yiqian Tian, Bin Wang, Hongbao Zhang, Zhen Zhong. _recent_, `open_conjecture`. https://consensus.app/papers/details/f70b0d60c8515d19b2737b8482c7053e/?utm_source=claude_code — Physical Review D 98, 124025 (2018). A charged scalar largely restores SCC in RNdS except in the highly extremal limit — important for the gravitational-collapse-relevant charged sector.
+- **Strong cosmic censorship for charged de Sitter black holes with a charged scalar field** (2018) — Oscar J. C. Dias, Harvey S. Reall, Jorge E. Santos. _recent_, `open_conjecture`. https://consensus.app/papers/details/f24f4541f0815b23adc86309269320ab/?utm_source=claude_code — Classical and Quantum Gravity 36, 045005 (2019). Charged scalar improves but cannot fully save SCC; a neighbourhood of extremality remains violated by smooth-data perturbations.
+- **Quantum instability of the Cauchy horizon in Reissner-Nordstrom-deSitter spacetime** (2019) — Stefan Hollands, Robert M. Wald, Jochen Zahn. _recent_, `open_conjecture`. https://consensus.app/papers/details/53347e4baef151aab00efd6fd369def8/?utm_source=claude_code — Classical and Quantum Gravity 37, 115009 (2020). A quantum scalar field's stress tensor diverges as C/V^2 at the RNdS Cauchy horizon with state-independent C, arguing that quantum effects restore SCC where classical perturbations fail.
+- **Universality of the quantum energy flux at the inner horizon of asymptotically de Sitter black holes** (2023) — Peter Hintz, Christiane K. M. Klein. _recent_, `open_conjecture`. https://consensus.app/papers/details/476797d454505d36b5174b7fdc019fa2/?utm_source=claude_code — Classical and Quantum Gravity 41, 015004 (2024). Extends the state-independent quadratic quantum-flux divergence to all subextremal RNdS and Kerr-de Sitter, generalizing the Hollands-Wald-Zahn quantum-SCC mechanism.
+- **Backreaction from quantum fluxes at the Kerr inner horizon** (2024) — Tyler McMaken. _recent_, `numerical_approximation`. https://consensus.app/papers/details/d0e16be812ce5e73a11b2e1c66c76403/?utm_source=claude_code — Physical Review D 109, 064060 (2024). Computes the renormalized stress tensor across the full Kerr spin/angle parameter space and analyzes the resulting backreaction toward a chaotic spacelike singularity.
+- **Non-linear instability of the Kerr Cauchy horizon near i_+** (2026) — Sebastian Gurriaran. _recent_, `analytic_classical`. https://consensus.app/papers/details/3864113004915e16bc9c6f8f9b2ec935/?utm_source=claude_code — Preprint (arXiv). Proves a Lipschitz-inextendibility (curvature blow-up) version of SCC for the vacuum Kerr interior near timelike infinity, building on Dafermos-Luk C0 stability and Sbierski's criterion.
+- **Spectral instability of quasinormal modes and strong cosmic censorship** (2023) — Aubin Courty, Kyriakos Destounis, Vitor Cardoso. _recent_, `numerical_approximation`. https://consensus.app/papers/details/7847eff0dd7e585c80ce7a18f08c60a0/?utm_source=claude_code — Physical Review D 108, 104027 (2023). Tests whether environmental QNM/pseudospectrum instability alters the RNdS SCC verdict; finds the dominant de Sitter and near-extremal modes are spectrally stable, so violation persists.
+- **A survey of strong cosmic censorship conjecture beyond Einstein's gravity** (2022) — Mohsen Khodadi, Alireza Allahyari, Salvatore Capozziello. _review_, `speculative_extension`. https://consensus.app/papers/details/117192e3b22c59dab5abc7243e6be0fb/?utm_source=claude_code — Physics of the Dark Universe 36, 101013 (2022). Survey of how modified-gravity parameters (f(R), energy-momentum-squared gravity) tune QNM decay rates and the SCC verdict for charged-de Sitter solutions.
+- **Mass Inflation without Cauchy Horizons** (2024) — Raul Carballo-Rubio, Francesco Di Filippo, Stefano Liberati, Costantino Pacilio, Matt Visser. _recent_, `open_conjecture`. https://consensus.app/papers/details/ac35f86ac20f5ab082b7c7fb3ee5402f/?utm_source=claude_code — Physical Review Letters (2024). Shows finite-but-large exponential energy buildup at slowly-evolving inner trapping horizons of accreting black holes even without a true Cauchy horizon, with implications for regular-black-hole endpoints.
+- **C^0-(in)extendibility of spacetimes** (2019) — Eric Ling. _review_, `analytic_classical`. https://consensus.app/papers/details/e78fbed8156152aba535b8152017fde8/?utm_source=claude_code — Lecture-note/thesis review of low-regularity (in)extendibility, reviewing Sbierski's C0-inextendibility of Schwarzschild and Dafermos-Luk, and how these sharpen the precise statement of SCC.
+- **Regular black holes in quasitopological gravity: Null shells and mass inflation** (2026) — Valeri P. Frolov, Andrei Zelnikov, et al.. _recent_, `speculative_extension`. https://consensus.app/papers/details/2faeed58cc585a25896875e425666db6/?utm_source=claude_code — Physical Review D (2026). Analyzes whether the mass-inflation instability persists at the inner horizon of regular (singularity-free) black holes in quasitopological gravity using the Dray-'t Hooft-Israel null-shell formalism.
+
+## Key physicists
+
+- **Roger Penrose** (originator, 1960s-present, University of Oxford) — Introduced cosmic censorship (1969) and the strong form via the inner-horizon instability of Reissner-Nordstrom (with Simpson, 1973); 2020 Nobel laureate for the singularity theorems.
+- **Werner Israel** (foundational, 1970s-2000s, University of Alberta / University of Victoria) — Co-discovered the mass-inflation mechanism (with Poisson, 1990) that converts the charged-black-hole Cauchy horizon into a curvature singularity.
+- **Eric Poisson** (foundational, 1990s-present, University of Guelph) — Co-author of the mass-inflation analysis of black-hole interiors, the canonical classical mechanism underpinning strong cosmic censorship.
+- **Amos Ori** (foundational, 1990s-present, Technion - Israel Institute of Technology) — Constructed the exact mass-inflation solution and clarified the 'weak' (C0-extendible but tidally non-destructive) nature of the inner-horizon singularity.
+- **Mihalis Dafermos** (active, 2000s-present, Princeton University / University of Cambridge) — Proved the C0-stability of the Kerr Cauchy horizon (with Luk) and earlier spherically-symmetric interior results, reframing SCC as a statement about low-regularity inextendibility.
+- **Jonathan Luk** (active, 2010s-present, Stanford University) — Co-proved the C0-stability of the Kerr Cauchy horizon and the C2-formulation of SCC in spherical symmetry (with Oh), establishing genericity of inextendibility.
+- **Harvey Reall** (active, 2000s-present, University of Cambridge) — Led the QNM-based analyses (with Dias and Santos) showing SCC violation for near-extremal Reissner-Nordstrom-de Sitter and its partial rescue by charged scalar fields.
+- **Vitor Cardoso** (active, 2000s-present, Instituto Superior Tecnico (Lisbon) / Niels Bohr Institute) — Co-introduced the QNM-decay-rate criterion for SCC in RNdS, identifying the de Sitter and near-extremal mode families central to the de Sitter censorship debate.
+- **Robert M. Wald** (active, 1970s-present, University of Chicago) — Co-author (with Hollands and Zahn) of the quantum-field-theory argument that a state-independent stress-tensor divergence at the RNdS Cauchy horizon restores strong cosmic censorship.
+- **Peter Hintz** (active, 2010s-present, ETH Zurich) — Proved (with Vasy) nonlinear stability of slowly-rotating Kerr-de Sitter and established universality of the quantum inner-horizon flux; central figure in both the PDE and de Sitter QNM sides of SCC.
+
+## Connection to the simulator
+
+The blueshift/QNM analysis uses the same Kerr null-geodesic and quasinormal-mode machinery as the simulator; the simulator can illustrate the inner-horizon structure (r_-) of the Kerr metric it already implements.
+
+## Related problems
+
+#01, #05, #11
+
+---
+
+*Coverage: Assembled 25 genuinely-relevant papers and 10 physicists. Method: ~10 Consensus paper-search calls (mcp__plugin_bio-research_consensus__search) across the themes — SCC/Cauchy-horizon instability, mass inflation, RNdS quasinormal modes, Dafermos-Luk Kerr interior, Hintz-Vasy Kerr-de Sitter stability, Luk-Oh two-ended SCC, Sbierski C0-inextendibility, Christodoulou collapse, and quantum inner-horizon flux. 17 of the 25 papers carry verified Consensus/arXiv URLs returned directly by search (identifier.url). The remaining 8 are canonical landmarks I attest with high confidence and give bibliographic notes/DOIs for: Penrose 1965 (PRL 14,57), Penrose 1969 (Riv. Nuovo Cim.), Hawking-Penrose 1970 (Proc. R. Soc. A 314), Simpson-Penrose 1973 (Int. J. Theor. Phys. 7), Chandrasekhar-Hartle 1982 (Proc. R. Soc. A 384), and Poisson-Israel 1990 (PRD 41,1796); McNamara 1978 and Ori 1991 carry both a Consensus URL and a DOI. Tiering reflects the open status: classical exact-GR results are analytic_classical, the resolution-level de Sitter/quantum claims are open_conjecture, numerical/pseudospectrum and quantum-backreaction studies are numerical_approximation, and modified-gravity/regular-black-hole work is speculative_extension. No titles, authors, years, arXiv ids, DOIs, or URLs were invented; where a precise arXiv id was not surfaced by search I gave a journal/year note instead. A few publication years reflect Consensus's listed dates (e.g. some 2017 preprints published 2018-2019; notes give the journal-of-record year).*
+
+*This page is generated from `problem.json` by `scripts/render_readme.py` (the structured file is the source of truth). Last updated 2026-06-14.*

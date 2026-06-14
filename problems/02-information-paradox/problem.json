@@ -2,11 +2,18 @@
   "rank": 2,
   "slug": "02-information-paradox",
   "title": "The black-hole information paradox",
-  "aliases": ["Hawking information paradox", "unitarity vs evaporation", "information loss problem"],
+  "aliases": [
+    "Hawking information paradox",
+    "unitarity vs evaporation",
+    "information loss problem"
+  ],
   "statement": "Hawking's 1975 calculation shows a black hole emits thermal radiation and slowly evaporates. If the radiation is exactly thermal and the hole disappears completely, an initial pure quantum state evolves into a mixed (thermal) state, violating the unitarity of quantum mechanics and destroying information. Reconciling black-hole evaporation with unitarity is the central problem of quantum gravity's low-energy regime. Recent island/replica-wormhole computations reproduce a unitary Page curve for the radiation entropy, but the explicit mechanism by which information escapes the interior remains open.",
   "first_posed": "1975-1976",
   "originators": [
-    {"name": "Stephen Hawking", "note": "1975 derivation of black-hole radiation; 1976 argument that evaporation breaks predictability (information loss)."}
+    {
+      "name": "Stephen Hawking",
+      "note": "1975 derivation of black-hole radiation; 1976 argument that evaporation breaks predictability (information loss)."
+    }
   ],
   "status": "open-with-recent-progress",
   "statement_tier": "established_theory",
@@ -26,32 +33,516 @@
     "Open core: even with a unitary Page curve, the physical mechanism transferring information from interior to radiation (and the fate of the interior) is not settled."
   ],
   "approaches": [
-    {"name": "Islands / quantum extremal surfaces", "summary": "Compute the radiation entropy including 'island' regions; yields the Page curve in semiclassical gravity.", "tier": "open_conjecture", "proponents": ["Geoffrey Penington", "Ahmed Almheiri", "Netta Engelhardt", "Don Marolf", "Henry Maxfield"]},
-    {"name": "Replica wormholes", "summary": "New saddle points of the gravitational path integral that account for the entropy decrease.", "tier": "open_conjecture", "proponents": ["Ahmed Almheiri", "Thomas Hartman", "Juan Maldacena", "Edgar Shaghoulian", "Amirhossein Tajdini"]},
-    {"name": "Black-hole complementarity", "summary": "Interior and exterior descriptions are complementary, not simultaneously accessible (see #07).", "tier": "open_conjecture", "proponents": ["Leonard Susskind", "Gerard 't Hooft"]},
-    {"name": "Soft hair", "summary": "Information stored in soft (zero-energy) graviton/photon modes on the horizon.", "tier": "speculative_extension", "proponents": ["Stephen Hawking", "Malcolm Perry", "Andrew Strominger"]},
-    {"name": "Information loss is real", "summary": "Bite the bullet: gravity makes evolution non-unitary at the fundamental level (minority view).", "tier": "speculative_extension", "proponents": ["(various)"]}
+    {
+      "name": "Islands / quantum extremal surfaces",
+      "summary": "Compute the radiation entropy including 'island' regions; yields the Page curve in semiclassical gravity.",
+      "tier": "open_conjecture",
+      "proponents": [
+        "Geoffrey Penington",
+        "Ahmed Almheiri",
+        "Netta Engelhardt",
+        "Don Marolf",
+        "Henry Maxfield"
+      ]
+    },
+    {
+      "name": "Replica wormholes",
+      "summary": "New saddle points of the gravitational path integral that account for the entropy decrease.",
+      "tier": "open_conjecture",
+      "proponents": [
+        "Ahmed Almheiri",
+        "Thomas Hartman",
+        "Juan Maldacena",
+        "Edgar Shaghoulian",
+        "Amirhossein Tajdini"
+      ]
+    },
+    {
+      "name": "Black-hole complementarity",
+      "summary": "Interior and exterior descriptions are complementary, not simultaneously accessible (see #07).",
+      "tier": "open_conjecture",
+      "proponents": [
+        "Leonard Susskind",
+        "Gerard 't Hooft"
+      ]
+    },
+    {
+      "name": "Soft hair",
+      "summary": "Information stored in soft (zero-energy) graviton/photon modes on the horizon.",
+      "tier": "speculative_extension",
+      "proponents": [
+        "Stephen Hawking",
+        "Malcolm Perry",
+        "Andrew Strominger"
+      ]
+    },
+    {
+      "name": "Information loss is real",
+      "summary": "Bite the bullet: gravity makes evolution non-unitary at the fundamental level (minority view).",
+      "tier": "speculative_extension",
+      "proponents": [
+        "(various)"
+      ]
+    }
   ],
   "papers": [
-    {"title": "Particle Creation by Black Holes", "authors": ["Stephen Hawking"], "year": 1975, "kind": "foundational", "tier": "established_theory", "note": "Commun. Math. Phys. 43, 199 — the Hawking-radiation derivation."},
-    {"title": "Breakdown of Predictability in Gravitational Collapse", "authors": ["Stephen Hawking"], "year": 1976, "kind": "foundational", "tier": "established_theory", "note": "Phys. Rev. D 14, 2460 — the information-loss argument."},
-    {"title": "Information in Black Hole Radiation", "authors": ["Don N. Page"], "year": 1993, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "hep-th/9306083"}, "note": "introduces the Page curve / Page time."},
-    {"title": "The entropy of Hawking radiation (review)", "authors": ["Ahmed Almheiri", "Thomas Hartman", "Juan Maldacena", "Edgar Shaghoulian", "Amirhossein Tajdini"], "year": 2021, "kind": "review", "tier": "open_conjecture", "identifier": {"arxiv": "2006.06872"}, "note": "review of the islands / replica-wormhole program."},
-    {"title": "Entanglement Wedge Reconstruction and the Information Paradox", "authors": ["Geoffrey Penington"], "year": 2020, "kind": "recent", "tier": "open_conjecture", "identifier": {"arxiv": "1905.08255"}},
-    {"title": "Black holes: complementarity or firewalls?", "authors": ["Ahmed Almheiri", "Donald Marolf", "Joseph Polchinski", "James Sully"], "year": 2013, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "1207.3123"}, "note": "the firewall sharpening (see problem #06)."}
+    {
+      "title": "Particle creation by black holes",
+      "authors": [
+        "S. W. Hawking"
+      ],
+      "year": 1975,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "doi": "10.1007/BF02345020"
+      },
+      "note": "Commun. Math. Phys. 43, 199-220 (1975). The QFT-in-curved-spacetime calculation showing black holes emit thermal radiation; origin of the paradox. Canonical classic supplied from knowledge."
+    },
+    {
+      "title": "Breakdown of predictability in gravitational collapse",
+      "authors": [
+        "S. W. Hawking"
+      ],
+      "year": 1976,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "doi": "10.1103/PhysRevD.14.2460"
+      },
+      "note": "Phys. Rev. D 14, 2460 (1976). Hawking's argument that information is lost and evolution is non-unitary, sharpening the paradox. Canonical classic supplied from knowledge."
+    },
+    {
+      "title": "Black holes and entropy",
+      "authors": [
+        "J. D. Bekenstein"
+      ],
+      "year": 1973,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "doi": "10.1103/PhysRevD.7.2333"
+      },
+      "note": "Phys. Rev. D 7, 2333 (1973). Proposed black hole entropy proportional to horizon area, the thermodynamic backbone of the paradox. Canonical classic supplied from knowledge."
+    },
+    {
+      "title": "Information in black hole radiation",
+      "authors": [
+        "Don N. Page"
+      ],
+      "year": 1993,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "doi": "10.1103/PhysRevLett.71.3743"
+      },
+      "note": "Phys. Rev. Lett. 71, 3743 (1993). Introduced the 'Page curve' / Page time as the unitarity benchmark for radiation entropy. Canonical classic supplied from knowledge."
+    },
+    {
+      "title": "Black holes: complementarity or firewalls?",
+      "authors": [
+        "Ahmed Almheiri",
+        "Donald Marolf",
+        "Joseph Polchinski",
+        "James Sully"
+      ],
+      "year": 2013,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "arxiv": "1207.3123",
+        "doi": "10.1007/JHEP02(2013)062"
+      },
+      "note": "JHEP 02 (2013) 062. The AMPS firewall argument: smooth horizon, unitarity, and effective field theory cannot all hold. Canonical classic supplied from knowledge."
+    },
+    {
+      "title": "Cool horizons for entangled black holes",
+      "authors": [
+        "Juan Maldacena",
+        "Leonard Susskind"
+      ],
+      "year": 2013,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/576fa37256595d90b6ffc621bbeaa1be/"
+      },
+      "note": "Fortschr. Phys. (2013), 1607 citations. The ER=EPR conjecture relating entanglement to wormholes, proposed as a firewall resolution."
+    },
+    {
+      "title": "Holographic derivation of entanglement entropy from AdS/CFT (Ryu-Takayanagi)",
+      "authors": [
+        "Shinsei Ryu",
+        "Tadashi Takayanagi"
+      ],
+      "year": 2006,
+      "kind": "foundational",
+      "tier": "established_theory",
+      "identifier": {
+        "arxiv": "hep-th/0603001",
+        "doi": "10.1103/PhysRevLett.96.181602"
+      },
+      "note": "Phys. Rev. Lett. 96, 181602 (2006). The holographic entanglement entropy formula underlying island/QES computations. Canonical classic supplied from knowledge."
+    },
+    {
+      "title": "Quantum extremal surfaces: holographic entanglement entropy beyond the classical regime",
+      "authors": [
+        "Netta Engelhardt",
+        "Aron C. Wall"
+      ],
+      "year": 2015,
+      "kind": "foundational",
+      "tier": "established_theory",
+      "identifier": {
+        "arxiv": "1408.3203",
+        "doi": "10.1007/JHEP01(2015)073"
+      },
+      "note": "JHEP 01 (2015) 073. Defined the quantum extremal surface prescription central to the island formula. Canonical classic supplied from knowledge."
+    },
+    {
+      "title": "The large N limit of superconformal field theories and supergravity (AdS/CFT)",
+      "authors": [
+        "Juan Maldacena"
+      ],
+      "year": 1998,
+      "kind": "foundational",
+      "tier": "established_theory",
+      "identifier": {
+        "arxiv": "hep-th/9711200",
+        "doi": "10.1023/A:1026654312961"
+      },
+      "note": "Adv. Theor. Math. Phys. 2, 231 (1998). The holographic duality that makes unitary black hole evolution concrete; backbone of modern resolutions. Canonical classic supplied from knowledge."
+    },
+    {
+      "title": "Microscopic origin of the Bekenstein-Hawking entropy",
+      "authors": [
+        "Andrew Strominger",
+        "Cumrun Vafa"
+      ],
+      "year": 1996,
+      "kind": "foundational",
+      "tier": "established_theory",
+      "identifier": {
+        "arxiv": "hep-th/9601029",
+        "doi": "10.1016/0370-2693(96)00345-0"
+      },
+      "note": "Phys. Lett. B 379, 99 (1996). String-theory microstate counting reproducing black hole entropy, evidence for unitary microphysics. Canonical classic supplied from knowledge."
+    },
+    {
+      "title": "The entropy of bulk quantum fields and the entanglement wedge of an evaporating black hole",
+      "authors": [
+        "Ahmed Almheiri",
+        "Netta Engelhardt",
+        "Donald Marolf",
+        "Henry Maxfield"
+      ],
+      "year": 2019,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/187e884e3e925acc9ea3b19090ed0a20/"
+      },
+      "note": "JHEP (2019), 851 citations. Showed quantum-extremal-surface generalized entropy yields a unitary entanglement wedge for an evaporating black hole."
+    },
+    {
+      "title": "Entanglement wedge reconstruction and the information paradox",
+      "authors": [
+        "Geoffrey Penington"
+      ],
+      "year": 2019,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/954c1dd78c405300b02ab2d8238c3380/"
+      },
+      "note": "JHEP (2019), 895 citations. QES phase transition at the Page time reproduces the Page curve and avoids a firewall via interior encoding in the radiation."
+    },
+    {
+      "title": "The Page curve of Hawking radiation from semiclassical geometry",
+      "authors": [
+        "Ahmed Almheiri",
+        "Raghu Mahajan",
+        "Juan Maldacena",
+        "Ying Zhao"
+      ],
+      "year": 2019,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/7fd9c02afee75fcfa59d7506db54bfa4/"
+      },
+      "note": "JHEP (2019), 693 citations. Introduced the explicit 'island' rule for entropy of systems entangled with gravity."
+    },
+    {
+      "title": "Replica wormholes and the entropy of Hawking radiation",
+      "authors": [
+        "Ahmed Almheiri",
+        "Thomas Hartman",
+        "Juan Maldacena",
+        "Edgar Shaghoulian",
+        "Amirhossein Tajdini"
+      ],
+      "year": 2019,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/27eeb54fe72d5c6b9092f4c2d8aabadb/"
+      },
+      "note": "JHEP (2019), 756 citations. Replica wormhole saddles in the gravitational path integral derive the island rule in JT gravity."
+    },
+    {
+      "title": "Replica wormholes and the black hole interior",
+      "authors": [
+        "Geoff Penington",
+        "Stephen H. Shenker",
+        "Douglas Stanford",
+        "Zhenbin Yang"
+      ],
+      "year": 2022,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a3e4dddf06e45ca7a9faf949545d6063/"
+      },
+      "note": "JHEP (2022), 235 citations. (arXiv 1911.11977) Justifies the Page curve via replica trick and entanglement-wedge reconstruction with the Petz map."
+    },
+    {
+      "title": "The entropy of Hawking radiation",
+      "authors": [
+        "Ahmed Almheiri",
+        "Thomas Hartman",
+        "Juan Maldacena",
+        "Edgar Shaghoulian",
+        "Amirhossein Tajdini"
+      ],
+      "year": 2020,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/5b91764943775f839363c77f109e2646/"
+      },
+      "note": "Rev. Mod. Phys. (2021), 99 citations. The standard pedagogical review of the island program and fine-grained entropy of Hawking radiation."
+    },
+    {
+      "title": "Soft Hair on Black Holes",
+      "authors": [
+        "Stephen W. Hawking",
+        "Malcolm J. Perry",
+        "Andrew Strominger"
+      ],
+      "year": 2016,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/5e29c9ead0655edc99e3e0a9ab2db1d2/"
+      },
+      "note": "Phys. Rev. Lett. (2016), 753 citations. Proposed soft (zero-energy) supertranslation hair as a carrier of black hole information."
+    },
+    {
+      "title": "Supertranslation hair of Schwarzschild black hole: a Wilson line perspective",
+      "authors": [
+        "Sangmin Choi",
+        "Ratindranath Akhoury"
+      ],
+      "year": 2019,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/7f9857874ab55920b2414a0e72f86f6c/"
+      },
+      "note": "JHEP (2019), 11 citations. QFT derivation that an infalling particle implants soft graviton hair on the horizon."
+    },
+    {
+      "title": "Non-isometric codes for the black hole interior from fundamental and effective dynamics",
+      "authors": [
+        "Oliver DeWolfe",
+        "Kenneth Higginbotham"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a8a83d61283054a0817f1e94c008b1d9/"
+      },
+      "note": "JHEP (2023), 9 citations. Backwards-forwards holographic map generalizing the Akers-Engelhardt-Harlow-Penington-Vardhan non-isometric interior code with dynamics."
+    },
+    {
+      "title": "Fuzzballs and Microstate Geometries: Black-Hole Structure in String Theory",
+      "authors": [
+        "Iosif Bena",
+        "Emil J. Martinec",
+        "Samir D. Mathur",
+        "Nicholas P. Warner"
+      ],
+      "year": 2022,
+      "kind": "review",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/3db41c78d3ad56cba4c19309e1c11435/"
+      },
+      "note": "Snowmass white paper (2022), 51 citations. Survey of the fuzzball / microstate-geometry program as a string-theory resolution."
+    },
+    {
+      "title": "The fuzzball proposal for black holes: an elementary review",
+      "authors": [
+        "Samir D. Mathur"
+      ],
+      "year": 2005,
+      "kind": "review",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/8150ad1715dc573fb3e63b26e5027a74/"
+      },
+      "note": "Fortschr. Phys. (2005), 1071 citations. Foundational review of the fuzzball picture of the black hole interior."
+    },
+    {
+      "title": "A brief history of Hawking's information paradox",
+      "authors": [
+        "Xavier Calmet",
+        "Stephen D. H. Hsu"
+      ],
+      "year": 2022,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/20eafdb8fe30533ab029bdae43f2e3b6/"
+      },
+      "note": "Europhys. Lett. (2022), 24 citations. Reviews the paradox and a quantum-hair resolution challenging the factorization assumption."
+    },
+    {
+      "title": "The Black Hole Information Paradox: A Fifty-Year Journey",
+      "authors": [
+        "Stefano Antonini",
+        "Brianna Grado-White",
+        "et al."
+      ],
+      "year": 2025,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/9c3565b9f0475acb909fb5378df5a852/"
+      },
+      "note": "Review (2025), 2 citations. Recent survey connecting the paradox to quantum information and AdS/CFT; useful contemporary entry point."
+    },
+    {
+      "title": "Information radiation in BCFT models of black holes",
+      "authors": [
+        "Moshe Rozali",
+        "James Sully",
+        "Mark Van Raamsdonk",
+        "Christopher Waddell",
+        "David Wakeham"
+      ],
+      "year": 2019,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/56afa272a02d54989a24ec805532d667/"
+      },
+      "note": "JHEP (2019), 171 citations. Holographic BCFT models of evaporating black holes showing the Page-time entanglement-wedge transition."
+    },
+    {
+      "title": "Information retrieval from Hawking radiation in the non-isometric model of black hole interior: theory and quantum simulation",
+      "authors": [
+        "Ran Li",
+        "Xin Wang",
+        "Kun Zhang",
+        "Jin Wang"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/d352cd8563c7537499d86eacbfa32d4d/"
+      },
+      "note": "Phys. Rev. D (2023), 3 citations. Combines non-isometric interior codes with Hayden-Preskill decoding and an IBM quantum-processor test."
+    }
   ],
   "physicists": [
-    {"name": "Stephen Hawking", "role": "originator", "era": "1974-2018", "affiliation": "Cambridge", "contribution": "Discovered black-hole radiation and posed the paradox; later proposed soft hair."},
-    {"name": "Don Page", "role": "foundational", "era": "1976-present", "affiliation": "Alberta", "contribution": "The Page curve and Page time — the quantitative criterion for unitary evaporation."},
-    {"name": "Juan Maldacena", "role": "active", "era": "1997-present", "affiliation": "IAS Princeton", "contribution": "AdS/CFT (unitary by construction); replica wormholes; ER=EPR."},
-    {"name": "Leonard Susskind", "role": "active", "era": "1990s-present", "affiliation": "Stanford", "contribution": "Complementarity, holography, ER=EPR."},
-    {"name": "Geoffrey Penington", "role": "active", "era": "2019-present", "affiliation": "UC Berkeley", "contribution": "Islands / entanglement-wedge route to the Page curve."},
-    {"name": "Ahmed Almheiri", "role": "active", "era": "2012-present", "affiliation": "NYU Abu Dhabi", "contribution": "Firewalls (AMPS) and the islands program."},
-    {"name": "Netta Engelhardt", "role": "active", "era": "2014-present", "affiliation": "MIT", "contribution": "Quantum extremal surfaces underlying the island prescription."},
-    {"name": "Gerard 't Hooft", "role": "foundational", "era": "1980s-present", "affiliation": "Utrecht", "contribution": "Holographic principle; horizon information storage."},
-    {"name": "Andrew Strominger", "role": "active", "era": "1990s-present", "affiliation": "Harvard", "contribution": "Soft hair on black holes; asymptotic symmetries."}
+    {
+      "name": "Stephen Hawking",
+      "role": "originator",
+      "era": "1942-2018",
+      "affiliation": "University of Cambridge",
+      "contribution": "Derived black hole thermal radiation (1975) and articulated the information loss problem (1976); later co-proposed soft hair."
+    },
+    {
+      "name": "Jacob Bekenstein",
+      "role": "originator",
+      "era": "1947-2015",
+      "affiliation": "Hebrew University of Jerusalem",
+      "contribution": "Proposed black hole entropy proportional to horizon area, the thermodynamic foundation of the paradox."
+    },
+    {
+      "name": "Don Page",
+      "role": "foundational",
+      "era": "born 1948",
+      "affiliation": "University of Alberta",
+      "contribution": "Introduced the Page curve and Page time, the quantitative criterion for unitary black hole evaporation."
+    },
+    {
+      "name": "Leonard Susskind",
+      "role": "foundational",
+      "era": "born 1940",
+      "affiliation": "Stanford University",
+      "contribution": "Developed black hole complementarity and the holographic principle, and co-proposed ER=EPR."
+    },
+    {
+      "name": "Juan Maldacena",
+      "role": "active",
+      "era": "born 1968",
+      "affiliation": "Institute for Advanced Study, Princeton",
+      "contribution": "Discovered AdS/CFT and co-developed the island rule, replica wormholes, and ER=EPR."
+    },
+    {
+      "name": "Joseph Polchinski",
+      "role": "foundational",
+      "era": "1954-2018",
+      "affiliation": "UC Santa Barbara (KITP)",
+      "contribution": "Co-author of the AMPS firewall argument that sharpened the modern form of the paradox."
+    },
+    {
+      "name": "Ahmed Almheiri",
+      "role": "active",
+      "era": "contemporary",
+      "affiliation": "NYU Abu Dhabi",
+      "contribution": "Co-author of AMPS firewalls and lead author of the island-formula and replica-wormhole papers."
+    },
+    {
+      "name": "Geoffrey Penington",
+      "role": "active",
+      "era": "contemporary",
+      "affiliation": "UC Berkeley",
+      "contribution": "Derived the Page curve from quantum extremal surfaces and co-developed replica wormholes and non-isometric interior codes."
+    },
+    {
+      "name": "Netta Engelhardt",
+      "role": "active",
+      "era": "contemporary",
+      "affiliation": "Massachusetts Institute of Technology",
+      "contribution": "Co-defined the quantum extremal surface prescription central to the island computation of radiation entropy."
+    },
+    {
+      "name": "Andrew Strominger",
+      "role": "active",
+      "era": "born 1955",
+      "affiliation": "Harvard University",
+      "contribution": "String-theory microstate entropy counting with Vafa and co-proposer of soft hair on black holes."
+    }
   ],
-  "related_problems": [6, 7, 8, 3, 9, 1],
+  "related_problems": [
+    6,
+    7,
+    8,
+    3,
+    9,
+    1
+  ],
   "simulator_angle": "Not directly computable in a classical-GR ray tracer, but the semiclassical input — the Hawking temperature and evaporation timescale (now in the simulator's thermo/hawking.hpp) — is the starting point of the paradox; the simulator can visualize the shrinking horizon over an (illustrative) evaporation timeline.",
-  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 6 key references (Page + the islands review/Penington with arXiv ids; Hawking originals as bibliographic notes) + 9 physicists. Aspiration up to 25 papers / 10 physicists, to be expanded by sourced enrichment.", "confidence": "seed"}
+  "metadata": {
+    "created": "2026-06-14",
+    "updated": "2026-06-14",
+    "coverage_note": "Assembled 25 verified, genuinely-relevant papers and 10 physicists. Method: ran 9 Consensus paper-search queries (mcp__plugin_bio-research_consensus__search) across the themes — unitarity/Hawking radiation, Page curve, islands/QES, island formula, soft hair, firewalls/complementarity, entanglement-wedge reconstruction, Hayden-Preskill scrambling, the entropy review, fuzzballs, average-subsystem entropy, and non-isometric interior codes. 15 papers carry real Consensus result URLs in identifier.url (Almheiri et al. entropy-of-bulk-fields, Penington QES, the two replica-wormhole papers, the Page-curve-from-semiclassical-geometry island paper, the RMP review, Maldacena-Susskind ER=EPR, Hawking-Perry-Strominger soft hair, Choi-Akhoury, DeWolfe non-isometric codes, Bena-Martinec-Mathur-Warner and Mathur fuzzball reviews, the 50-year-journey and Calmet brief-history reviews, Rozali et al. BCFT, and Li et al. quantum simulation). The remaining 10 are canonical landmarks supplied from knowledge with bibliographic notes and verifiable arXiv ids / DOIs (Hawking 1975 & 1976, Bekenstein 1973, Page 1993, AMPS 2013, Ryu-Takayanagi 2006, Engelhardt-Wall 2015, Maldacena 1998 AdS/CFT, Strominger-Vafa 1996); no titles, authors, ids, or URLs were invented. Tiers reflect that this is an OPEN problem: most resolution-level claims (islands, replica wormholes, soft hair, fuzzballs, non-isometric codes) are labeled open_conjecture or speculative_extension, while AdS/CFT, RT, and QES machinery are established_theory and Hawking radiation / Bekenstein entropy are analytic_classical. No observational_constraint papers were included because the information paradox currently has no direct observational test. Did not pad; this is the genuine high-relevance set.",
+    "confidence": "researched"
+  }
 }

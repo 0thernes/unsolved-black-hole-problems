@@ -2,11 +2,18 @@
   "rank": 5,
   "slug": "05-weak-cosmic-censorship",
   "title": "Weak cosmic censorship",
-  "aliases": ["no naked singularities", "WCC", "cosmic censorship hypothesis"],
+  "aliases": [
+    "no naked singularities",
+    "WCC",
+    "cosmic censorship hypothesis"
+  ],
   "statement": "Weak cosmic censorship (Penrose 1969) conjectures that the singularities produced by realistic gravitational collapse are always hidden behind event horizons, so no 'naked' singularity is visible to a distant observer and predictability at infinity is preserved. There is no general proof. Spherically-symmetric counterexamples exist (Christodoulou) but appear non-generic; gedanken experiments that try to over-spin or over-charge a black hole into a naked singularity are generically thwarted, though with subtle near-extremal cases; and clean violations are known in asymptotically anti-de Sitter spacetimes.",
   "first_posed": "1969",
   "originators": [
-    {"name": "Roger Penrose", "note": "1969 cosmic-censorship hypothesis; weak version protects observers at infinity."}
+    {
+      "name": "Roger Penrose",
+      "note": "1969 cosmic-censorship hypothesis; weak version protects observers at infinity."
+    }
   ],
   "status": "open-with-recent-progress",
   "statement_tier": "analytic_classical",
@@ -26,27 +33,549 @@
     "Closely tied to whether the final state of collapse is always a Kerr black hole."
   ],
   "approaches": [
-    {"name": "Rigorous spherical-collapse analysis", "summary": "Prove formation/non-genericity of naked singularities in symmetric models.", "tier": "analytic_classical", "proponents": ["Demetrios Christodoulou"]},
-    {"name": "Critical-collapse / numerical relativity", "summary": "Study the threshold of black-hole formation and its self-similar, marginally-naked critical solution.", "tier": "numerical_approximation", "proponents": ["Matthew Choptuik"]},
-    {"name": "Overspinning/overcharging gedanken tests", "summary": "Test destructibility of horizons by infalling matter; backreaction and self-force generically protect censorship.", "tier": "analytic_classical", "proponents": ["Robert Wald", "Veronika Hubeny"]},
-    {"name": "AdS violations", "summary": "Construct explicit naked-singularity-forming solutions with anti-de Sitter boundary conditions.", "tier": "numerical_approximation", "proponents": ["Gary Horowitz", "Jorge Santos", "Toby Crisford"]}
+    {
+      "name": "Rigorous spherical-collapse analysis",
+      "summary": "Prove formation/non-genericity of naked singularities in symmetric models.",
+      "tier": "analytic_classical",
+      "proponents": [
+        "Demetrios Christodoulou"
+      ]
+    },
+    {
+      "name": "Critical-collapse / numerical relativity",
+      "summary": "Study the threshold of black-hole formation and its self-similar, marginally-naked critical solution.",
+      "tier": "numerical_approximation",
+      "proponents": [
+        "Matthew Choptuik"
+      ]
+    },
+    {
+      "name": "Overspinning/overcharging gedanken tests",
+      "summary": "Test destructibility of horizons by infalling matter; backreaction and self-force generically protect censorship.",
+      "tier": "analytic_classical",
+      "proponents": [
+        "Robert Wald",
+        "Veronika Hubeny"
+      ]
+    },
+    {
+      "name": "AdS violations",
+      "summary": "Construct explicit naked-singularity-forming solutions with anti-de Sitter boundary conditions.",
+      "tier": "numerical_approximation",
+      "proponents": [
+        "Gary Horowitz",
+        "Jorge Santos",
+        "Toby Crisford"
+      ]
+    }
   ],
   "papers": [
-    {"title": "Gravitational Collapse: The Role of General Relativity", "authors": ["Roger Penrose"], "year": 1969, "kind": "foundational", "tier": "analytic_classical", "note": "Riv. Nuovo Cimento 1, 252."},
-    {"title": "Universality and Scaling in Gravitational Collapse of a Massless Scalar Field", "authors": ["Matthew W. Choptuik"], "year": 1993, "kind": "foundational", "tier": "numerical_approximation", "note": "Phys. Rev. Lett. 70, 9 — critical collapse."},
-    {"title": "The instability of naked singularities in the gravitational collapse of a scalar field", "authors": ["Demetrios Christodoulou"], "year": 1999, "kind": "foundational", "tier": "analytic_classical", "note": "Ann. of Math. 149, 183 — naked singularities are non-generic."},
-    {"title": "Gedanken Experiments to Destroy a Black Hole", "authors": ["Robert M. Wald"], "year": 1974, "kind": "foundational", "tier": "analytic_classical", "note": "Ann. Phys. 82, 548 — cannot overcharge/overspin by dropping particles."},
-    {"title": "Violating the Weak Cosmic Censorship Conjecture in Four-Dimensional Anti-de Sitter Space", "authors": ["Toby Crisford", "Jorge E. Santos"], "year": 2017, "kind": "recent", "tier": "numerical_approximation", "identifier": {"arxiv": "1702.05490"}}
+    {
+      "title": "Gravitational Collapse and Space-Time Singularities",
+      "authors": [
+        "Roger Penrose"
+      ],
+      "year": 1965,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "doi": "10.1103/PhysRevLett.14.57"
+      },
+      "note": "Phys. Rev. Lett. 14, 57 (1965). The trapped-surface singularity theorem; the geodesic-incompleteness result that motivated Penrose to introduce cosmic censorship. Cited with certainty."
+    },
+    {
+      "title": "Gravitational Collapse: The Role of General Relativity (Riv. Nuovo Cimento)",
+      "authors": [
+        "Roger Penrose"
+      ],
+      "year": 1969,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "doi": "10.1023/A:1016578408204"
+      },
+      "note": "Riv. Nuovo Cimento 1, 252 (1969); reprinted Gen. Rel. Grav. 34, 1141 (2002). The original statement of the cosmic censorship hypothesis. Cited with certainty."
+    },
+    {
+      "title": "Gedanken experiments to destroy a black hole (Wald 1974)",
+      "authors": [
+        "Robert M. Wald"
+      ],
+      "year": 1974,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "doi": "10.1016/0003-4916(74)90125-0"
+      },
+      "note": "Annals of Physics 82, 548 (1974). First gedanken experiment: an extremal Kerr-Newman black hole cannot be overcharged/overspun by a test particle. Origin of the overcharging/overspinning program. Cited with certainty."
+    },
+    {
+      "title": "The instability of naked singularities in the gravitational collapse of a scalar field (Christodoulou 1999)",
+      "authors": [
+        "Demetrios Christodoulou"
+      ],
+      "year": 1999,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "doi": "10.2307/121023"
+      },
+      "note": "Annals of Mathematics 149, 183 (1999). Rigorous proof of weak (and strong) cosmic censorship for the spherically symmetric Einstein-massless-scalar-field system via genericity/instability of naked singularities. Cited with certainty."
+    },
+    {
+      "title": "Naked singularities in spherically symmetric inhomogeneous Tolman-Bondi dust cloud collapse",
+      "authors": [
+        "P. S. Joshi",
+        "I. H. Dwivedi"
+      ],
+      "year": 1993,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/e1de64cd022e5ccb9b9c9bf3e20fe41b/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. D 47, 5357 (1993). Naked singularities form at the center for a wide class of inhomogeneous dust collapse models, generalizing Eardley-Smarr and Christodoulou; a key counterexample-class to naive censorship."
+    },
+    {
+      "title": "The structure of singularity in spherical inhomogeneous dust collapse",
+      "authors": [
+        "S. Jhingan",
+        "P. S. Joshi"
+      ],
+      "year": 1997,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/afee1f3720825f5c8fef4ffd8ae3bbd0/?utm_source=claude_code"
+      },
+      "note": "Relates black-hole vs naked shell-focusing singularity end states to generic regular initial data (density/velocity profiles) in Tolman-Bondi-Lemaitre collapse."
+    },
+    {
+      "title": "Universality and scaling in gravitational collapse of a massless scalar field",
+      "authors": [
+        "Matthew W. Choptuik"
+      ],
+      "year": 1993,
+      "kind": "foundational",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/2b6c90bcbf0e5138b45aa5a698944f61/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. Lett. 70, 9 (1993). The original discovery of critical phenomena (universality, mass-scaling exponent gamma~0.37, discrete self-similarity) at the black-hole threshold; a natural route from smooth data to large curvature relevant to censorship."
+    },
+    {
+      "title": "Critical Phenomena in Gravitational Collapse (Living Reviews, 2007)",
+      "authors": [
+        "Carsten Gundlach",
+        "Jose M. Martin-Garcia"
+      ],
+      "year": 2007,
+      "kind": "review",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/001e5cb7f36e586686413d6db9e75e7e/?utm_source=claude_code"
+      },
+      "note": "Living Rev. Relativity 10, 5 (2007). The standard review of critical collapse: threshold solutions as codimension-one self-similar attractors, and their relevance to cosmic censorship."
+    },
+    {
+      "title": "Critical Phenomena in Gravitational Collapse (updated review, 2025 version)",
+      "authors": [
+        "Carsten Gundlach",
+        "Jose M. Martin-Garcia"
+      ],
+      "year": 2025,
+      "kind": "review",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/b7247f7de5385aefa14b4689121609ae/?utm_source=claude_code"
+      },
+      "note": "Updated Living Reviews edition adding non-spherical/vacuum critical collapse, PDE-blowup toy models, and a new section on naked-singularity formation in GR."
+    },
+    {
+      "title": "Critical Phenomena in Gravitational Collapse: The Studies So Far",
+      "authors": [
+        "Anzhong Wang"
+      ],
+      "year": 2001,
+      "kind": "review",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/42d33468eb355cc7a994dd183e54503f/?utm_source=claude_code"
+      },
+      "note": "Braz. J. Phys. 31, 188 (2001). Pedagogical review of critical collapse since Choptuik 1993, with an analytic toy model and publication survey."
+    },
+    {
+      "title": "Gravitational Collapse and Cosmic Censorship",
+      "authors": [
+        "Tarun Pratim Singh"
+      ],
+      "year": 1996,
+      "kind": "review",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/f5230a8d290f508bae38408f468ab57c/?utm_source=claude_code"
+      },
+      "note": "Elementary overview of end-states of collapse (black holes vs naked singularities) across physically reasonable models, with implications for the censorship hypothesis."
+    },
+    {
+      "title": "Penrose's 1965 singularity theorem: from geodesic incompleteness to cosmic censorship",
+      "authors": [
+        "Klaas Landsman"
+      ],
+      "year": 2022,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/68ed39da0cc250bcb3d0b9fdca05539a/?utm_source=claude_code"
+      },
+      "note": "Gen. Rel. Grav. (2022). Historical/conceptual analysis clarifying that the singularity theorem alone does not prove black holes, motivating weak vs strong cosmic censorship."
+    },
+    {
+      "title": "Singularities, Black Holes, and Cosmic Censorship: A Tribute to Roger Penrose",
+      "authors": [
+        "Klaas Landsman"
+      ],
+      "year": 2021,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a41abcb4ed2f59ca97496dbaa1f09a5f/?utm_source=claude_code"
+      },
+      "note": "Found. Phys. (2021). Reviews the evolution of Penrose's weak/strong censorship conjectures and their inequivalent PDE reformulations; includes an appendix by Erik Curiel on the history of the black-hole definition."
+    },
+    {
+      "title": "Gedanken experiments to destroy a black hole. II. Kerr-Newman black holes cannot be overcharged or overspun",
+      "authors": [
+        "Jonathan Sorce",
+        "Robert M. Wald"
+      ],
+      "year": 2017,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/423a0453169356ff922b94f58ebde28f/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. D 96, 104014 (2017). The influential second-order (delta^2 M) gedanken-experiment formalism showing nearly extremal Kerr-Newman cannot be destroyed; spawned a large overcharging/overspinning literature."
+    },
+    {
+      "title": "Self-force as a cosmic censor",
+      "authors": [
+        "Peter Zimmerman",
+        "Ian Vega",
+        "Eric Poisson",
+        "Roland Haas"
+      ],
+      "year": 2012,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/0b03c2c8715e5168a286ca6a01a35fc6/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. D 87, 041501 (2013). Including electromagnetic self-force and radiation, Hubeny's overcharging of near-extremal Reissner-Nordstrom finds no overcharged final state; conjectures self-force as a censor."
+    },
+    {
+      "title": "Overcharging higher-dimensional black holes with point particles",
+      "authors": [
+        "Karl Simon Revelar",
+        "Ian Vega"
+      ],
+      "year": 2017,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/22b387079acd5767855eab13ff19466d/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. D 96, 064010 (2017). Generalizes Wald and Hubeny scenarios to D>4; overcharging of nearly extremal black holes possible in a shrinking region of parameter space as D grows."
+    },
+    {
+      "title": "Higher-dimensional charged black holes cannot be over-charged by gedanken experiments",
+      "authors": [
+        "Bo-Xuan Ge",
+        "Yong Mo",
+        "Sijie Gao"
+      ],
+      "year": 2017,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/88bda2d1230f5349b880bd3fb0afef22/?utm_source=claude_code"
+      },
+      "note": "Phys. Lett. B (2017). Applying the Sorce-Wald second-order method, nearly extremal higher-dimensional charged black holes cannot be overcharged once quadratic corrections are included."
+    },
+    {
+      "title": "Five-dimensional Myers-Perry black holes cannot be overspun in gedanken experiments",
+      "authors": [
+        "Jie An",
+        "Junji Shan",
+        "Hongbao Zhang",
+        "Su Zhao"
+      ],
+      "year": 2018,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/9fcbe2362bcc5be496a3a039f730d2f4/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. D 97, 104007 (2018). Second-order Sorce-Wald analysis: 5D Myers-Perry black holes cannot be overspun, preserving WCCC."
+    },
+    {
+      "title": "Examining the weak cosmic censorship conjecture by gedanken experiments for Kerr-Sen black holes",
+      "authors": [
+        "Jie Jiang",
+        "Yuan Gao"
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/4bf77451a26653d2b3be216dd228ef38/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. D (2020). Kerr-Sen (heterotic string) black holes cannot be overspun/overcharged once second-order perturbation inequalities are imposed."
+    },
+    {
+      "title": "Gedanken experiments at high-order approximation: Kerr black hole cannot be overspun",
+      "authors": [
+        "Aofei Sang",
+        "Jie Jiang"
+      ],
+      "year": 2021,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/961d10b337a25795909a50721e6f08d5/?utm_source=claude_code"
+      },
+      "note": "JHEP (2021). Extends the Sorce-Wald program to arbitrarily high order (proved to n-th order via induction); nearly extremal Kerr cannot be overspun at the perturbative level."
+    },
+    {
+      "title": "Weak cosmic censorship conjecture cannot be violated in gedanken experiments",
+      "authors": [
+        "Peng-Yu Wu",
+        "Hao Tan",
+        "Sijie Gao"
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/634a9b85cb7e5c2a9ac397ddd089d1ea/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. D (2024). Unifies Hubeny/mixed/Sorce-Wald scenarios; argues a sign parameter W>0 (protected by no-hair) preserves WCCC for static and rotating, flat and (A)dS black holes."
+    },
+    {
+      "title": "Black strings, low viscosity fluids, and violation of cosmic censorship",
+      "authors": [
+        "Luis Lehner",
+        "Frans Pretorius"
+      ],
+      "year": 2010,
+      "kind": "foundational",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/c35ac8d65db85b8db3d6c22eee02476a/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. Lett. 105, 101102 (2010). Nonlinear Gregory-Laflamme evolution of 5D black strings produces a self-similar cascade pinching to a naked singularity in finite time; a generic (no fine-tuning) higher-dimensional censorship violation."
+    },
+    {
+      "title": "End Point of Black Ring Instabilities and the Weak Cosmic Censorship Conjecture",
+      "authors": [
+        "Pau Figueras",
+        "Markus Kunesch",
+        "Saran Tunyasuvunakool"
+      ],
+      "year": 2016,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/0ea3597fdd3a50898236e47958555d47/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. Lett. 116, 071102 (2016). First concrete evidence of WCCC violation in asymptotically flat 5D: perturbed thin black rings develop Gregory-Laflamme bulges/necks heading to a naked singularity."
+    },
+    {
+      "title": "Black hole collisions, instabilities, and cosmic censorship violation at large D",
+      "authors": [
+        "Tomas Andrade",
+        "Roberto Emparan",
+        "David Licht",
+        "Raimon Luna"
+      ],
+      "year": 2019,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/61dc17b6fba45a74a8feb87299f3112e/?utm_source=claude_code"
+      },
+      "note": "JHEP (2019). Large-D effective theory: high-angular-momentum black-hole collisions and ultraspinning instabilities lead to black bars/rings that pinch toward naked singularities for D>~6-8."
+    },
+    {
+      "title": "Violating the Weak Cosmic Censorship Conjecture in Asymptotically Anti-de Sitter Space-Times",
+      "authors": [
+        "Toby Crisford",
+        "Jorge E. Santos"
+      ],
+      "year": 2017,
+      "kind": "foundational",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/75204621deb254979b84a0977de79778/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. Lett. 118, 181101 (2017). Numerically constructs AdS4 solutions where boundary conditions drive curvature unbounded in view of distant observers; charged-field version restored exactly at the Weak Gravity Conjecture bound."
+    },
+    {
+      "title": "Further evidence for the weak gravity - cosmic censorship connection",
+      "authors": [
+        "Gary T. Horowitz",
+        "Jorge E. Santos"
+      ],
+      "year": 2019,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/7b5b1854e4c8571b91443c1153c6fc61/?utm_source=claude_code"
+      },
+      "note": "JHEP (2019). Extends the AdS censorship counterexamples to dilaton and multi-Maxwell theories; the modified Weak Gravity bound remains necessary and sufficient to remove them."
+    },
+    {
+      "title": "Violation of weak cosmic censorship in de Sitter space",
+      "authors": [
+        "Feng-Li Lin",
+        "Bo Ning",
+        "Yu Tian"
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/f08915bb8d7c58cbbf0f1dea8a0720e2/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. D (2024). Using a second-law formulation of Wald's gedanken experiment, finds WCCC can be violated for near-extremal Reissner-Nordstrom-de Sitter in some second-order regimes, hinting at SCC-WCC correlations."
+    },
+    {
+      "title": "Instability of spherical naked singularities of a scalar field under gravitational perturbations",
+      "authors": [
+        "Junbin Li",
+        "Jue Liu"
+      ],
+      "year": 2017,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/76a3caf80a215318a367ae50ca4a51c1/?utm_source=claude_code"
+      },
+      "note": "J. Differential Geometry (2017). First step toward instability of naked singularities beyond symmetry: generic non-spherical perturbations of Christodoulou-type naked singularities produce trapped surfaces."
+    },
+    {
+      "title": "A Proof of Weak Cosmic Censorship for the Spherically Symmetric Einstein-Maxwell-Charged Scalar Field System",
+      "authors": [
+        "Xinliang An",
+        "Haoyang Chen",
+        "Silu Yin"
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/86338d6290f657a69c559bcc1a9ab18c/?utm_source=claude_code"
+      },
+      "note": "Generalizes Christodoulou's spherically symmetric WCCC proof to the charged (Einstein-Maxwell-charged-scalar) case: generic data hide singularities behind horizons."
+    },
+    {
+      "title": "Twist-free axisymmetric critical collapse of a complex scalar field",
+      "authors": [
+        "Krinio Marouda",
+        "David Hilditch",
+        "et al."
+      ],
+      "year": 2024,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/6dff324306ca56f496524a07fdfcdd12/?utm_source=claude_code"
+      },
+      "note": "Phys. Rev. D (2024). Pseudospectral (BAMPS) study of aspherical critical collapse: documents shifts in the critical exponent/echoing period with asphericity and bifurcation of the collapse center, probing universality near threshold."
+    }
   ],
   "physicists": [
-    {"name": "Roger Penrose", "role": "originator", "era": "1969-present", "affiliation": "Oxford", "contribution": "Cosmic-censorship hypothesis; Nobel Prize 2020."},
-    {"name": "Demetrios Christodoulou", "role": "foundational", "era": "1980s-present", "affiliation": "ETH Zurich", "contribution": "Formation and non-genericity of naked singularities in scalar collapse."},
-    {"name": "Matthew Choptuik", "role": "active", "era": "1990s-present", "affiliation": "UBC", "contribution": "Discovered critical phenomena in gravitational collapse."},
-    {"name": "Robert Wald", "role": "foundational", "era": "1970s-present", "affiliation": "Chicago", "contribution": "Gedanken tests of horizon destructibility."},
-    {"name": "Jorge Santos", "role": "active", "era": "2010s-present", "affiliation": "Cambridge", "contribution": "Explicit WCC violations in anti-de Sitter space."},
-    {"name": "Gary Horowitz", "role": "active", "era": "1980s-present", "affiliation": "UC Santa Barbara", "contribution": "Holography; AdS instabilities and censorship violations."}
+    {
+      "name": "Roger Penrose",
+      "role": "originator",
+      "era": "1965-present",
+      "affiliation": "University of Oxford",
+      "contribution": "Proposed the cosmic censorship conjectures (1969/1979) and proved the 1965 trapped-surface singularity theorem that motivated them; 2020 Nobel laureate."
+    },
+    {
+      "name": "Robert M. Wald",
+      "role": "foundational",
+      "era": "1974-present",
+      "affiliation": "University of Chicago",
+      "contribution": "Introduced the overcharging/overspinning gedanken-experiment test of WCCC (1974) and, with Sorce, the modern second-order (canonical-energy) formulation."
+    },
+    {
+      "name": "Demetrios Christodoulou",
+      "role": "foundational",
+      "era": "1984-present",
+      "affiliation": "ETH Zurich",
+      "contribution": "Rigorously proved weak and strong cosmic censorship for the spherically symmetric Einstein-scalar-field system, and constructed self-similar naked-singularity solutions."
+    },
+    {
+      "name": "Matthew W. Choptuik",
+      "role": "foundational",
+      "era": "1993-present",
+      "affiliation": "University of British Columbia",
+      "contribution": "Discovered critical phenomena in gravitational collapse (universality, mass scaling, discrete self-similarity), a key route from smooth data to large visible curvature."
+    },
+    {
+      "name": "Pankaj S. Joshi",
+      "role": "foundational",
+      "era": "1990s-present",
+      "affiliation": "International Centre for Cosmology, Charusat / formerly TIFR",
+      "contribution": "Systematically classified naked-singularity formation in inhomogeneous dust and matter collapse, mapping the genericity of censorship counterexamples."
+    },
+    {
+      "name": "Carsten Gundlach",
+      "role": "active",
+      "era": "1995-present",
+      "affiliation": "University of Southampton",
+      "contribution": "Co-author of the standard Living Reviews on critical collapse and leading analyst of self-similar threshold solutions and their relation to censorship."
+    },
+    {
+      "name": "Jonathan Sorce",
+      "role": "active",
+      "era": "2017-present",
+      "affiliation": "Stanford / MIT (theoretical physics)",
+      "contribution": "Co-developed the Sorce-Wald second-order gedanken-experiment formalism proving nearly extremal Kerr-Newman black holes cannot be over-charged or over-spun."
+    },
+    {
+      "name": "Jorge E. Santos",
+      "role": "active",
+      "era": "2010-present",
+      "affiliation": "University of Cambridge (DAMTP)",
+      "contribution": "Constructed numerical AdS counterexamples to WCCC and established the weak-gravity-conjecture / cosmic-censorship connection."
+    },
+    {
+      "name": "Gary T. Horowitz",
+      "role": "active",
+      "era": "1980s-present",
+      "affiliation": "University of California, Santa Barbara",
+      "contribution": "Pioneered AdS cosmic-censorship-violation studies and the weak-gravity-conjecture / censorship link across dilatonic and multi-Maxwell theories."
+    },
+    {
+      "name": "Pau Figueras",
+      "role": "active",
+      "era": "2010-present",
+      "affiliation": "Queen Mary University of London",
+      "contribution": "Performed the numerical-relativity evolutions of black-ring instabilities providing the first asymptotically flat (5D) evidence for weak cosmic censorship violation."
+    }
   ],
-  "related_problems": [4, 1, 11],
+  "related_problems": [
+    4,
+    1,
+    11
+  ],
   "simulator_angle": "The event-horizon vs naked-singularity distinction is exactly the shadow-formation condition the simulator encodes (b_critical, the photon region); a hypothetical naked singularity would cast no shadow — a renderable contrast.",
-  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references (Crisford-Santos with arXiv id; others as bibliographic notes) + 6 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+  "metadata": {
+    "created": "2026-06-14",
+    "updated": "2026-06-14",
+    "coverage_note": "Assembled 30 verified, genuinely-relevant papers and 10 physicists. Method: ran 11 Consensus paper-search calls (mcp__plugin_bio-research_consensus__search) across the requested sub-themes (foundational collapse/singularity theorems, Choptuik critical phenomena, Sorce-Wald overcharging/overspinning gedanken experiments, higher-dimensional black ring/string instabilities, AdS/dS censorship violation and the weak-gravity connection, Tolman-Bondi dust naked singularities, and reviews). 26 papers carry real Consensus/arXiv result URLs returned by the tool. Four canonical classics not surfaced by search (Penrose 1965 singularity theorem, Penrose 1969 censorship paper, Wald 1974 gedanken experiment, Christodoulou 1999 censorship proof) are included with verifiable bibliographic notes and DOIs cited with certainty. Tier labels reflect that this is an OPEN problem: full resolution-level statements are open_conjecture, numerical-relativity violation/critical-collapse results are numerical_approximation, exact-GR and rigorous-PDE results are analytic_classical, and no purely observational papers were found relevant (none labeled observational_constraint). No titles, authors, years, DOIs, or URLs were invented; uncertain items were omitted rather than padded.",
+    "confidence": "researched"
+  }
 }

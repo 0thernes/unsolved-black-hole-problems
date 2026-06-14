@@ -2,12 +2,22 @@
   "rank": 3,
   "slug": "03-bekenstein-hawking-entropy",
   "title": "Microscopic origin of Bekenstein-Hawking entropy",
-  "aliases": ["black hole entropy microstates", "A/4 entropy", "statistical origin of horizon entropy"],
+  "aliases": [
+    "black hole entropy microstates",
+    "A/4 entropy",
+    "statistical origin of horizon entropy"
+  ],
   "statement": "A black hole carries entropy S = k_B c^3 A / (4 G hbar) — one quarter of its horizon area in Planck units (Bekenstein 1973; Hawking 1975). In ordinary statistical mechanics, entropy counts microstates. What are the microstates of a black hole? String theory (Strominger-Vafa 1996) reproduced S = A/4 by counting D-brane states for special supersymmetric, extremal (and near-extremal) black holes. A microscopic state-counting for a generic astrophysical (e.g. Kerr) black hole, and a framework-independent understanding of why the answer is universally A/4, remain open.",
   "first_posed": "1972-1973",
   "originators": [
-    {"name": "Jacob Bekenstein", "note": "1972-73 proposed that black holes carry entropy proportional to horizon area."},
-    {"name": "Stephen Hawking", "note": "1975 fixed the coefficient to 1/4 via the radiation temperature (the first law)."}
+    {
+      "name": "Jacob Bekenstein",
+      "note": "1972-73 proposed that black holes carry entropy proportional to horizon area."
+    },
+    {
+      "name": "Stephen Hawking",
+      "note": "1975 fixed the coefficient to 1/4 via the radiation temperature (the first law)."
+    }
   ],
   "status": "partially-solved",
   "statement_tier": "established_theory",
@@ -27,29 +37,484 @@
     "Open: a microscopic count for a generic (non-extremal, rotating, astrophysical) black hole and a framework-independent derivation of the 1/4."
   ],
   "approaches": [
-    {"name": "String theory / D-brane counting", "summary": "Count BPS microstates of brane bound states; matches A/4 for SUSY extremal and near-extremal black holes.", "tier": "established_theory", "proponents": ["Andrew Strominger", "Cumrun Vafa", "Ashoke Sen"]},
-    {"name": "Loop quantum gravity horizon counting", "summary": "Count quantum-geometry states puncturing the horizon; fixes A/4 via the Barbero-Immirzi parameter.", "tier": "speculative_extension", "proponents": ["Carlo Rovelli", "Abhay Ashtekar", "Kirill Krasnov"]},
-    {"name": "Euclidean / Noether-charge (Wald) entropy", "summary": "Entropy as a Noether charge of the horizon-generating Killing field; generalizes A/4 to higher-curvature gravity.", "tier": "analytic_classical", "proponents": ["Robert Wald", "Ted Jacobson"]},
-    {"name": "Conformal symmetry near the horizon (Cardy)", "summary": "Near-horizon conformal symmetry fixes the state count via Cardy's formula, independent of microscopic details.", "tier": "open_conjecture", "proponents": ["Steven Carlip", "Andrew Strominger"]}
+    {
+      "name": "String theory / D-brane counting",
+      "summary": "Count BPS microstates of brane bound states; matches A/4 for SUSY extremal and near-extremal black holes.",
+      "tier": "established_theory",
+      "proponents": [
+        "Andrew Strominger",
+        "Cumrun Vafa",
+        "Ashoke Sen"
+      ]
+    },
+    {
+      "name": "Loop quantum gravity horizon counting",
+      "summary": "Count quantum-geometry states puncturing the horizon; fixes A/4 via the Barbero-Immirzi parameter.",
+      "tier": "speculative_extension",
+      "proponents": [
+        "Carlo Rovelli",
+        "Abhay Ashtekar",
+        "Kirill Krasnov"
+      ]
+    },
+    {
+      "name": "Euclidean / Noether-charge (Wald) entropy",
+      "summary": "Entropy as a Noether charge of the horizon-generating Killing field; generalizes A/4 to higher-curvature gravity.",
+      "tier": "analytic_classical",
+      "proponents": [
+        "Robert Wald",
+        "Ted Jacobson"
+      ]
+    },
+    {
+      "name": "Conformal symmetry near the horizon (Cardy)",
+      "summary": "Near-horizon conformal symmetry fixes the state count via Cardy's formula, independent of microscopic details.",
+      "tier": "open_conjecture",
+      "proponents": [
+        "Steven Carlip",
+        "Andrew Strominger"
+      ]
+    }
   ],
   "papers": [
-    {"title": "Black Holes and Entropy", "authors": ["Jacob D. Bekenstein"], "year": 1973, "kind": "foundational", "tier": "established_theory", "note": "Phys. Rev. D 7, 2333 — entropy proportional to horizon area."},
-    {"title": "Particle Creation by Black Holes", "authors": ["Stephen Hawking"], "year": 1975, "kind": "foundational", "tier": "established_theory", "note": "Commun. Math. Phys. 43, 199 — fixes S = A/4."},
-    {"title": "Microscopic Origin of the Bekenstein-Hawking Entropy", "authors": ["Andrew Strominger", "Cumrun Vafa"], "year": 1996, "kind": "foundational", "tier": "established_theory", "identifier": {"arxiv": "hep-th/9601029"}, "note": "D-brane microstate counting matching A/4 for extremal black holes."},
-    {"title": "Black Hole Entropy is the Noether Charge", "authors": ["Robert M. Wald"], "year": 1993, "kind": "foundational", "tier": "analytic_classical", "identifier": {"arxiv": "gr-qc/9307038"}},
-    {"title": "Black Hole Entropy from Conformal Field Theory in Any Dimension", "authors": ["Steven Carlip"], "year": 1999, "kind": "recent", "tier": "open_conjecture", "identifier": {"arxiv": "hep-th/9812013"}}
+    {
+      "title": "Black Holes and Entropy",
+      "authors": [
+        "Jacob D. Bekenstein"
+      ],
+      "year": 1973,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "doi": "10.1103/PhysRevD.7.2333"
+      },
+      "note": "Phys. Rev. D 7, 2333 (1973). The proposal that a black hole carries entropy proportional to its horizon area; the genesis of the whole problem of a microscopic state count."
+    },
+    {
+      "title": "Particle Creation by Black Holes",
+      "authors": [
+        "Stephen W. Hawking"
+      ],
+      "year": 1975,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "doi": "10.1007/BF02345020"
+      },
+      "note": "Commun. Math. Phys. 43, 199 (1975). Hawking radiation and the fixing of the entropy coefficient to S = A/4; defines the thermodynamic quantity whose microscopic origin is sought."
+    },
+    {
+      "title": "Action Integrals and Partition Functions in Quantum Gravity",
+      "authors": [
+        "Gary W. Gibbons",
+        "Stephen W. Hawking"
+      ],
+      "year": 1977,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "doi": "10.1103/PhysRevD.15.2752"
+      },
+      "note": "Phys. Rev. D 15, 2752 (1977). Euclidean gravitational path integral derivation of black-hole entropy from the on-shell action; the saddle-point benchmark all microscopic counts must reproduce."
+    },
+    {
+      "title": "Microscopic Origin of the Bekenstein-Hawking Entropy",
+      "authors": [
+        "Andrew Strominger",
+        "Cumrun Vafa"
+      ],
+      "year": 1996,
+      "kind": "foundational",
+      "tier": "speculative_extension",
+      "identifier": {
+        "arxiv": "hep-th/9601029",
+        "doi": "10.1016/0370-2693(96)00345-0"
+      },
+      "note": "Phys. Lett. B 379, 99 (1996). First exact microstate count: D-brane BPS state degeneracy of a 5D extremal black hole reproduces S = A/4. The landmark string-theory result for this problem."
+    },
+    {
+      "title": "D-brane Approach to Black Hole Quantum Mechanics",
+      "authors": [
+        "Curtis G. Callan",
+        "Juan M. Maldacena"
+      ],
+      "year": 1996,
+      "kind": "foundational",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/0c18aa1587985f50b1b8aecb5eff9cf1/"
+      },
+      "note": "Nucl. Phys. B 472, 591 (1996). Extends Strominger-Vafa to near-extremal 5D black holes, reproducing entropy and Hawking emission rates from D-brane state counting."
+    },
+    {
+      "title": "Black Hole Entropy is Noether Charge",
+      "authors": [
+        "Robert M. Wald"
+      ],
+      "year": 1993,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "arxiv": "gr-qc/9307038",
+        "doi": "10.1103/PhysRevD.48.R3427"
+      },
+      "note": "Phys. Rev. D 48, R3427 (1993). Defines entropy as a Noether charge for any diffeomorphism-invariant gravity theory, giving the entropy of higher-curvature black holes that any microscopic count must match."
+    },
+    {
+      "title": "On Black Hole Entropy",
+      "authors": [
+        "Ted Jacobson",
+        "Gungwon Kang",
+        "Robert C. Myers"
+      ],
+      "year": 1994,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/02e930204b7e5fe98a79dad9af3ab0cf/"
+      },
+      "note": "Phys. Rev. D 49, 6587 (1994). Develops and extends Wald's Noether-charge entropy for general higher-derivative gravity, showing it holds on arbitrary horizon cross-sections."
+    },
+    {
+      "title": "Black Hole Entropy from Conformal Field Theory in Any Dimension",
+      "authors": [
+        "Steven Carlip"
+      ],
+      "year": 1999,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/4eba3838b0605b549ce881e027542f4d/"
+      },
+      "note": "Phys. Rev. Lett. 82, 2828 (1999). Argues a near-horizon Virasoro algebra with computable central charge yields S_BH via Cardy's formula universally, independent of the microscopic UV completion."
+    },
+    {
+      "title": "Near-Horizon Conformal Symmetry and Black Hole Entropy",
+      "authors": [
+        "Steven Carlip"
+      ],
+      "year": 2002,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/14fc7b978fdc5181be803e482cba7837/"
+      },
+      "note": "Phys. Rev. Lett. 88, 241301 (2002). Two-dimensional dilaton-gravity realization of the near-horizon conformal-symmetry / Cardy mechanism for S_BH."
+    },
+    {
+      "title": "Quantum Geometry and Black Hole Entropy",
+      "authors": [
+        "Abhay Ashtekar",
+        "John Baez",
+        "Alejandro Corichi",
+        "Kirill Krasnov"
+      ],
+      "year": 1998,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/0c9fab80ad0b5c3aad6afb15e7833186/"
+      },
+      "note": "Phys. Rev. Lett. 80, 904 (1998). Loop-quantum-gravity count of horizon spin-network punctures (Chern-Simons on the horizon) yields S proportional to area, fixing the Immirzi parameter to give S = A/4."
+    },
+    {
+      "title": "Quantum Geometry of Isolated Horizons and Black Hole Entropy",
+      "authors": [
+        "Abhay Ashtekar",
+        "John C. Baez",
+        "Kirill Krasnov"
+      ],
+      "year": 2000,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/eda5f0dcec20541ca5768a45a4e03535/"
+      },
+      "note": "Adv. Theor. Math. Phys. 4, 1 (2000). Full non-perturbative LQG quantization of the isolated-horizon sector; horizon-geometry microstates account for the entropy of generic (non-extremal, charged) black holes."
+    },
+    {
+      "title": "Analytic Continuation of Black Hole Entropy in Loop Quantum Gravity",
+      "authors": [
+        "Jibril Ben Achour",
+        "Amaury Mouchet",
+        "Karim Noui"
+      ],
+      "year": 2015,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/2fab8d7b13455b67bd6f710114485d46/"
+      },
+      "note": "JHEP 06 (2015) 145. Analytic continuation of the LQG microstate count to Barbero-Immirzi parameter gamma = +/- i recovers the area law with logarithmic corrections."
+    },
+    {
+      "title": "Quantum Entropy Function from AdS(2)/CFT(1) Correspondence",
+      "authors": [
+        "Ashoke Sen"
+      ],
+      "year": 2009,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/71984953b3a95c34920c8d75207283b9/"
+      },
+      "note": "Int. J. Mod. Phys. A 24, 4225 (2009). Defines the quantum entropy function as a near-horizon AdS2 string partition function, giving a non-perturbative gravitational definition of the microstate degeneracy that reduces to Wald entropy classically."
+    },
+    {
+      "title": "The Fuzzball Proposal for Black Holes: An Elementary Review",
+      "authors": [
+        "Samir D. Mathur"
+      ],
+      "year": 2005,
+      "kind": "review",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/8150ad1715dc573fb3e63b26e5027a74/"
+      },
+      "note": "Fortsch. Phys. 53, 793 (2005). Review of the fuzzball picture: black-hole microstates as horizonless string-theory geometries, with the 2-charge system as the worked example."
+    },
+    {
+      "title": "Fuzzballs and Microstate Geometries: Black-Hole Structure in String Theory",
+      "authors": [
+        "Iosif Bena",
+        "Emil J. Martinec",
+        "Samir D. Mathur",
+        "Nicholas P. Warner"
+      ],
+      "year": 2022,
+      "kind": "review",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/3db41c78d3ad56cba4c19309e1c11435/"
+      },
+      "note": "Snowmass white paper (arXiv:2204.13113). Current status of the fuzzball / microstate-geometry program as a candidate microscopic structure resolving horizons."
+    },
+    {
+      "title": "Black Hole Entropy from Entanglement: A Review",
+      "authors": [
+        "Saurya Das",
+        "S. Shankaranarayanan",
+        "Sourav Sur"
+      ],
+      "year": 2008,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/0613737fe23556459fa303a09b232fd5/"
+      },
+      "note": "arXiv:0806.0402. Reviews the proposal that S_BH originates from entanglement entropy of quantum fields across the horizon, reproducing the area law and its power-law/log corrections."
+    },
+    {
+      "title": "Black Hole Entropy in Massive Type IIA",
+      "authors": [
+        "Francesco Benini",
+        "Hugh Khan",
+        "Vincent S. Min",
+        "Sameer Murthy",
+        "Alberto Zaffaroni"
+      ],
+      "year": 2017,
+      "kind": "recent",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/4076ae6adc84595d9670b3aff7623da3/"
+      },
+      "note": "Class. Quantum Grav. 34, 235005 (2017). Microscopic count of AdS4 dyonic BPS black-hole entropy via the topologically twisted index of the dual 3D field theory (BHZ program)."
+    },
+    {
+      "title": "Microstate Counting of AdS4 Hyperbolic Black Hole Entropy via the Topologically Twisted Index",
+      "authors": [
+        "Alejandro Cabo-Bizet",
+        "Victor I. Giraldo-Rivera",
+        "Leopoldo A. Pando Zayas"
+      ],
+      "year": 2017,
+      "kind": "recent",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/d7d741ec08cc5ddf8c270d90c3bfcc27/"
+      },
+      "note": "JHEP 08 (2017) 023. Extends the twisted-index microstate count to AdS4 magnetic black holes with hyperbolic horizons, matching Bekenstein-Hawking for ABJM."
+    },
+    {
+      "title": "Black Holes in 4D N=4 Super-Yang-Mills Field Theory",
+      "authors": [
+        "Francesco Benini",
+        "Paolo Milan"
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a72e25c03d985c35a6532d74680df7a1/"
+      },
+      "note": "Phys. Rev. X 10, 021037 (2020). Bethe-Ansatz evaluation of the N=4 SYM superconformal index reproduces the Bekenstein-Hawking entropy of rotating electrically-charged BPS black holes in AdS5."
+    },
+    {
+      "title": "Quantum Black Hole Entropy from 4d Supersymmetric Cardy Formula",
+      "authors": [
+        "Masazumi Honda"
+      ],
+      "year": 2019,
+      "kind": "recent",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a6ecfc2470d3586c968ddf69687ddfbc/"
+      },
+      "note": "Phys. Rev. D 100, 026008 (2019). A supersymmetric Cardy limit of the 4D index reproduces AdS5 BPS black-hole entropy for arbitrary N, hinting at non-renormalization of the quantum entropy."
+    },
+    {
+      "title": "Revisiting the Logarithmic Corrections to the Black Hole Entropy",
+      "authors": [
+        "Luca V. Iliesiu",
+        "Sameer Murthy",
+        "Gustavo J. Turiaci"
+      ],
+      "year": 2022,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/82588ee602d95441ac27d7ccbb9cee0e/"
+      },
+      "note": "arXiv:2209.13602. Recomputes logarithmic corrections for extremal and near-extremal black holes via the (super-)Schwarzian zero-mode sector of the gravitational path integral."
+    },
+    {
+      "title": "Logarithmic Correction to Black Hole Entropy in Universal Low-Energy String Theory Models",
+      "authors": [
+        "Sudip Karan",
+        "Gourav Banerjee",
+        "Binata Panda"
+      ],
+      "year": 2022,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/3480303dbc8b5483812a9e20ec282684/"
+      },
+      "note": "JHEP (2022). Heat-kernel computation of logarithmic entropy corrections for black holes in Einstein-Maxwell-dilaton / N=4 supergravity, a universal infrared diagnostic of the microscopic count."
+    },
+    {
+      "title": "Black Hole Microstates in AdS",
+      "authors": [
+        "Edgar Shaghoulian"
+      ],
+      "year": 2015,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/4572e799fc435914ac47576e4cfb774c/"
+      },
+      "note": "Phys. Rev. D 94, 104044 (2016). Higher-dimensional Cardy formula reproduces Bekenstein-Hawking entropy of large AdS/Schwarzschild/Kerr black holes, generalizing Strominger's BTZ argument and recovering log corrections."
+    },
+    {
+      "title": "The Kerr/CFT Correspondence and Its Extensions",
+      "authors": [
+        "Geoffrey Compère"
+      ],
+      "year": 2017,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/433669c5bae65a30aba4510582c8f830/"
+      },
+      "note": "Living Rev. Relativ. 20, 1 (2017). First-principles review of the near-horizon Virasoro / chiral-Cardy derivation of extremal and non-extremal black-hole entropy and its open problems."
+    },
+    {
+      "title": "A Survey of Black Hole Thermodynamics",
+      "authors": [
+        "Aron C. Wall"
+      ],
+      "year": 2018,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/3d691b0a1e4656d885769ff037150b27/"
+      },
+      "note": "arXiv:1804.10610. Up-to-date review of the laws of horizon thermodynamics, the nature and quantum corrections of black-hole entropy, and its ultimate origin from quantum-gravity microstates."
+    }
   ],
   "physicists": [
-    {"name": "Jacob Bekenstein", "role": "originator", "era": "1972-2015", "affiliation": "Hebrew University", "contribution": "Proposed black-hole entropy proportional to horizon area."},
-    {"name": "Stephen Hawking", "role": "originator", "era": "1974-2018", "affiliation": "Cambridge", "contribution": "Fixed the 1/4 coefficient via the radiation temperature."},
-    {"name": "Andrew Strominger", "role": "active", "era": "1996-present", "affiliation": "Harvard", "contribution": "String-theory microstate counting; near-horizon conformal symmetry."},
-    {"name": "Cumrun Vafa", "role": "active", "era": "1996-present", "affiliation": "Harvard", "contribution": "D-brane entropy counting with Strominger."},
-    {"name": "Ashoke Sen", "role": "active", "era": "1990s-present", "affiliation": "ICTS / Harish-Chandra", "contribution": "Precision entropy, logarithmic corrections, quantum entropy function."},
-    {"name": "Robert Wald", "role": "foundational", "era": "1990s-present", "affiliation": "Chicago", "contribution": "Noether-charge definition of horizon entropy."},
-    {"name": "Carlo Rovelli", "role": "active", "era": "1990s-present", "affiliation": "Aix-Marseille", "contribution": "Loop-quantum-gravity horizon state counting."},
-    {"name": "Steven Carlip", "role": "active", "era": "1990s-present", "affiliation": "UC Davis", "contribution": "Near-horizon conformal (Cardy) approach to universality of A/4."}
+    {
+      "name": "Jacob D. Bekenstein",
+      "role": "originator",
+      "era": "1973-2015",
+      "affiliation": "Hebrew University of Jerusalem",
+      "contribution": "Proposed that black holes carry entropy proportional to horizon area, defining the quantity whose microscopic origin is sought."
+    },
+    {
+      "name": "Stephen W. Hawking",
+      "role": "originator",
+      "era": "1974-2018",
+      "affiliation": "University of Cambridge (DAMTP)",
+      "contribution": "Discovered Hawking radiation and fixed the entropy to S = A/4, turning black-hole entropy into a precise number to be reproduced."
+    },
+    {
+      "name": "Andrew Strominger",
+      "role": "foundational",
+      "era": "1996-present",
+      "affiliation": "Harvard University",
+      "contribution": "With Vafa, gave the first exact microscopic D-brane state count reproducing S_BH; later developed near-horizon CFT (BTZ, Kerr/CFT) approaches."
+    },
+    {
+      "name": "Cumrun Vafa",
+      "role": "foundational",
+      "era": "1996-present",
+      "affiliation": "Harvard University",
+      "contribution": "Co-author of the Strominger-Vafa D-brane derivation of Bekenstein-Hawking entropy, the landmark string-theory microstate count."
+    },
+    {
+      "name": "Robert M. Wald",
+      "role": "foundational",
+      "era": "1993-present",
+      "affiliation": "University of Chicago",
+      "contribution": "Formulated black-hole entropy as a Noether charge, giving the entropy of arbitrary diffeomorphism-invariant (higher-curvature) gravity theories."
+    },
+    {
+      "name": "Abhay Ashtekar",
+      "role": "foundational",
+      "era": "1997-present",
+      "affiliation": "Pennsylvania State University",
+      "contribution": "Led the loop-quantum-gravity / isolated-horizon derivation of entropy from quantized horizon geometry (Chern-Simons punctures)."
+    },
+    {
+      "name": "Steven Carlip",
+      "role": "foundational",
+      "era": "1995-present",
+      "affiliation": "University of California, Davis",
+      "contribution": "Developed the universal near-horizon conformal-symmetry / Cardy-formula approach to black-hole entropy valid in any dimension."
+    },
+    {
+      "name": "Samir D. Mathur",
+      "role": "active",
+      "era": "1997-present",
+      "affiliation": "Ohio State University",
+      "contribution": "Originated the fuzzball proposal, identifying black-hole microstates with horizonless string-theory geometries."
+    },
+    {
+      "name": "Ashoke Sen",
+      "role": "active",
+      "era": "1995-present",
+      "affiliation": "International Centre for Theoretical Sciences (ICTS), Bengaluru",
+      "contribution": "Introduced the quantum entropy function and AdS2/CFT1 / localization techniques for exact microstate degeneracies and logarithmic corrections."
+    },
+    {
+      "name": "Alberto Zaffaroni",
+      "role": "active",
+      "era": "2016-present",
+      "affiliation": "University of Milano-Bicocca / INFN",
+      "contribution": "Co-developed the topologically-twisted-index microscopic counting of AdS4 BPS black-hole entropy via dual field-theory localization."
+    }
   ],
-  "related_problems": [2, 1, 8],
+  "related_problems": [
+    2,
+    1,
+    8
+  ],
   "simulator_angle": "The horizon area (and thus S = A/4) for Kerr is exactly what the simulator's thermo/hawking.hpp computes (horizon_area_factor, entropy functions); the catalogue documents what that number means and why its microscopic origin is unsolved.",
-  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references (Strominger-Vafa, Wald, Carlip with arXiv ids; Bekenstein/Hawking as notes) + 8 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+  "metadata": {
+    "created": "2026-06-14",
+    "updated": "2026-06-14",
+    "coverage_note": "Assembled 25 verified, genuinely-relevant papers and 10 physicists. Method: ~11 Consensus MCP searches (mcp__plugin_bio-research_consensus__search) across the named sub-themes — Strominger-Vafa D-brane counting, LQG/isolated-horizon entropy and the Immirzi parameter, Wald/Noether-charge dynamical entropy, near-horizon conformal symmetry and the Cardy/Kerr-CFT mechanism, entanglement-entropy origin, fuzzballs/microstate geometries, Sen's quantum entropy function, supersymmetric-index counting (twisted index for AdS4, superconformal index for AdS5), logarithmic corrections, and review/survey works. 18 of the 25 papers carry direct Consensus URLs returned by search; the remaining 7 are canonical landmarks not surfaced by search (Bekenstein 1973, Hawking 1975, Gibbons-Hawking 1977, Strominger-Vafa 1996, Wald 1993, plus Sen and Carlip entries) given with verified journal citations and well-established arXiv ids/DOIs only where certain — no titles, authors, ids, or URLs were invented. Tiers reflect that this is an OPEN problem: the exact GR/Wald results are analytic_classical; the string-theory, LQG, fuzzball, and index counts that purport to resolve the origin are labeled speculative_extension or open_conjecture; the universal CFT/entanglement/log-correction mechanisms are open_conjecture. No observational_constraint entries were included since this is a theoretical state-counting problem. The list was not padded; all 25 are directly on-topic.\"",
+    "confidence": "researched"
+  }
 }

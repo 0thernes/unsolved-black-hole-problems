@@ -2,11 +2,24 @@
   "rank": 13,
   "slug": "13-final-parsec",
   "title": "The final-parsec problem",
-  "aliases": ["last parsec problem", "SMBH binary stalling", "final-parsec problem"],
+  "aliases": [
+    "last parsec problem",
+    "SMBH binary stalling",
+    "final-parsec problem"
+  ],
   "statement": "When two galaxies merge, their central supermassive black holes sink toward the center and form a binary. Dynamical friction and stellar scattering harden the binary efficiently down to roughly parsec separation, but there the binary may run out of stars on intersecting (loss-cone) orbits to extract its angular momentum, while gravitational-wave emission is still far too weak to drive a merger. The binary could then stall for longer than a Hubble time. Whether (and how) SMBH binaries cross this 'final parsec' to merge is open — and directly relevant to the nanohertz gravitational-wave background now detected by pulsar-timing arrays.",
   "first_posed": "1980",
   "originators": [
-    {"name": "Mitchell Begelman"}, {"name": "Roger Blandford"}, {"name": "Martin Rees", "note": "1980 Nature paper describing the binary-SMBH evolution and the stalling problem."}
+    {
+      "name": "Mitchell Begelman"
+    },
+    {
+      "name": "Roger Blandford"
+    },
+    {
+      "name": "Martin Rees",
+      "note": "1980 Nature paper describing the binary-SMBH evolution and the stalling problem."
+    }
   ],
   "status": "open-with-recent-progress",
   "statement_tier": "numerical_approximation",
@@ -26,24 +39,496 @@
     "Connects to SMBH seeds (#12) and galaxy-merger demographics."
   ],
   "approaches": [
-    {"name": "Triaxial / rotating-nucleus N-body", "summary": "Non-spherical galaxy potentials keep the loss cone refilled, avoiding stalling.", "tier": "numerical_approximation", "proponents": ["David Merritt", "Fazeel Khan", "Peter Berczik"]},
-    {"name": "Gas-driven inspiral", "summary": "Circumbinary gas disks torque the binary across the gap.", "tier": "numerical_approximation", "proponents": ["(community)"]},
-    {"name": "PTA observational test", "summary": "Use the nanohertz GW background spectrum to infer whether/how binaries merge.", "tier": "observational_constraint", "proponents": ["NANOGrav", "EPTA", "PPTA", "IPTA"]}
+    {
+      "name": "Triaxial / rotating-nucleus N-body",
+      "summary": "Non-spherical galaxy potentials keep the loss cone refilled, avoiding stalling.",
+      "tier": "numerical_approximation",
+      "proponents": [
+        "David Merritt",
+        "Fazeel Khan",
+        "Peter Berczik"
+      ]
+    },
+    {
+      "name": "Gas-driven inspiral",
+      "summary": "Circumbinary gas disks torque the binary across the gap.",
+      "tier": "numerical_approximation",
+      "proponents": [
+        "(community)"
+      ]
+    },
+    {
+      "name": "PTA observational test",
+      "summary": "Use the nanohertz GW background spectrum to infer whether/how binaries merge.",
+      "tier": "observational_constraint",
+      "proponents": [
+        "NANOGrav",
+        "EPTA",
+        "PPTA",
+        "IPTA"
+      ]
+    }
   ],
   "papers": [
-    {"title": "Massive black hole binaries in active galactic nuclei", "authors": ["Mitchell C. Begelman", "Roger D. Blandford", "Martin J. Rees"], "year": 1980, "kind": "foundational", "tier": "numerical_approximation", "note": "Nature 287, 307 — defines the binary-SMBH evolution and stalling."},
-    {"title": "The Final Parsec Problem", "authors": ["Milos Milosavljevic", "David Merritt"], "year": 2003, "kind": "foundational", "tier": "numerical_approximation", "identifier": {"arxiv": "astro-ph/0212270"}},
-    {"title": "Efficient Merger of Binary Supermassive Black Holes in Non-axisymmetric Galaxies", "authors": ["Fazeel Mahmood Khan", "Andreas Just", "David Merritt"], "year": 2011, "kind": "recent", "tier": "numerical_approximation", "identifier": {"arxiv": "1103.0272"}},
-    {"title": "The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background", "authors": ["NANOGrav Collaboration"], "year": 2023, "kind": "recent", "tier": "observational_constraint", "identifier": {"arxiv": "2306.16213"}}
+    {
+      "title": "Massive black hole binaries in active galactic nuclei",
+      "authors": [
+        "Mitchell C. Begelman",
+        "Roger D. Blandford",
+        "Martin J. Rees"
+      ],
+      "year": 1980,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/fb0698cb6cb7505092cf32ebe3284902/",
+        "doi": "10.1038/287307a0"
+      },
+      "note": "Nature 287, 307 (1980). The founding paper: lays out the three-stage evolution of a massive black-hole binary (dynamical friction, three-body stellar slingshot hardening, gravitational-wave inspiral) and first identifies the hardening bottleneck that became the final-parsec problem."
+    },
+    {
+      "title": "Long-Term Evolution of Massive Black Hole Binaries",
+      "authors": [
+        "Milos Milosavljevic",
+        "David Merritt"
+      ],
+      "year": 2002,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/7ed0e2bdbb8956bd9c692e797f22d871/"
+      },
+      "note": "ApJ 563, 34 (2003 publ.). Coins/sharpens the 'final parsec problem' terminology; derives non-equilibrium loss-cone refilling and shows standard collisional refilling underestimates decay rates in galactic nuclei."
+    },
+    {
+      "title": "Long-Term Evolution of Massive Black Hole Binaries. III. Binary Evolution in Collisional Nuclei",
+      "authors": [
+        "David Merritt",
+        "Seppo Mikkola",
+        "Alessia Gualandris"
+      ],
+      "year": 2007,
+      "kind": "foundational",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a713a841a0ce57b3811dd8faa4200779/"
+      },
+      "note": "ApJ 671, 53. Combines direct N-body with Fokker-Planck to bridge the spurious-relaxation gap; shows coalescence within 10 Gyr only in low-dispersion (< ~80 km/s) nuclei, framing the stalling problem quantitatively."
+    },
+    {
+      "title": "Efficient Merger of Binary Supermassive Black Holes in Merging Galaxies",
+      "authors": [
+        "Fazeel Mahmood Khan",
+        "Andreas Just",
+        "David Merritt"
+      ],
+      "year": 2011,
+      "kind": "foundational",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/8dca4729d10c52108328eeac6f3e66d9/"
+      },
+      "note": "ApJ 732, 89. Self-consistent merger N-body simulations showing N-independent hardening in non-spherical remnants - argued as a stellar-dynamical solution via triaxial/centrophilic orbits."
+    },
+    {
+      "title": "Supermassive Black Hole Binary Evolution in Axisymmetric Galaxies: The Final Parsec Problem Is Not a Problem",
+      "authors": [
+        "Fazeel Mahmood Khan",
+        "Kelly Holley-Bockelmann",
+        "Peter Berczik",
+        "Andreas Just"
+      ],
+      "year": 2013,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/e1daed23665e53c7a72898a2a60fa837/"
+      },
+      "note": "ApJ 773, 100. Direct N-body shows mere axisymmetry (c/a ~ 0.75-0.8) drives binaries to the GW regime, claiming the problem dissolves; representative of the 'solved by geometry' camp (still debated)."
+    },
+    {
+      "title": "Collisionless loss-cone refilling: there is no final parsec problem",
+      "authors": [
+        "Alessia Gualandris",
+        "Justin I. Read",
+        "Walter Dehnen",
+        "Eugene Vasiliev"
+      ],
+      "year": 2016,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/55b647410b215010b9364c244439b3b4/"
+      },
+      "note": "MNRAS 464, 2301. Uses a fast-multipole method to isolate collisionless orbit diffusion, finding efficient loss-cone refilling even for mild triaxiality (1:0.9:0.8); explicitly reconciles contradictory earlier N-body results."
+    },
+    {
+      "title": "Scattering experiments meet N-body - I. A practical recipe for the evolution of massive black hole binaries in stellar environments",
+      "authors": [
+        "Alberto Sesana",
+        "Fazeel Mahmood Khan"
+      ],
+      "year": 2015,
+      "kind": "foundational",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/9a34626290155745a5b90a9fee192b4b/"
+      },
+      "note": "MNRAS 454, L66. Establishes that the hardening rate maps onto an unbound 3-body scattering field set by density/velocity dispersion at the binary influence radius - the standard recipe linking stellar dynamics to PTA predictions."
+    },
+    {
+      "title": "Dynamical Friction and the Evolution of Supermassive Black Hole Binaries: The Final Hundred-parsec Problem",
+      "authors": [
+        "Fani Dosopoulou",
+        "Fabio Antonini"
+      ],
+      "year": 2016,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/35837ebd94315de3ac5f8b80e3733e1a/"
+      },
+      "note": "ApJ 840, 31 (publ. 2017). Extends Chandrasekhar dynamical friction including fast stars; shows low-mass-ratio minor mergers can stall at ~0.1 influence radius (the 'final hundred-parsec problem')."
+    },
+    {
+      "title": "Evolution of supermassive black hole binaries and tidal disruption rates in non-spherical galactic nuclei",
+      "authors": [
+        "Kirill Lezhnin",
+        "Eugene Vasiliev"
+      ],
+      "year": 2019,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/7f91cc9208be5c429fb163d1b928787e/"
+      },
+      "note": "MNRAS 484, 2851. Monte Carlo (Raga) co-evolution of binary + nuclear star cluster; confirms sustained hardening only in triaxial systems while axisymmetric loss cones deplete."
+    },
+    {
+      "title": "On the orbital evolution of supermassive black hole binaries with circumbinary accretion discs",
+      "authors": [
+        "Yike Tang",
+        "Andrew MacFadyen",
+        "Zoltan Haiman"
+      ],
+      "year": 2017,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/2a531682efe45a29bce65f8568313355/"
+      },
+      "note": "MNRAS 469, 4258. Moving-mesh circumbinary-disc hydrodynamics; net gravitational torque shrinks the binary on ~Myr timescales - the leading gas-driven alternative to stellar hardening."
+    },
+    {
+      "title": "Gas-driven Inspiral of Binaries in Thin Accretion Disks",
+      "authors": [
+        "Christopher Tiede",
+        "Jonathan Zrake",
+        "Andrew MacFadyen",
+        "Zoltan Haiman"
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/9c482bdd9e6a5ba8b662a97093dffe0b/"
+      },
+      "note": "ApJ 900, 43. Shows the sign of the gas torque flips with disc aspect ratio: thin (realistic AGN) discs at h/r < ~0.04 drive inspiral rather than outspiral - key caveat for the gas channel."
+    },
+    {
+      "title": "Circumbinary Accretion: From Binary Stars to Massive Binary Black Holes",
+      "authors": [
+        "Dong Lai",
+        "Diego J. Munoz"
+      ],
+      "year": 2022,
+      "kind": "review",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/48ab4706f41752c39910afb4b9c27e12/"
+      },
+      "note": "Annu. Rev. Astron. Astrophys. 61 (2023). Review of circumbinary-disc dynamics and secular orbital evolution; cautions that accretion does not always drive orbital decay - directly relevant to whether gas resolves the final parsec."
+    },
+    {
+      "title": "Post-Newtonian evolution of massive black hole triplets in galactic nuclei - II. Survey of the parameter space",
+      "authors": [
+        "Matteo Bonetti",
+        "Alberto Sesana",
+        "Enrico Barausse",
+        "Francesco Haardt"
+      ],
+      "year": 2017,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/440db1f33c825311883d6bd32c24801a/"
+      },
+      "note": "MNRAS 477, 3910 (publ. 2018). Triple-MBH Kozai-Lidov channel: ~20-30% of otherwise-stalled binaries coalesce after a third black hole arrives - a dynamical bypass of the final parsec."
+    },
+    {
+      "title": "Final parsec problem of black hole mergers and ultralight dark matter",
+      "authors": [
+        "Hyeonmo Koo",
+        "Dongsu Bak",
+        "Inkyu Park",
+        "Sungwook E. Hong",
+        "Jae-Weon Lee"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/32230d137032558c9093a37cbf32fbcf/",
+        "doi": "10.1016/j.physletb.2023.138908"
+      },
+      "note": "Physics Letters B 844, 138908. Proposes ultralight-dark-matter wave dynamical friction as the energy sink that overcomes loss-cone depletion - a speculative dark-sector resolution."
+    },
+    {
+      "title": "The gravitational wave background from massive black hole binaries in Illustris: spectral features and time to detection with pulsar timing arrays",
+      "authors": [
+        "Luke Zoltan Kelley",
+        "Laura Blecha",
+        "Lars Hernquist",
+        "Alberto Sesana",
+        "Stephen R. Taylor"
+      ],
+      "year": 2017,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/f674644c51d25af0aa5ddcdaf6971b56/"
+      },
+      "note": "MNRAS 471, 4508. Cosmological-simulation GWB spectra showing a low-frequency turnover diagnostic of environmental hardening (the final-parsec coupling) vs pure GW-driven inspiral."
+    },
+    {
+      "title": "Massive Black Hole Binaries: Dynamical Evolution and Observational Signatures",
+      "authors": [
+        "Massimo Dotti",
+        "Alberto Sesana",
+        "Roberto Decarli"
+      ],
+      "year": 2011,
+      "kind": "review",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/0b938b0b5e2053b484bb40b7d2d17e52/"
+      },
+      "note": "Advances in Astronomy 2012, 940568. Review of the pairing/hardening/coalescence sequence and observational signatures, with explicit treatment of the final-parsec uncertainty."
+    },
+    {
+      "title": "Dynamics and Evolution of Galactic Nuclei (textbook)",
+      "authors": [
+        "David Merritt"
+      ],
+      "year": 2013,
+      "kind": "textbook",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/fe41dc992bd3536da113e19f9c4f757d/"
+      },
+      "note": "Princeton University Press (2013). The standard graduate reference for loss-cone dynamics, collisional/collisionless nuclei, and the final-parsec and multiple-SMBH problems (review entry in Contemporary Physics by B. Ishak, 2016)."
+    },
+    {
+      "title": "The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background",
+      "authors": [
+        "Gabriella Agazie",
+        "et al. (NANOGrav Collaboration)"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/d44b58f90a5c5541bc6369629b088fc3/",
+        "doi": "10.3847/2041-8213/acdac6"
+      },
+      "note": "ApJL 951, L8. Hellings-Downs-correlated nanohertz GWB at ~3-4 sigma, amplitude 2.4e-15 at 1/yr, consistent with an inspiraling SMBH binary population - the headline detection bearing on whether binaries reach the GW regime."
+    },
+    {
+      "title": "The NANOGrav 15 yr Data Set: Constraints on Supermassive Black Hole Binaries from the Gravitational-wave Background",
+      "authors": [
+        "Gabriella Agazie",
+        "et al. (NANOGrav Collaboration)"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/fa449873c0e357108a4e0193c58c6ca0/",
+        "doi": "10.3847/2041-8213/ad0306"
+      },
+      "note": "ApJL 952, L37. Models the GWB as an SMBH binary population; the relatively high amplitude requires parameters at the edge of expectations, directly informing final-parsec/efficiency questions."
+    },
+    {
+      "title": "The NANOGrav 15 yr Data Set: Search for Signals from New Physics",
+      "authors": [
+        "Adeela Afzal",
+        "et al. (NANOGrav Collaboration)"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/bc276185f4d656b89e3bce483e350c87/",
+        "doi": "10.3847/2041-8213/acdc91"
+      },
+      "note": "ApJL 951, L11. Tests cosmological alternatives (inflation, phase transitions, cosmic strings, ULDM) - some fit better than the SMBHB interpretation, underscoring that the binary origin is not yet established."
+    },
+    {
+      "title": "The NANOGrav 15 yr Data Set: Bayesian Limits on Gravitational Waves from Individual Supermassive Black Hole Binaries",
+      "authors": [
+        "Gabriella Agazie",
+        "et al. (NANOGrav Collaboration)"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/216c4df7139e54e49653e27f62e0159c/",
+        "doi": "10.3847/2041-8213/ad011d"
+      },
+      "note": "ApJL 951, L50. Continuous-wave search; no confident individual binary, sky-averaged strain upper limit ~8e-15 at 6 nHz - bounds on the loudest nearby (post-final-parsec) binaries."
+    },
+    {
+      "title": "The second data release from the European Pulsar Timing Array. III. Search for gravitational wave signals",
+      "authors": [
+        "John Antoniadis",
+        "et al. (EPTA & InPTA Collaborations)"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/572164f325bc5e1cb1d70c4a3f4c677f/",
+        "doi": "10.1051/0004-6361/202346844"
+      },
+      "note": "A&A 678, A50. Independent ~3 sigma GWB evidence, amplitude 2.5e-15 (gamma=13/3), corroborating NANOGrav."
+    },
+    {
+      "title": "The second data release from the European Pulsar Timing Array. V. Implications for massive black holes, dark matter, and the early Universe",
+      "authors": [
+        "John Antoniadis",
+        "et al. (EPTA & InPTA Collaborations)"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/d436777fa8615eacb2164c786149a89f/",
+        "doi": "10.1051/0004-6361/202347433"
+      },
+      "note": "A&A 685, A94. Interprets the signal as inspiraling SMBHBs and uses the high amplitude to constrain binary merger timescales and SMBH-host scaling - explicitly probing the final-parsec efficiency."
+    },
+    {
+      "title": "Search for an Isotropic Gravitational-wave Background with the Parkes Pulsar Timing Array",
+      "authors": [
+        "Daniel J. Reardon",
+        "et al. (PPTA Collaboration)"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/a201f390f5c85c52bc16d23fb3fd545e/",
+        "doi": "10.3847/2041-8213/acdd02"
+      },
+      "note": "ApJL 951, L6. PPTA DR3 (18 yr): common-spectrum signal with HD-correlation evidence (p < ~0.02); notes a time-dependence caveat in the apparent amplitude."
+    },
+    {
+      "title": "Searching for the Nanohertz Stochastic Gravitational Wave Background with the Chinese Pulsar Timing Array Data Release I",
+      "authors": [
+        "Heng Xu",
+        "et al. (CPTA Collaboration)"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/51a7b6c032de5189a7d1d16e1f45a04a/",
+        "doi": "10.1088/1674-4527/acdfa5"
+      },
+      "note": "Res. Astron. Astrophys. 23, 075024. FAST-based CPTA DR1; ~4.6 sigma evidence for HD correlation near 14 nHz - the fourth independent 2023 PTA result."
+    }
   ],
   "physicists": [
-    {"name": "Martin Rees", "role": "originator", "era": "1980-present", "affiliation": "Cambridge", "contribution": "Co-author of the founding binary-SMBH paper."},
-    {"name": "Roger Blandford", "role": "originator", "era": "1980-present", "affiliation": "Stanford", "contribution": "Co-author; AGN/jet theory."},
-    {"name": "Mitchell Begelman", "role": "originator", "era": "1980-present", "affiliation": "Colorado", "contribution": "Co-author of the 1980 framework."},
-    {"name": "David Merritt", "role": "active", "era": "1990s-present", "affiliation": "RIT (emeritus)", "contribution": "Named/analyzed the final-parsec problem; loss-cone dynamics."},
-    {"name": "Fazeel Khan", "role": "active", "era": "2010s-present", "affiliation": "Pakistan/IST", "contribution": "Showed triaxial galaxies avoid stalling in N-body simulations."}
+    {
+      "name": "Martin J. Rees",
+      "role": "originator",
+      "era": "1980s-present",
+      "affiliation": "University of Cambridge",
+      "contribution": "Co-author of Begelman-Blandford-Rees (1980), which first laid out the three-stage MBH binary evolution and the hardening bottleneck underlying the final-parsec problem."
+    },
+    {
+      "name": "Mitchell C. Begelman",
+      "role": "originator",
+      "era": "1980s-present",
+      "affiliation": "JILA, University of Colorado Boulder",
+      "contribution": "Lead author of the 1980 Nature paper introducing the dynamical-friction/slingshot/GW evolution sequence for massive black-hole binaries."
+    },
+    {
+      "name": "Roger D. Blandford",
+      "role": "originator",
+      "era": "1980s-present",
+      "affiliation": "Stanford University (KIPAC)",
+      "contribution": "Co-originator of the binary-MBH framework (BBR80) connecting stellar/gas hardening to galactic-nucleus dynamics."
+    },
+    {
+      "name": "David Merritt",
+      "role": "foundational",
+      "era": "1990s-2010s",
+      "affiliation": "Rochester Institute of Technology (emeritus)",
+      "contribution": "Developed modern loss-cone theory, the 'final parsec problem' formalism (with Milosavljevic), and authored the standard textbook on galactic-nucleus dynamics."
+    },
+    {
+      "name": "Milos Milosavljevic",
+      "role": "foundational",
+      "era": "2000s-present",
+      "affiliation": "University of Texas at Austin",
+      "contribution": "Co-author of the 2003 'Long-Term Evolution of Massive Black Hole Binaries' work that named and quantified the final-parsec problem."
+    },
+    {
+      "name": "Alberto Sesana",
+      "role": "active",
+      "era": "2000s-present",
+      "affiliation": "University of Milano-Bicocca",
+      "contribution": "Leading theorist linking SMBH binary dynamics to the PTA gravitational-wave background; co-developed the scattering-experiment hardening recipe and triple-MBH channel."
+    },
+    {
+      "name": "Fazeel Mahmood Khan",
+      "role": "active",
+      "era": "2010s-present",
+      "affiliation": "Institute of Space Technology, Islamabad",
+      "contribution": "Direct N-body simulations showing efficient, N-independent hardening in triaxial and axisymmetric galaxy remnants - central to the 'no final parsec problem' claims."
+    },
+    {
+      "name": "Eugene Vasiliev",
+      "role": "active",
+      "era": "2010s-present",
+      "affiliation": "University of Cambridge",
+      "contribution": "Created the Raga Monte Carlo and fast-multipole methods that isolate collisionless loss-cone refilling, clarifying when triaxiality drives binaries to the GW regime."
+    },
+    {
+      "name": "Alessia Gualandris",
+      "role": "active",
+      "era": "2010s-present",
+      "affiliation": "University of Surrey",
+      "contribution": "Co-led collisionless loss-cone refilling studies demonstrating sustained hardening at mild triaxiality and resolving spurious-relaxation artefacts in N-body work."
+    },
+    {
+      "name": "Zoltan Haiman",
+      "role": "active",
+      "era": "2000s-present",
+      "affiliation": "Columbia University",
+      "contribution": "Leading work on circumbinary-disc/gas-driven hardening of SMBH binaries, the principal alternative to stellar-dynamical resolution of the final parsec."
+    }
   ],
-  "related_problems": [12],
+  "related_problems": [
+    12
+  ],
   "simulator_angle": "Outside the single-black-hole GR ray tracer; but a future binary/merger visualization and the resulting ringdown (a no-hair test, #11) connect back to it.",
-  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 4 key references (Milosavljevic-Merritt/Khan/NANOGrav with arXiv ids; Begelman-Blandford-Rees 1980 as note) + 5 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+  "metadata": {
+    "created": "2026-06-14",
+    "updated": "2026-06-14",
+    "coverage_note": "Assembled 25 verified, highly-relevant papers and 10 physicists. Method: ran 10 Consensus paper-search queries (mcp__plugin_bio-research_consensus__search) spanning foundational dynamics, loss-cone/triaxial N-body, gas-driven circumbinary discs, triplet-MBH and dark-matter channels, the 2023 PTA detections (NANOGrav 15yr, EPTA DR2, PPTA DR3, CPTA DR1), and astrophysical interpretation/predictions. 24 of the 25 papers have direct Consensus/arXiv URLs returned by search (DOIs added where confidently known); the sole non-search entry is the canonical Begelman, Blandford & Rees 1980 Nature landmark (verified bibliographic note, and it also independently surfaced in search). The Merritt 2013 textbook is included via its Consensus review-record URL. Honest tiering: PTA results are observational_constraint; the dynamical N-body 'solutions' (Khan 2011/2013, Gualandris 2016, Lezhnin/Vasiliev 2019, gas-disc, triplet) are numerical_approximation since the problem's resolution in real galaxies remains open/contested; the BBR80 and Milosavljevic-Merritt analytic framework are analytic_classical; the ultralight-dark-matter route is speculative_extension. Additional verified candidates existed (e.g. NANOGrav anisotropy search, EPTA continuous-wave search, IPTA cross-comparison Agazie 2024, PPTA noise/null-hypothesis, Kelley Illustris already included, Bonetti triplets paper I, Saha 2025 triple-SMBH triaxiality, Chen 2023 CPTA forecasts) and could extend the list further, but I capped at the 25 most load-bearing for the final-parsec problem without padding.",
+    "confidence": "researched"
+  }
 }

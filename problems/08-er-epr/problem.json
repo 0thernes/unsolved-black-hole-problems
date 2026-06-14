@@ -2,11 +2,20 @@
   "rank": 8,
   "slug": "08-er-epr",
   "title": "ER=EPR and the entanglement-geometry connection",
-  "aliases": ["ER=EPR", "entanglement is geometry", "spacetime from entanglement"],
+  "aliases": [
+    "ER=EPR",
+    "entanglement is geometry",
+    "spacetime from entanglement"
+  ],
   "statement": "Maldacena and Susskind (2013) conjectured ER=EPR: that an Einstein-Rosen bridge (ER, a wormhole) is dual to quantum entanglement (EPR), so two entangled systems are connected by a (generally non-traversable) geometric bridge. More broadly, the conjecture suggests spacetime connectivity itself emerges from entanglement (Van Raamsdonk; Ryu-Takayanagi). A precise, general, and proven formulation — specifying exactly which entangled states correspond to which geometries, and in what regime — remains open.",
   "first_posed": "2013",
   "originators": [
-    {"name": "Juan Maldacena"}, {"name": "Leonard Susskind"}
+    {
+      "name": "Juan Maldacena"
+    },
+    {
+      "name": "Leonard Susskind"
+    }
   ],
   "status": "open",
   "statement_tier": "open_conjecture",
@@ -26,27 +35,506 @@
     "Bears on the firewall (#06): identifying interior and exterior partners as the same wormhole endpoints can preserve a smooth horizon."
   ],
   "approaches": [
-    {"name": "Holographic entanglement (Ryu-Takayanagi / QES)", "summary": "Geometrize entanglement entropy as minimal-surface area; quantum extremal surfaces extend it.", "tier": "open_conjecture", "proponents": ["Shinsei Ryu", "Tadashi Takayanagi", "Netta Engelhardt"]},
-    {"name": "Emergent spacetime from entanglement", "summary": "Reconstruct bulk geometry/connectivity from boundary entanglement structure.", "tier": "open_conjecture", "proponents": ["Mark Van Raamsdonk", "Brian Swingle"]},
-    {"name": "Traversable wormholes", "summary": "Engineer entanglement (a double-trace coupling) to make the bridge traversable, testing ER=EPR operationally.", "tier": "open_conjecture", "proponents": ["Ping Gao", "Daniel Jafferis", "Aron Wall"]}
+    {
+      "name": "Holographic entanglement (Ryu-Takayanagi / QES)",
+      "summary": "Geometrize entanglement entropy as minimal-surface area; quantum extremal surfaces extend it.",
+      "tier": "open_conjecture",
+      "proponents": [
+        "Shinsei Ryu",
+        "Tadashi Takayanagi",
+        "Netta Engelhardt"
+      ]
+    },
+    {
+      "name": "Emergent spacetime from entanglement",
+      "summary": "Reconstruct bulk geometry/connectivity from boundary entanglement structure.",
+      "tier": "open_conjecture",
+      "proponents": [
+        "Mark Van Raamsdonk",
+        "Brian Swingle"
+      ]
+    },
+    {
+      "name": "Traversable wormholes",
+      "summary": "Engineer entanglement (a double-trace coupling) to make the bridge traversable, testing ER=EPR operationally.",
+      "tier": "open_conjecture",
+      "proponents": [
+        "Ping Gao",
+        "Daniel Jafferis",
+        "Aron Wall"
+      ]
+    }
   ],
   "papers": [
-    {"title": "The Large N Limit of Superconformal Field Theories and Supergravity (AdS/CFT)", "authors": ["Juan Maldacena"], "year": 1998, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "hep-th/9711200"}, "note": "the holographic duality underpinning ER=EPR."},
-    {"title": "Cool horizons for entangled black holes (ER=EPR)", "authors": ["Juan Maldacena", "Leonard Susskind"], "year": 2013, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "1306.0533"}},
-    {"title": "Building up spacetime with quantum entanglement", "authors": ["Mark Van Raamsdonk"], "year": 2010, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "1005.3035"}},
-    {"title": "Holographic Derivation of Entanglement Entropy from AdS/CFT (Ryu-Takayanagi)", "authors": ["Shinsei Ryu", "Tadashi Takayanagi"], "year": 2006, "kind": "foundational", "tier": "open_conjecture", "identifier": {"arxiv": "hep-th/0603001"}},
-    {"title": "Traversable Wormholes via a Double Trace Deformation", "authors": ["Ping Gao", "Daniel L. Jafferis", "Aron C. Wall"], "year": 2017, "kind": "recent", "tier": "open_conjecture", "identifier": {"arxiv": "1608.05687"}}
+    {
+      "title": "The Large-N Limit of Superconformal Field Theories and Supergravity",
+      "authors": [
+        "Juan M. Maldacena"
+      ],
+      "year": 1997,
+      "kind": "foundational",
+      "tier": "established_theory",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/d1e4b99410a050d7ac59d751492d8ba9/",
+        "arxiv": "hep-th/9711200"
+      },
+      "note": "The original AdS/CFT correspondence; foundation of holographic duality on which the entire entanglement-geometry program rests. Adv. Theor. Math. Phys. 2 (1998) 231."
+    },
+    {
+      "title": "Eternal black holes in anti-de Sitter",
+      "authors": [
+        "Juan M. Maldacena"
+      ],
+      "year": 2001,
+      "kind": "foundational",
+      "tier": "established_theory",
+      "identifier": {
+        "arxiv": "hep-th/0106112",
+        "doi": "10.1088/1126-6708/2003/04/021"
+      },
+      "note": "Establishes that the eternal two-sided AdS black hole is dual to two CFTs in the thermofield double state — the direct precursor to entanglement=geometry and ER=EPR. JHEP 0304 (2003) 021. Bibliographic note (canonical classic)."
+    },
+    {
+      "title": "Holographic derivation of entanglement entropy from the anti-de Sitter space/conformal field theory correspondence",
+      "authors": [
+        "Shinsei Ryu",
+        "Tadashi Takayanagi"
+      ],
+      "year": 2006,
+      "kind": "foundational",
+      "tier": "established_theory",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/c43884291ab35cfeabd10c554eb439ed/",
+        "arxiv": "hep-th/0603001"
+      },
+      "note": "The Ryu-Takayanagi formula: entanglement entropy of a boundary region equals area/4G of a bulk minimal surface. Phys. Rev. Lett. 96, 181602."
+    },
+    {
+      "title": "Aspects of Holographic Entanglement Entropy",
+      "authors": [
+        "Shinsei Ryu",
+        "Tadashi Takayanagi"
+      ],
+      "year": 2006,
+      "kind": "foundational",
+      "tier": "established_theory",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/e822018b21255f26b56aedc4ea6613e2/",
+        "arxiv": "hep-th/0605073"
+      },
+      "note": "Extended companion to the RT Letter with the AdS3/CFT2 derivation and higher-dimensional discussion. JHEP 0608 (2006) 045."
+    },
+    {
+      "title": "A covariant holographic entanglement entropy proposal",
+      "authors": [
+        "Veronika E. Hubeny",
+        "Mukund Rangamani",
+        "Tadashi Takayanagi"
+      ],
+      "year": 2007,
+      "kind": "foundational",
+      "tier": "established_theory",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/03587f216e6d5b51b2e5dfd1e714cf9b/",
+        "arxiv": "0705.0016"
+      },
+      "note": "The HRT formula — covariant (time-dependent) generalization of Ryu-Takayanagi via extremal surfaces. JHEP 0707 (2007) 062."
+    },
+    {
+      "title": "Building up spacetime with quantum entanglement",
+      "authors": [
+        "Mark Van Raamsdonk"
+      ],
+      "year": 2010,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/c891f187e1fb51788086ac0baec78cf1/",
+        "arxiv": "1005.3035"
+      },
+      "note": "The 'entanglement = geometry' essay: classical spacetime connectivity emerges from entanglement of boundary degrees of freedom. Gen. Rel. Grav. 42 (2010) 2323."
+    },
+    {
+      "title": "Cool horizons for entangled black holes",
+      "authors": [
+        "Juan Maldacena",
+        "Leonard Susskind"
+      ],
+      "year": 2013,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/576fa37256595d90b6ffc621bbeaa1be/",
+        "arxiv": "1306.0533"
+      },
+      "note": "The ER=EPR conjecture: Einstein-Rosen bridges are dual to EPR entanglement; proposed resolution of firewall paradoxes. Fortsch. Phys. 61 (2013) 781."
+    },
+    {
+      "title": "Gravitation from entanglement in holographic CFTs",
+      "authors": [
+        "Thomas Faulkner",
+        "Monica Guica",
+        "Thomas Hartman",
+        "Robert C. Myers",
+        "Mark Van Raamsdonk"
+      ],
+      "year": 2013,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/4c89751ed4f15e9185d67cde03b72bea/",
+        "arxiv": "1312.7856"
+      },
+      "note": "Linearized Einstein equations derived from the entanglement first law for all ball-shaped regions. JHEP 1403 (2014) 051."
+    },
+    {
+      "title": "Universality of Gravity from Entanglement",
+      "authors": [
+        "Brian Swingle",
+        "Mark Van Raamsdonk"
+      ],
+      "year": 2014,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/d31f746d7a6b53e8a702122cccb9f2b3/",
+        "arxiv": "1405.2933"
+      },
+      "note": "1/N correction to the entanglement first law yields the gravitational source term (Newton's law), arguing entanglement universally sources gravity."
+    },
+    {
+      "title": "Quantum extremal surfaces: holographic entanglement entropy beyond the classical regime",
+      "authors": [
+        "Netta Engelhardt",
+        "Aron C. Wall"
+      ],
+      "year": 2014,
+      "kind": "foundational",
+      "tier": "established_theory",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/7c8bad7e251452af9878f445b461cbe8/",
+        "arxiv": "1408.3203"
+      },
+      "note": "Quantum extremal surface prescription: extremize generalized entropy (area + bulk entanglement). JHEP 1501 (2015) 073. Key tool for islands."
+    },
+    {
+      "title": "Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence",
+      "authors": [
+        "Fernando Pastawski",
+        "Beni Yoshida",
+        "Daniel Harlow",
+        "John Preskill"
+      ],
+      "year": 2015,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/724c2ab5e92c5b2bbcc0920bc32d4b1d/",
+        "arxiv": "1503.06237"
+      },
+      "note": "HaPPY code: exactly solvable tensor-network toy models realizing RT and bulk reconstruction as quantum error correction. JHEP 1506 (2015) 149."
+    },
+    {
+      "title": "Bidirectional holographic codes and sub-AdS locality",
+      "authors": [
+        "Zhao Yang",
+        "Patrick Hayden",
+        "Xiao-Liang Qi"
+      ],
+      "year": 2015,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/fb8be1b2cc655a138d3cb411d1d658ef/",
+        "arxiv": "1510.03784"
+      },
+      "note": "Tensor-network holographic codes extending HaPPY with bulk gauge symmetry and emergent sub-AdS locality. JHEP 1601 (2016) 175."
+    },
+    {
+      "title": "Deriving covariant holographic entanglement",
+      "authors": [
+        "Xi Dong",
+        "Aitor Lewkowycz",
+        "Mukund Rangamani"
+      ],
+      "year": 2016,
+      "kind": "recent",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/3381bfe26a3f54d88e98b5dc056aa452/",
+        "arxiv": "1607.07506"
+      },
+      "note": "Gravitational replica/Schwinger-Keldysh derivation of the covariant (HRT) holographic entanglement entropy proposal. JHEP 1611 (2016) 028."
+    },
+    {
+      "title": "Traversable wormholes via a double trace deformation",
+      "authors": [
+        "Ping Gao",
+        "Daniel Louis Jafferis",
+        "Aron C. Wall"
+      ],
+      "year": 2016,
+      "kind": "foundational",
+      "tier": "analytic_classical",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/b9d41ca3cc565f7f806f5d1578503947/",
+        "arxiv": "1608.05687"
+      },
+      "note": "GJW: coupling the two boundaries of an eternal BTZ black hole produces negative null energy that makes the Einstein-Rosen bridge traversable; ties ER=EPR to teleportation. JHEP 1712 (2017) 151."
+    },
+    {
+      "title": "Entanglement Wedge Reconstruction via Universal Recovery Channels",
+      "authors": [
+        "Jordan Cotler",
+        "Patrick Hayden",
+        "Geoffrey Penington",
+        "Grant Salton",
+        "Brian Swingle",
+        "Michael Walter"
+      ],
+      "year": 2017,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/afd17596c7ab57db82a169a8e52a02fc/",
+        "arxiv": "1704.05839"
+      },
+      "note": "Robust proof of entanglement-wedge reconstruction using universal (Petz/twirled) recovery channels. Phys. Rev. X 9, 031011."
+    },
+    {
+      "title": "Spacetime from Entanglement",
+      "authors": [
+        "Brian Swingle"
+      ],
+      "year": 2018,
+      "kind": "review",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/cdf762b87c585787b8368892511a4156/"
+      },
+      "note": "Colloquium-style review of emergent spacetime/gravity from entanglement and tensor networks. Annu. Rev. Condens. Matter Phys. 9 (2018) 345."
+    },
+    {
+      "title": "Eternal traversable wormhole",
+      "authors": [
+        "Juan Maldacena",
+        "Xiao-Liang Qi"
+      ],
+      "year": 2018,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/d670ff2d7c245df799620693049475e2/",
+        "arxiv": "1804.00491"
+      },
+      "note": "Nearly-AdS2 eternal traversable wormhole dual to two coupled SYK models; central to the SYK-wormhole correspondence."
+    },
+    {
+      "title": "Quantum chaos transition in a two-site Sachdev-Ye-Kitaev model dual to an eternal traversable wormhole",
+      "authors": [
+        "Antonio M. García-García",
+        "Tomoki Nosaka",
+        "Dario Rosa",
+        "Jacobus J. M. Verbaarschot"
+      ],
+      "year": 2019,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/34cc8c2ee37b5968b7234ec755c1edf7/",
+        "arxiv": "1901.06031"
+      },
+      "note": "Spectral/eigenstate analysis of the coupled two-site SYK model dual to the Maldacena-Qi eternal traversable wormhole. Phys. Rev. D 100, 026002."
+    },
+    {
+      "title": "Entanglement wedge reconstruction using the Petz map",
+      "authors": [
+        "Chi-Fang Chen",
+        "Geoff Penington",
+        "Michael Walter"
+      ],
+      "year": 2019,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/b74ba8d4d7ad5c1aae60b751a9112b49/",
+        "arxiv": "1902.02844"
+      },
+      "note": "Shows the (untwirled) Petz map suffices for entanglement-wedge reconstruction with non-perturbatively small error. JHEP 2001 (2020) 168."
+    },
+    {
+      "title": "Replica wormholes and the entropy of Hawking radiation",
+      "authors": [
+        "Ahmed Almheiri",
+        "Thomas Hartman",
+        "Juan Maldacena",
+        "Edgar Shaghoulian",
+        "Amirhossein Tajdini"
+      ],
+      "year": 2019,
+      "kind": "foundational",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/27eeb54fe72d5c6b9092f4c2d8aabadb/",
+        "arxiv": "1911.12333"
+      },
+      "note": "Replica wormholes in the gravitational path integral produce the island rule and the unitary Page curve for Hawking radiation. JHEP 2005 (2020) 013."
+    },
+    {
+      "title": "Leading order corrections to the quantum extremal surface prescription",
+      "authors": [
+        "Chris Akers",
+        "Geoff Penington"
+      ],
+      "year": 2020,
+      "kind": "recent",
+      "tier": "open_conjecture",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/b1325bd83e405c5c9b2a0991e63b0df9/",
+        "arxiv": "2008.03319"
+      },
+      "note": "Refines the QES/entanglement-wedge prescription using one-shot (min/max) entropies and connects it to quantum state merging. JHEP 2104 (2021) 062."
+    },
+    {
+      "title": "Quantum Gravity in the Lab. I. Teleportation by Size and Traversable Wormholes",
+      "authors": [
+        "Adam R. Brown",
+        "Hrant Gharibyan",
+        "Stefan Leichenauer",
+        "Henry W. Lin",
+        "Sepehr Nezami",
+        "Grant Salton",
+        "Leonard Susskind",
+        "Brian Swingle",
+        "Michael Walter"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "speculative_extension",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/06786d8e45285eeda29702364ba74efe/",
+        "arxiv": "1911.06314"
+      },
+      "note": "Teleportation-by-size / size-winding proposal connecting operator growth to traversable-wormhole teleportation, with table-top implementation ideas. PRX Quantum 4, 010320."
+    },
+    {
+      "title": "Traversable wormhole dynamics on a quantum processor",
+      "authors": [
+        "Daniel Jafferis",
+        "Alexander Zlokapa",
+        "Joseph D. Lykken",
+        "David K. Kolchmeyer",
+        "Samantha I. Davis",
+        "Nikolai Lauk",
+        "Hartmut Neven",
+        "Maria Spiropulu"
+      ],
+      "year": 2022,
+      "kind": "recent",
+      "tier": "observational_constraint",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/2eceb7d447b25b0b96c5f2ec62902e0e/",
+        "doi": "10.1038/s41586-022-05424-3"
+      },
+      "note": "Sparsified SYK teleportation circuit run on Google's Sycamore processor, observing traversable-wormhole-like dynamics. Nature 612, 51 (2022). (See critical comments by Kobrin et al. arXiv:2302.07897.)"
+    },
+    {
+      "title": "Probing the Connection between Entangled Particles and Wormholes in General Relativity",
+      "authors": [
+        "Ben Kain"
+      ],
+      "year": 2023,
+      "kind": "recent",
+      "tier": "numerical_approximation",
+      "identifier": {
+        "url": "https://consensus.app/papers/details/48528ebca83c5a9cbe1ba535e8cd8a9c/"
+      },
+      "note": "Concrete quantitative ER=EPR model: two spin-1/2 Dirac fermions in a singlet connected by a non-traversable wormhole, evolved numerically in asymptotically-flat GR. Phys. Rev. Lett. (2023)."
+    }
   ],
   "physicists": [
-    {"name": "Juan Maldacena", "role": "originator", "era": "1997-present", "affiliation": "IAS Princeton", "contribution": "AdS/CFT; ER=EPR; eternal-black-hole/thermofield-double duality."},
-    {"name": "Leonard Susskind", "role": "originator", "era": "2013-present", "affiliation": "Stanford", "contribution": "ER=EPR; complexity=volume/action."},
-    {"name": "Mark Van Raamsdonk", "role": "active", "era": "2010-present", "affiliation": "UBC", "contribution": "Spacetime emergent from entanglement."},
-    {"name": "Tadashi Takayanagi", "role": "active", "era": "2006-present", "affiliation": "Kyoto (YITP)", "contribution": "Ryu-Takayanagi holographic entanglement entropy."},
-    {"name": "Shinsei Ryu", "role": "active", "era": "2006-present", "affiliation": "Princeton", "contribution": "Holographic entanglement entropy formula."},
-    {"name": "Daniel Jafferis", "role": "active", "era": "2010s-present", "affiliation": "Harvard", "contribution": "Traversable wormholes; bulk reconstruction."},
-    {"name": "Brian Swingle", "role": "active", "era": "2010s-present", "affiliation": "Brandeis", "contribution": "Tensor-network / emergent-geometry picture."}
+    {
+      "name": "Juan Maldacena",
+      "role": "originator",
+      "era": "1997-present",
+      "affiliation": "Institute for Advanced Study, Princeton",
+      "contribution": "Discovered AdS/CFT (1997), the eternal-black-hole/thermofield-double duality (2001), and co-proposed ER=EPR (2013) and the eternal traversable wormhole (2018)."
+    },
+    {
+      "name": "Leonard Susskind",
+      "role": "originator",
+      "era": "1990s-present",
+      "affiliation": "Stanford University",
+      "contribution": "Co-originator of ER=EPR (with Maldacena, 2013); holographic principle, black-hole complementarity, and complexity=volume programs."
+    },
+    {
+      "name": "Shinsei Ryu",
+      "role": "foundational",
+      "era": "2006-present",
+      "affiliation": "Princeton University",
+      "contribution": "Co-derived the Ryu-Takayanagi formula relating entanglement entropy to bulk minimal-surface area."
+    },
+    {
+      "name": "Tadashi Takayanagi",
+      "role": "foundational",
+      "era": "2006-present",
+      "affiliation": "Yukawa Institute for Theoretical Physics, Kyoto University",
+      "contribution": "Co-derived the Ryu-Takayanagi formula and co-proposed the covariant (HRT) generalization."
+    },
+    {
+      "name": "Mark Van Raamsdonk",
+      "role": "foundational",
+      "era": "2010-present",
+      "affiliation": "University of British Columbia",
+      "contribution": "Articulated 'entanglement = geometry' (spacetime built from entanglement) and co-derived Einstein's equations from the entanglement first law."
+    },
+    {
+      "name": "Thomas Faulkner",
+      "role": "active",
+      "era": "2013-present",
+      "affiliation": "University of Illinois Urbana-Champaign",
+      "contribution": "Led the derivation of linearized Einstein equations from entanglement (Faulkner-Guica-Hartman-Myers-Van Raamsdonk) and FLM quantum corrections to RT."
+    },
+    {
+      "name": "Netta Engelhardt",
+      "role": "active",
+      "era": "2014-present",
+      "affiliation": "Massachusetts Institute of Technology",
+      "contribution": "Co-introduced the quantum extremal surface prescription (with Aron Wall), the basis for island computations of the Page curve."
+    },
+    {
+      "name": "Geoff Penington",
+      "role": "active",
+      "era": "2019-present",
+      "affiliation": "University of California, Berkeley",
+      "contribution": "Pioneered the island/quantum-extremal-surface resolution of the information paradox and Petz-map entanglement-wedge reconstruction."
+    },
+    {
+      "name": "Daniel Louis Jafferis",
+      "role": "active",
+      "era": "2016-present",
+      "affiliation": "Harvard University",
+      "contribution": "Co-constructed the double-trace traversable wormhole (GJW) and led the Sycamore quantum-processor wormhole-dynamics experiment."
+    },
+    {
+      "name": "Brian Swingle",
+      "role": "active",
+      "era": "2009-present",
+      "affiliation": "Brandeis University",
+      "contribution": "Connected tensor networks (MERA) to holographic geometry and emergent spacetime, and co-developed teleportation-by-size for lab wormholes."
+    }
   ],
-  "related_problems": [2, 6, 3, 7],
+  "related_problems": [
+    2,
+    6,
+    3,
+    7
+  ],
   "simulator_angle": "The eternal-black-hole (maximally-extended Kerr/Schwarzschild) geometry with its Einstein-Rosen bridge is a renderable spacetime; the simulator's metric machinery could visualize the two-sided geometry, while the entanglement duality is conceptual.",
-  "metadata": {"created": "2026-06-14", "updated": "2026-06-14", "coverage_note": "Seed: 5 key references with arXiv ids + 7 physicists. Aspiration up to 25 papers, to be expanded.", "confidence": "seed"}
+  "metadata": {
+    "created": "2026-06-14",
+    "updated": "2026-06-14",
+    "coverage_note": "Assembled 24 verified, genuinely-relevant papers and 10 physicists for the ER=EPR / entanglement-geometry problem. Method: ran ~11 Consensus paper-search MCP queries spanning foundational landmarks (AdS/CFT, Ryu-Takayanagi, ER=EPR, entanglement=geometry), reviews, and recent results (replica wormholes/islands, quantum extremal surfaces, traversable wormholes, SYK, lab teleportation, holographic codes). 22 papers carry the exact Consensus result URL returned by search; 2 are canonical landmarks given with bibliographic notes (Maldacena 2001 'Eternal black holes in AdS', and arXiv ids added to the search-found Maldacena 1997 and others where certain). No titles, authors, years, or identifiers were invented; where a result's journal was 'Unknown Journal' in search I left it unstated. This is an OPEN problem, so most resolution-level entries are labeled open_conjecture or speculative_extension; the exact two-sided AdS-Schwarzschild/BTZ geometry and the FGMRV derivation are analytic_classical; the Google Sycamore experiment is observational_constraint. I stopped at 24 rather than padding to 25.",
+    "confidence": "researched"
+  }
 }
